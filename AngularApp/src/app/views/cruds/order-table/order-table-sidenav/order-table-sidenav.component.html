@@ -1,0 +1,123 @@
+<form class="sidenavForm" *ngIf="data" [formGroup]="itemForm" (ngSubmit)="submit()">
+    <div class="sideNav-flex-container">
+        <div>
+            <div fxLayout="row wrap" fxLayout.lt-sm="column">
+                <div fxFlex="80">
+                    <h1 matDialogTitle>{{title}}</h1>
+                </div>
+                <div fxFlex="20">
+                    <button mat-flat-button class="mb-8 table-action-button closeIcon" color="primary"
+                        (click)="close('toggle button')">
+                        <span class="material-icons">
+                            clear
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="sideNav-main">
+            <div fxLayout="row wrap" fxLayout.lt-sm="column">
+                <div fxFlex="50" class="pr-16">
+                    <mat-form-field class="full-width" appearance="none">
+                        <mat-label>Order Id</mat-label>
+                        <input matInput name="OrderId" [formControl]="itemForm.controls['OrderId']"
+                            placeholder="Order Id" [readonly]='true'>
+                    </mat-form-field>
+                </div>
+                <div fxFlex="50" class="pr-16">
+                    <mat-form-field class="full-width" appearance="none">
+                        <mat-label>Order Number</mat-label>
+                        <input matInput name="OrderNumber" [formControl]="itemForm.controls['OrderNumber']"
+                            placeholder="Order Number" [readonly]='true'>
+                    </mat-form-field>
+                </div>
+                <div fxFlex="50" class="pr-16">
+                    <mat-form-field class="full-width">
+                        <mat-label>Select Status</mat-label>
+                        <mat-select matInput name="Status" [formControl]="itemForm.controls['Current_Status']">
+                            <mat-option *ngFor="let status of statusList" [value]="status">
+                                {{status}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div fxFlex="50" class="pr-16">
+                    <mat-form-field class="full-width" appearance="none">
+                        <mat-label>Select Process</mat-label>
+                        <mat-select matInput name="Process" [formControl]="itemForm.controls['Current_Process']"
+                            disabled>
+                            <mat-option *ngFor="let process of processList" [value]="process">
+                                {{process}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div fxFlex="100" class="pr-16">
+                    <mat-form-field class="full-width">
+                        <input matInput name="Notes" [formControl]="itemForm.controls['Notes']" placeholder="Notes">
+                    </mat-form-field>
+                </div>
+                <div *ngIf="DesignURL && DesignURL !== ''" fxFlex="50" class="pr-16">
+                    <label class="smallMatLbl">Design File</label>
+                    <img src="../../../../assets/images/file-types/002-pdf.svg" class="iconI smallMatLbl"
+                        style="margin-bottom: 0px !important; float: right;">
+                    <br />
+                    <button mat-raised-button class="small" color="primary" style="width: 100%;"
+                        (click)="DownloadFile()">Download Design
+                    </button><br>
+                </div>
+                <div fxFlex="50" class="pr-16">
+                    <label class="smallMatLbl">Bom File</label>
+                    <img src="../../../../assets/images/file-types/002-excel.svg" class="iconI smallMatLbl"
+                        style="margin-bottom: 0px !important; float: right;">
+                    <br />
+                    <button mat-raised-button class="small" color="primary" style="width: 100%;"
+                        (click)="DownloadBomFile()">Download Bom
+                    </button><br>
+                </div>
+                <div *ngIf="showModifiedInfo" fxFlex="50" class="pr-16" style="margin-top: 20px !important;">
+                    <mat-form-field class="full-width" appearance="none">
+                        <mat-label>Last Modified By</mat-label>
+                        <input matInput name="ModifiedByName" [formControl]="itemForm.controls['ModifiedByName']"
+                            placeholder="Last Modified By" [readonly]='true'>
+                    </mat-form-field>
+                </div>
+                <div *ngIf="showModifiedInfo" fxFlex="50" class="pr-16" style="margin-top: 20px !important;">
+                    <mat-form-field class="full-width" appearance="none">
+                        <mat-label>Last Modified On</mat-label>
+                        <input matInput name="ModifiedInfo" [formControl]="itemForm.controls['ModifiedInfo']"
+                            placeholder="Last Modified On" [readonly]='true'>
+                    </mat-form-field>
+                </div>
+                <div *ngIf="AddressType" fxFlex="50" class="pr-16" style="margin-top: 20px !important;">
+                    <label class="smallMatLbl">Address Type</label><br>
+                    {{AddressType}}
+                </div>
+                <div *ngIf="ShippingMethod" fxFlex="50" class="pr-16" style="margin-top: 20px !important;">
+                    <label class="smallMatLbl">Shipping Method</label><br>
+                    {{ShippingMethod}}
+                </div>
+                <div *ngIf="FromAddressInfo" fxFlex="50" class="pr-16"><br>
+                    <label class="smallMatLbl">From Address</label><br>
+                    {{FromAddressInfo}}
+                </div>
+                <div *ngIf="ToAddressInfo" fxFlex="50" class="pr-16"><br>
+                    <label class="smallMatLbl">To Address</label><br>
+                    {{ToAddressInfo}}
+                </div>
+            </div>
+        </div>
+        <div class="item3">
+            <div fxFlex="100" class="mt-16">
+                <button mat-raised-button color="primary" [disabled]="itemForm.invalid">{{"SAVE" | translate }}</button>
+                <span fxFlex></span>
+                <button mat-button color="warn" type="button" (click)="close('toggle button')">Cancel</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<h1 matDialogTitle>{{data.title}}</h1>
+<form [formGroup]="itemForm" (ngSubmit)="submit()">
+
+</form>

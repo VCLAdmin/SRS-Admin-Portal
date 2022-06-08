@@ -1,0 +1,142 @@
+<h1 matDialogTitle>{{data.title}}</h1>
+<h3>
+  <mat-slide-toggle (change)="toggle()" [color]="togglecolor" [checked]="isDealer" [disabled]="updation">{{toggleInfo}}
+  </mat-slide-toggle>
+</h3>
+<form [formGroup]="itemForm" (ngSubmit)="submit()">
+  <div fxLayout="row wrap" fxLayout.lt-sm="column">
+    <div fxFlex="50" class="pr-16">
+      <mat-form-field class="full-width">
+        <input matInput name="NameFirst" [formControl]="itemForm.controls['NameFirst']" placeholder="First Name">
+      </mat-form-field>
+    </div>
+    <div fxFlex="50" class="pr-16">
+      <mat-form-field class="full-width">
+        <input matInput name="NameLast" [formControl]="itemForm.controls['NameLast']" placeholder="Last Name">
+      </mat-form-field>
+    </div>
+    <!-- <div fxFlex="50"  class="pr-16">
+      <mat-form-field class="full-width">
+        <input
+        matInput
+        type="number"
+        name="age"
+        [formControl]="itemForm.controls['age']"
+        placeholder="Age">
+      </mat-form-field>
+    </div> -->
+
+    <div fxFlex="100" class="pr-16">
+      <!-- <mat-form-field class="full-width" >
+        <input
+        matInput
+        type="email"
+        name="Email"
+        [formControl]="itemForm.controls['Email']"
+        placeholder="Email" [disabled]="updation">
+      </mat-form-field> -->
+      <div *ngIf="!editing">
+        <mat-form-field class="full-width">
+          <input matInput type="email" name="Email" [formControl]="itemForm.controls['Email']" placeholder="Email">
+        </mat-form-field>
+        <div
+          *ngIf="itemForm.controls['Email'].invalid && !itemForm.controls['Email'].errors?.isExists && (itemForm.controls['Email'].dirty || itemForm.controls['Email'].touched)"
+          class="form-error-msg">
+          Invalid Email
+        </div>
+        <div
+          *ngIf="itemForm.controls['Email'].errors?.isExists && (itemForm.controls['Email'].dirty || itemForm.controls['Email'].touched)"
+          class="form-error-msg">
+          This email has been registered already
+        </div>
+        <!-- <span *ngIf="itemForm.controls['Email'].errors?.isExists">Name already exists!</span> -->
+      </div>
+      <div *ngIf="editing">
+        <mat-form-field class="full-width" appearance="none">
+          <mat-label>Email</mat-label>
+          <input matInput name="Email" [formControl]="itemForm.controls['Email']" placeholder="Email" [readonly]='true'>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <!-- <div fxFlex="50"  class="pr-16">
+      <mat-form-field class="full-width">
+        <input
+        matInput
+        name="company"
+        [formControl]="itemForm.controls['company']"
+        placeholder="Company">
+      </mat-form-field>
+    </div> -->
+    <div *ngIf="!isDealer" fxFlex="100" class="pr-16">
+      <mat-form-field class="full-width">
+        <mat-label>Select Fabricator</mat-label>
+        <mat-select matInput name="FabricatorId" [formControl]="itemForm.controls['FabricatorId']">
+          <mat-option *ngFor="let fabricator of allFabricators" [value]="fabricator.FabricatorId">
+            {{fabricator.Name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div *ngIf="isDealer" fxFlex="50" class="pr-16">
+      <mat-form-field class="full-width">
+        <mat-label>Select Dealer</mat-label>
+        <mat-select matInput name="DealerId" [formControl]="itemForm.controls['DealerId']">
+          <mat-option *ngFor="let dealer of allDealers" [value]="dealer.DealerId">
+            {{dealer.Name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div *ngIf="isDealer" fxFlex="50" class="pr-16">
+      <mat-form-field class="full-width">
+        <mat-label>Select Role</mat-label>
+        <mat-select matInput name="UserRole" [formControl]="itemForm.controls['UserRole']">
+          <mat-option *ngFor="let dealerRole of allDealerRoles" [value]="dealerRole">
+            {{dealerRole}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div *ngIf="!editing">
+      <div fxFlex="100" class="pr-16">
+
+        <mat-form-field class="full-width">
+          <input matInput type="password" name="Password" [formControl]="itemForm.controls['Password']"
+            placeholder="Password">
+        </mat-form-field>
+        <div
+          *ngIf="itemForm.controls['Password'].hasError('required') && (itemForm.controls['Password'].dirty || itemForm.controls['Password'].touched)"
+          class="form-error-msg">
+          Password is required
+        </div>
+
+
+
+      </div>
+      <br />
+      <div fxFlex="100" class="pr-16">
+        <div class="mb-16 mt-16">
+          <mat-checkbox> Send out an email when the user is added.</mat-checkbox>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="editing">
+      <div fxFlex="100" class="pr-16">
+        <div fxLayout="row wrap" fxLayoutAlign="start center" style="margin-top: 20px;">
+          <a class="font-weight-bold mat-color-primary" routerLink="/sessions/change-password"
+            [queryParams]="{id:userGuid}" target="_blank">Change Password</a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div fxFlex="100" class="mt-16">
+      <button mat-raised-button color="primary" [disabled]="itemForm.invalid">{{"SAVE" | translate }}</button>
+      <span fxFlex></span>
+      <button mat-button color="warn" type="button" (click)="dialogRef.close(false)">Cancel</button>
+    </div>
+  </div>
+</form>

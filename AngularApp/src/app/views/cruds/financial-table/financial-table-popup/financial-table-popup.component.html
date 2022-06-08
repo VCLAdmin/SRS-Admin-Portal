@@ -1,0 +1,52 @@
+<h1 matDialogTitle>{{data.title}}</h1>
+<form [formGroup]="itemForm" (ngSubmit)="submit()">
+    <div fxLayout="row wrap" fxLayout.lt-sm="column">
+        <div fxFlex="100" class="pr-16">
+            <mat-form-field class="full-width" appearance="none">
+                <mat-label>Dealer Name</mat-label>
+                <input matInput name="DealerName" [formControl]="itemForm.controls['DealerName']"
+                    placeholder="Dealer Name" [readonly]='true'>
+            </mat-form-field>
+        </div>
+        <div fxFlex="50" class="pr-16">
+            <mat-form-field class="full-width" appearance="none">
+                <mat-label>Line Of Credit</mat-label>
+                <input matInput type="number" name="LineOfCredit" [formControl]="itemForm.controls['LineOfCredit']"
+                    placeholder="Line Of Credit" [readonly]='true'>
+                <span matPrefix>$&nbsp;</span>
+                <span matSuffix>.00</span>
+            </mat-form-field>
+        </div>
+        <div fxFlex="50" class="pr-16">
+            <mat-form-field class="full-width" appearance="none">
+                <mat-label>Orders To Date</mat-label>
+                <input matInput type="number" name="OrdersToDate" [formControl]="itemForm.controls['OrdersToDate']"
+                    placeholder="Orders To Date" [readonly]='true'>
+                <span matPrefix>$&nbsp;</span>
+                <span matSuffix>.00</span>
+            </mat-form-field>
+        </div>
+        <div fxFlex="50" class="pr-16">
+            <mat-form-field class="full-width">
+                <input matInput type="number" name="PaidToDate" [formControl]="itemForm.controls['PaidToDate']"
+                    placeholder="Paid To Date">
+                <span matPrefix>$&nbsp;</span>
+                <span matSuffix>.00</span>
+            </mat-form-field>
+        </div>
+        <div fxFlex="50" class="pr-16">
+            <mat-form-field class="full-width" appearance="none">
+                <mat-label>Current Balance</mat-label>
+                <input matInput type="number" name="CurrentBalance" [formControl]="itemForm.controls['CurrentBalance']"
+                    placeholder="Current Balance" [readonly]='true'>
+                <span matPrefix>$&nbsp;</span>
+                <span matSuffix>.00</span>
+            </mat-form-field>
+        </div>
+        <div fxFlex="100" class="mt-16">
+            <button mat-raised-button color="primary" [disabled]="itemForm.invalid">{{"SAVE" | translate }}</button>
+            <span fxFlex></span>
+            <button mat-button color="warn" type="button" (click)="dialogRef.close(false)">Cancel</button>
+        </div>
+    </div>
+</form>

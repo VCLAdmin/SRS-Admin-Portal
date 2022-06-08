@@ -1,0 +1,80 @@
+<h1 matDialogTitle>{{data.title}}</h1>
+<form [formGroup]="itemForm" (ngSubmit)="submit()">
+  <div fxLayout="row wrap" fxLayout.lt-sm="column">
+    <div fxFlex="100" class="pr-16">
+      <mat-form-field class="full-width" appearance="none">
+        <mat-label>Order Id</mat-label>
+        <input matInput name="OrderId" [formControl]="itemForm.controls['OrderId']" placeholder="Order Id"
+          [readonly]='true'>
+      </mat-form-field>
+    </div>
+    <div fxFlex="50" class="pr-16">
+      <mat-form-field class="full-width">
+        <mat-label>Select Status</mat-label>
+        <mat-select matInput name="Status" [formControl]="itemForm.controls['Current_Status']">
+          <mat-option *ngFor="let sta of statusList" [value]="sta">
+            {{sta}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div fxFlex="50" class="pr-16">
+      <mat-form-field class="full-width" appearance="none">
+        <mat-label>Select Process</mat-label>
+        <mat-select matInput name="Process" [formControl]="itemForm.controls['Current_Process']" disabled>
+          <mat-option *ngFor="let pro of processList" [value]="pro">
+            {{pro}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div fxFlex="100" class="pr-16">
+      <mat-form-field class="full-width">
+        <input matInput name="Notes" [formControl]="itemForm.controls['Notes']" placeholder="Notes">
+      </mat-form-field>
+    </div>
+    <br />
+    <div *ngIf="DesignURL && DesignURL !== ''">
+      <div fxFlex="100" class="pr-16">
+        <label>Design URL</label>
+        <br />
+        <!-- <b><a href="{{DesignURL}}" target="_blank" >{{DesignURL}}</a></b> -->
+        <button mat-raised-button class="small" color="primary" (click)="DownloadFile()">Download Design </button>
+      </div>
+    </div>
+    <br />
+    <!-- <div fxFlex="100" class="pr-16">
+      <label>Json URL</label>
+      <br />
+      <b><a href="{{JsonURL}}" target="_blank">{{JsonURL}}</a></b>
+    </div> -->
+    <!-- <br />
+    <br /> -->
+    <!-- <div fxFlex="100" class="pr-16">
+      <label>Proposal URL</label>
+      <br />
+      <b><a href="{{ProposalURL}}" target="_blank">{{ProposalURL}}</a></b>
+    </div> -->
+    <br />
+
+    <div *ngIf="showModifiedInfo" fxFlex="100" class="pr-16">
+      <mat-form-field class="full-width" appearance="none">
+        <input matInput name="ModifiedInfo" [formControl]="itemForm.controls['ModifiedInfo']" placeholder=""
+          [readonly]='true'>
+      </mat-form-field>
+    </div>
+
+
+
+
+
+
+    <div fxFlex="100" class="mt-16">
+      <button mat-raised-button color="primary" [disabled]="itemForm.invalid">{{"SAVE" | translate }}</button>
+      <span fxFlex></span>
+      <button mat-button color="warn" type="button" (click)="dialogRef.close(false)">Cancel</button>
+    </div>
+  </div>
+</form>

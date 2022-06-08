@@ -1,0 +1,171 @@
+<div fxLayout="row wrap" fxLayout.lt-sm="column">
+    <div fxFlex="80">
+        <span matDialogTitle>Order History</span>
+    </div>
+    <div fxFlex="20">
+        <button mat-flat-button class="mb-8 table-action-button closeIcon" color="accent"
+            (click)="close('toggle button')">
+            <span class="material-icons">
+                clear
+            </span>
+        </button>
+        <button mat-flat-button class="mb-8 table-action-button closeIcon" color="primary" (click)="unfold_more()">
+            <span class="material-icons" *ngIf="simpleView" title="Simple View">
+                table_rows
+            </span>
+            <span class="material-icons" *ngIf="!simpleView" title="Detailed View">
+                format_align_justify
+            </span>
+        </button>
+    </div>
+</div>
+<div id="print-area">
+    <!-- order details -->
+    <div *ngFor="let parent of parentOrders">
+        <div class="order-info" fxLayout="row" fxLayoutAlign="space-between" *ngIf="!simpleView">
+            <div style="width: 55%;">
+                <div>
+                    <div class="header">Order Id: </div> {{parent.OrderId}}
+                </div>
+                <div>
+                    <div class="header">Fabricator: </div> {{parent.FabricatorName}}
+                </div>
+                <div>
+                    <div class="header">Shipping Method: </div>
+                    <span *ngIf="parent.ShippingMethod">STL - Shared Truckload</span>
+                    <span *ngIf="!parent.ShippingMethod">TL - Truckload</span>
+                </div>
+                <div>
+                    <div class="header">Address Type: </div>
+                    <span *ngIf="parent.AddressType === 'STORE'">Store</span>
+                    <span *ngIf="parent.AddressType !== 'STORE'">Address</span>
+                </div>
+            </div>
+
+            <div style="width: 44%;">
+                <div>
+                    <div class="header">Order Status: </div> {{parent.Current_Status}}
+                </div>
+                <div>
+                    <div class="header">Order Process: </div> {{parent.Current_Process}}
+                </div>
+                <div>
+                    <div class="header">Created By: </div> {{parent.CreatedByName}}
+                </div>
+                <div>
+                    <div class="header">Created On: </div> {{parent.CreatedOn | date}}
+                </div>
+                <!-- <div *ngIf="parent.ModifiedOn">
+                    <div class="header">Modified by: </div> {{parent.ModifiedByName}}
+                </div>
+                <div *ngIf="parent.ModifiedOn">
+                    <div class="header">Modified on: </div> {{parent.ModifiedOn | date}}
+                </div> -->
+            </div>
+        </div>
+        <!-- end of order details -->
+
+        <!-- billing details -->
+        <div class="billing-address" fxLayout="row" fxLayoutAlign="space-between" *ngIf="!simpleView">
+            <!-- seller -->
+            <div>
+                <h4><strong>Address From</strong></h4>
+                <p>{{parent.FromAddress}} </p>
+            </div>
+
+            <!-- buyer -->
+            <div>
+                <h4><strong>Address To</strong></h4>
+                <p>{{parent.Line1}},
+                    {{parent.Line2}},
+                    {{parent.City}},
+                    {{parent.PostalCode}}</p>
+            </div>
+        </div>
+        <!-- end of billing details -->
+
+        <!-- item table -->
+        <div class="item-table">
+            <table class="order-table table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <table class="order-table table">
+                                <thead>
+                                    <tr>
+                                        <th>Order #</th>
+                                        <th style="text-align: right;">Qty</th>
+                                        <th style="text-align: right;">Unit Price</th>
+                                        <th style="text-align: right;">Sub Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let subOrder of parent.SubOrder">
+                                        <td>{{subOrder.ProjectId + '-' + subOrder.OrderDetails[0].ProductId}}</td>
+                                        <td style="text-align: right;">{{subOrder.OrderDetails[0].Qty}}</td>
+                                        <td style="text-align: right;">$ {{subOrder.OrderDetails[0].UnitPrice| number:'1.2-2'}}
+                                        </td>
+                                        <td style="text-align: right;">$ {{subOrder.OrderDetails[0].SubTotal| number:'1.2-2'}}
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td *ngIf="simpleView" style="vertical-align: bottom;">
+                            <!-- total cost -->
+                            <div class="total-order-cost" fxLayout="row" fxLayoutAlign="end" fxLayoutGap="50px">
+                                <div>
+                                    <div>Shipping Cost: </div>
+                                    <div>Tax:</div>
+                                    <div>Discount:</div>
+                                    <mat-divider></mat-divider>
+                                    <h5><strong>Total: </strong></h5>
+                                </div>
+
+                                <div>
+                                    <div style="text-align: right;"> $ {{parent.ShippingCost| number:'1.2-2'}} </div>
+                                    <div style="text-align: right;"> $ {{parent.Tax| number:'1.2-2'}} </div>
+                                    <div style="text-align: right;"> $ {{parent.Discount| number:'1.2-2'}} </div>
+                                    <mat-divider></mat-divider>
+                                    <h5 style="text-align: right;">
+                                        <strong> $ {{parent.Total | number:'1.2-2'}} </strong>
+                                    </h5>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <!-- end of table -->
+
+        <!-- total cost -->
+        <div class="total-order-cost" fxLayout="row" fxLayoutAlign="end" fxLayoutGap="50px" *ngIf="!simpleView">
+            <div>
+                <div>Shipping Cost: </div>
+                <div>Tax:</div>
+                <div>Discount:</div>
+                <mat-divider></mat-divider>
+                <h5><strong>Total: </strong></h5>
+            </div>
+
+            <div>
+                <div style="text-align: right;"> $ {{parent.ShippingCost| number:'1.2-2'}} </div>
+                <div style="text-align: right;"> $ {{parent.Tax| number:'1.2-2'}} </div>
+                <div style="text-align: right;"> $ {{parent.Discount| number:'1.2-2'}} </div>
+                <mat-divider></mat-divider>
+                <h5 style="text-align: right;">
+                    <strong> $ {{parent.Total | number:'1.2-2'}} </strong>
+                </h5>
+            </div>
+        </div>
+        <!-- end of total cost -->
+        <mat-divider></mat-divider>
+        <mat-divider></mat-divider>
+        <br>
+    </div>
+    <h1 style="margin-top: -20px; text-align: right;">
+        Order To Date: <strong> $ {{finalTotal | number:'1.2-2'}} </strong>
+    </h1>
+</div>

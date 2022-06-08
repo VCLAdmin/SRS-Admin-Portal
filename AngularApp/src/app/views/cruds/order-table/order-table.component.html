@@ -1,0 +1,110 @@
+<div class="m-333 topPadding">
+  <mat-form-field class="form-field-filter">
+    <input matInput placeholder="Type to filter all columns" value="" (keyup)='updateFilter($event)'>
+  </mat-form-field>
+</div>
+
+<mat-card-content class="p-0">
+  <mat-sidenav-container class="example-container" (backdropClick)="onCloseSideNav('backdrop')">
+    <mat-sidenav #sidenav (keydown.escape)="onCloseSideNav('escape')" position="end" mode="over" disableClose>
+      <div class="order-table-sidenav">
+        <app-order-table-sidenav *ngIf="selectedRow" [data]="selectedRow" [title]="title"
+          (onCloseSideNav)="onCloseSideNav($event)" (onSubmitData)="onSubmitData($event)">
+        </app-order-table-sidenav>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content class="sidenav-main-content">
+      <mat-card class="p-0 table-card" [@animate]="{value:'*',params:{y:'50px',delay:'300ms'}}">
+        <ngx-datatable class="material ml-0 mr-0" [rows]="items" [columnMode]="'force'" [headerHeight]="50"
+          [footerHeight]="50" [scrollbarH]="true" [limit]="10" [rowHeight]="50">
+          <!-- <ngx-datatable-column name="ID" [flexGrow]="1" [maxWidth]="70" [sortable]="false">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              {{ row.OrderId }}
+            </ng-template>
+          </ngx-datatable-column> -->
+          <ngx-datatable-column name="Order Name" [flexGrow]="1" [sortable]="false">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              {{row?.ProjectName}}
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Order Number" [flexGrow]="1" [sortable]="false">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              {{row?.ProjectId}}-{{row?.OrderDetails[0].ProductId}}
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Dealer" [flexGrow]="1" [sortable]="false">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              {{ row?.DealerName }}
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Fabricator" [flexGrow]="1" [sortable]="false">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              {{ row?.FabricatorName }}
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Status" [flexGrow]="1" [sortable]="false">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              {{ row?.Current_Status }}
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Order Placed On" [flexGrow]="1" [sortable]="false">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              {{ row?.CreatedOn | date }}
+              <!-- :'MMM-d-y - h:mm a' -->
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Quantity" [flexGrow]="1" [maxWidth]="84" [sortable]="false">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              {{ row?.OrderDetails[0].Qty }}
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Actions" [flexGrow]="1" [maxWidth]="150">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              <button *ngIf="showEditButton" mat-icon-button mat-sm-button class="table-icon"
+                (click)="onOpenSideNav(row)">
+                <mat-icon style="color: #858C97;">edit</mat-icon>
+              </button>
+              <button *ngIf=" !showEditButton" mat-icon-button mat-sm-button class="table-icon">
+                <mat-icon style="color: #858C9738;">edit</mat-icon>
+              </button>
+              <a *ngIf=" row?.OrderDetails[0].DesignURL !==''" (click)=" DownloadFile(row)" download="Design"
+                title="Download design file" target="_blank"
+                style="margin-top: 3px; margin-left: 4px; margin-right: 4px;">
+                <img src="../../../../assets/images/file-types/002-pdf.svg" class="iconI">
+              </a>
+              <a *ngIf="row?.OrderDetails[0].DesignURL === ''" download="Design" title="Download design file"
+                target="_blank" style="margin-top: 3px; margin-left: 4px; margin-right: 4px; cursor: not-allowed; ">
+                <img src="../../../../assets/images/file-types/002-pdf-disable.svg" class="iconI">
+              </a>
+              <a (click)="DownloadBomFile(row)" download="Design"
+                title="Download bom file" target="_blank" style="margin-top: 3px; margin-left: 4px; margin-right: 4px;">
+                <img src="../../../../assets/images/file-types/002-excel.svg" class="iconI">
+              </a>
+              <!-- <a *ngIf="row?.OrderDetails[0].BomURL === null" download="Design" title="Download bom file"
+                target="_blank" style="margin-top: 3px; margin-left: 4px; margin-right: 4px; cursor: not-allowed; ">
+                <img src="../../../../assets/images/file-types/002-excel-disable.svg" class="iconI">
+              </a> -->
+              <a (click)="OpenProposalFile(row)" download="Design" title="Download Proposal" target="_blank"
+                style="margin-top: 3px; margin-left: 4px; margin-right: 4px;">
+                <img src="../../../../assets/images/svg-icons/sps_round_icon_proposal_enabled.svg" class="iconI">
+              </a>
+              <button
+                *ngIf="!row?.DisableDelete && showDeleteButton && !(row?.Current_Status === 'Delivered' || row?.Current_Status === 'Completed')"
+                mat-icon-button mat-sm-button color="warn" (click)="deleteItem(row)" style="cursor: pointer;">
+                <mat-icon>delete</mat-icon>
+              </button>
+              <button
+                *ngIf="row?.DisableDelete || !showDeleteButton || row?.Current_Status === 'Delivered' || row?.Current_Status === 'Completed'"
+                mat-icon-button mat-sm-button color="warn" style="cursor: not-allowed; opacity: .5;">
+                <mat-icon>delete</mat-icon>
+              </button>
+            </ng-template>
+          </ngx-datatable-column>
+        </ngx-datatable>
+      </mat-card>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</mat-card-content>
+<!-- https://www.svgrepo.com/collection/file-names-glyph/
+https://www.svgrepo.com/collection/file-formats-text/2
+ -->

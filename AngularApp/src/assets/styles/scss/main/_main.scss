@@ -1,0 +1,41 @@
+/* 
+* REQUIRED STYLES 
+*/
+@import "scaffolding";
+@import "typography";
+@import "layout";
+@import "header";
+@import "sidenav";
+@import "footer";
+/*
+* ALTERNATIVE STYLES
+*/
+@import "breadcrumb"; // REQUIRED ONLY FOR BREADCRUMBS
+@import "notifications"; // REQUIRED ONLY FOR NOTIFICATIONS
+
+@import "sidebar"; // REQUIRED ONLY FOR SIDE NAVIGATION LAYOUT
+@import "header-side"; // REQUIRED ONLY FOR SIDE NAVIGATION LAYOUT
+
+@import "topnav"; // REQUIRED ONLY FOR TOP NAVIGATION LAYOUT
+@import "header-top"; // REQUIRED ONLY FOR TOP NAVIGATION LAYOUT
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #88888855; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #55555555; 
+}

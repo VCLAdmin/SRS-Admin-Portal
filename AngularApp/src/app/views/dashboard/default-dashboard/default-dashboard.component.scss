@@ -1,0 +1,11 @@
+.chart-container {
+  width: 100% !important;
+
+  div {
+    width: 100%;
+  }
+}
+
+.chart-container::ng-deep * {
+  max-width: 100% !important;
+}

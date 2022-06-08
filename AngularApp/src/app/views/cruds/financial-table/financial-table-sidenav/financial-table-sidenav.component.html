@@ -1,0 +1,88 @@
+<form class="sidenavForm" *ngIf="data" [formGroup]="itemForm" (ngSubmit)="submit()">
+    <div class="sideNav-flex-container">
+        <div class="item1">
+            <div fxLayout="row wrap" fxLayout.lt-sm="column">
+                <div fxFlex="80">
+                    <h1 matDialogTitle>{{title}}</h1>
+                </div>
+                <div fxFlex="20">
+                    <button mat-flat-button class="mb-8 table-action-button closeIcon" color="primary"
+                        (click)="close('toggle button')">
+                        <span class="material-icons">
+                            clear
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="sideNav-main">
+            <div fxLayout="row wrap" fxLayout.lt-sm="column">
+                <div fxFlex="100" class="pr-16">
+                    <mat-form-field class="full-width" appearance="none">
+                        <mat-label>Dealer Name</mat-label>
+                        <input matInput name="DealerName" [formControl]="itemForm.controls['DealerName']"
+                            placeholder="Dealer Name" [readonly]='true'>
+                    </mat-form-field>
+                </div>
+                <div fxFlex="100" class="pr-16">
+                    <mat-form-field class="full-width" appearance="none">
+                        <mat-label>Line Of Credit</mat-label>
+                        <input matInput type="text" name="LineOfCredit"
+                            [formControl]="itemForm.controls['LineOfCredit']" placeholder="Line Of Credit"
+                            [readonly]='true'>
+                        <!-- <span matPrefix>$&nbsp;</span> -->
+                        <!-- <span matSuffix>.00</span> -->
+                    </mat-form-field>
+                </div>
+                <div fxFlex="100" class="pr-16">
+                    <mat-form-field class="full-width" appearance="none">
+                        <mat-label>Orders To Date</mat-label>
+                        <input matInput type="text" name="OrdersToDate"
+                            [formControl]="itemForm.controls['OrdersToDate']" placeholder="Orders To Date"
+                            [readonly]='true'>
+                        <!-- <span matPrefix>$&nbsp;</span> -->
+                        <!-- <span matSuffix>.00</span> -->
+                    </mat-form-field>
+                </div>
+                <!-- <div fxFlex="100" class="pr-16">
+                    <mat-form-field class="full-width">
+                        <input matInput type="text" name="PaidToDate" [formControl]="itemForm.controls['PaidToDate']"
+                            placeholder="Paid To Date" (keypress)="keyPressNumbers($event)">
+                    </mat-form-field>
+                </div> -->
+                <div fxFlex="100" class="pr-16">
+                    <mat-form-field class="full-width">
+                        <input matInput type="number" name="PaidToDate" [formControl]="itemForm.controls['PaidToDate']"
+                            placeholder="Paid To Date" >
+                    </mat-form-field>
+                </div>
+                <div fxFlex="100" class="pr-16">
+                    <mat-form-field class="full-width" appearance="none">
+                        <mat-label>Current Balance</mat-label>
+                        <input matInput type="text" name="CurrentBalance"
+                            [formControl]="itemForm.controls['CurrentBalance']" placeholder="Current Balance"
+                            [readonly]='true'>
+                        <!-- <span matPrefix>$&nbsp;</span> -->
+                        <!-- <span matSuffix>.00</span> -->
+                    </mat-form-field>
+                </div>
+                <div  fxFlex="50" class="pr-16" style="margin-top: 20px !important;">
+                    <label class="smallMatLbl">Created On</label><br>
+                            {{data.CreatedOn | date}}
+                </div>
+                <div  fxFlex="50" class="pr-16" style="margin-top: 20px !important;">
+                    <label class="smallMatLbl">Modified On</label><br>
+                            {{data.ModifiedOn | date}}
+                </div>
+            </div>
+        </div>
+        <div class="item3">
+            <div fxFlex="100" class="mt-16">
+                <button mat-raised-button color="primary" [disabled]="itemForm.invalid">
+                    {{"SAVE" | translate}}</button>
+                <span fxFlex></span>
+                <button mat-button color="warn" type="button" (click)="close('toggle button')">Cancel</button>
+            </div>
+        </div>
+    </div>
+</form>

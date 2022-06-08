@@ -1,0 +1,131 @@
+<form class="sidenavForm" *ngIf="data" [formGroup]="itemForm" (ngSubmit)="submit()">
+    <div class="sideNav-flex-container">
+        <div class="item1">
+            <div fxLayout="row wrap" fxLayout.lt-sm="column">
+                <div fxFlex="80">
+                    <h1 matDialogTitle>{{title}}</h1>
+                </div>
+                <div fxFlex="20">
+                    <button mat-flat-button class="mb-8 table-action-button closeIcon" color="primary"
+                        (click)="close('toggle button')">
+                        <span class="material-icons">
+                            clear
+                        </span>
+                    </button>
+                </div>
+                <div fxFlex="100">
+                    <mat-label class="smallMatLbl">Account Type</mat-label>
+                    <h3>
+                        <mat-slide-toggle (change)="toggle()" [color]="togglecolor" [checked]="isDealer"
+                            [disabled]="updation">
+                            {{toggleInfo}}
+                        </mat-slide-toggle>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="sideNav-main">
+            <div fxLayout="row wrap" fxLayout.lt-sm="column">
+                <div fxFlex="100">
+                    <mat-form-field class="full-width">
+                        <input matInput name="NameFirst" [formControl]="itemForm.controls['NameFirst']"
+                            placeholder="First Name">
+                    </mat-form-field>
+                </div>
+                <div fxFlex="100">
+                    <mat-form-field class="full-width">
+                        <input matInput name="NameLast" [formControl]="itemForm.controls['NameLast']"
+                            placeholder="Last Name">
+                    </mat-form-field>
+                </div>
+                <div fxFlex="100">
+                    <div *ngIf="!editing">
+                        <mat-form-field class="full-width">
+                            <input matInput type="email" name="Email" [formControl]="itemForm.controls['Email']"
+                                placeholder="Email">
+                        </mat-form-field>
+                        <div *ngIf="itemForm.controls['Email'].invalid && !itemForm.controls['Email'].errors?.isExists && (itemForm.controls['Email'].dirty || itemForm.controls['Email'].touched)"
+                            class="form-error-msg">
+                            Invalid Email
+                        </div>
+                        <div *ngIf="itemForm.controls['Email'].errors?.isExists && (itemForm.controls['Email'].dirty || itemForm.controls['Email'].touched)"
+                            class="form-error-msg">
+                            This email has been registered already
+                        </div>
+                        <!-- <span *ngIf="itemForm.controls['Email'].errors?.isExists">Name already exists!</span> -->
+                    </div>
+                    <div *ngIf="editing">
+                        <mat-form-field class="full-width" appearance="none">
+                            <mat-label>Email</mat-label>
+                            <input matInput name="Email" [formControl]="itemForm.controls['Email']" placeholder="Email"
+                                [readonly]='true'>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div *ngIf="!isDealer" fxFlex="100">
+                    <mat-form-field class="full-width">
+                        <mat-label>Select Fabricator</mat-label>
+                        <mat-select matInput name="FabricatorId" [formControl]="itemForm.controls['FabricatorId']">
+                            <mat-option *ngFor="let fabricator of allFabricators" [value]="fabricator.FabricatorId">
+                                {{fabricator.Name}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div *ngIf="isDealer" fxFlex="100">
+                    <mat-form-field class="full-width">
+                        <mat-label>Select Dealer</mat-label>
+                        <mat-select matInput name="DealerId" [formControl]="itemForm.controls['DealerId']">
+                            <mat-option *ngFor="let dealer of allDealers" [value]="dealer.DealerId">
+                                {{dealer.Name}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div *ngIf="isDealer" fxFlex="100">
+                    <mat-form-field class="full-width">
+                        <mat-label>Select Role</mat-label>
+                        <mat-select matInput name="UserRole" [formControl]="itemForm.controls['UserRole']">
+                            <mat-option *ngFor="let dealerRole of allDealerRoles" [value]="dealerRole">
+                                {{dealerRole}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div *ngIf="!editing">
+                    <div fxFlex="90">
+                        <mat-form-field class="full-width">
+                            <input matInput [type]="hide ? 'password' : 'text'" name="Password" autocomplete="off" [formControl]="itemForm.controls['Password']" placeholder="Password">
+                            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </mat-form-field>
+                        <div *ngIf="itemForm.controls['Password'].hasError('required') && (itemForm.controls['Password'].dirty || itemForm.controls['Password'].touched)"
+                            class="form-error-msg">
+                            Password is required
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="!editing">
+                    <div fxFlex="100">
+                        <mat-checkbox> Send out an email when the account<br> is added.</mat-checkbox>
+                    </div>
+                </div>
+                <div *ngIf="editing">
+                    <div fxFlex="100">
+                        <div fxLayout="row wrap" fxLayoutAlign="start center">
+                            <a class="font-weight-bold mat-color-primary" routerLink="/sessions/change-password"
+                                [queryParams]="{id:userGuid}" target="_blank">Change Password</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item3">
+            <div fxFlex="100" class="mt-16">
+                <button mat-raised-button color="primary" [disabled]="itemForm.invalid">
+                    {{"SAVE" | translate}}</button>
+                <span fxFlex></span>
+                <button mat-button color="warn" type="button" (click)="close('toggle button')">Cancel</button>
+            </div>
+        </div>
+    </div>
+</form>

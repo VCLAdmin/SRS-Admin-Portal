@@ -1,0 +1,84 @@
+<div fxLayout="row wrap">
+  <div fxFlex="100" fxFlex.gt-sm="100" fxFlex.sm="100"
+    [@animate]="{ value: '*', params: { y: '50px', delay: '600ms' } }">
+    <mat-card class="p-0 table-card">
+      <mat-toolbar>
+        <mat-toolbar-row>
+          <span>Products By Status</span>
+          <span class="dashboard-widget-toolbar-spacer"></span>
+          <!-- <mat-icon class="dashboard-widget-toolbar-icon" aria-hidden="false" aria-label="Example heart icon"
+            (click)="RefreshChart()">
+            <ng-container *ngIf="getType === 'Amount'">
+              <span class="material-icons">
+                attach_money
+              </span>
+            </ng-container>
+            <ng-container *ngIf="getType === 'Count'">
+              <span class="material-icons">
+                numbers
+              </span>
+            </ng-container>
+          </mat-icon> -->
+        </mat-toolbar-row>
+      </mat-toolbar>
+      <div echarts [options]="orderByStatusOptions" [merge]="orderByStatus" [autoResize]="true" style="height: 255px;">
+      </div>
+    </mat-card>
+  </div>
+
+  <div fxFlex="100" fxFlex.gt-sm="100" fxFlex.sm="100"
+    [@animate]="{ value: '*', params: { y: '50px', delay: '600ms' } }">
+    <mat-card class="p-0 table-card">
+      <mat-toolbar>
+        <mat-toolbar-row>
+          <span>Dealer Summary</span>
+          <span class="dashboard-widget-toolbar-spacer"></span>
+          <mat-icon class="dashboard-widget-toolbar-icon" aria-hidden="false" aria-label="Chart"
+            (click)="getDealerOrders(getDealerOrdersType)">
+            <ng-container *ngIf="getDealerOrdersType === 'Amount'">
+              <span class="material-icons">
+                attach_money
+              </span>
+            </ng-container>
+            <ng-container *ngIf="getDealerOrdersType === 'Count'">
+              <span class="material-icons">
+                numbers
+              </span>
+            </ng-container>
+          </mat-icon>
+        </mat-toolbar-row>
+      </mat-toolbar>
+      <div echarts [options]="dealerOrdersOptions" [merge]="dealerOrders" class="chart-container" [autoResize]="true"
+        style="height: 255px;"></div>
+    </mat-card>
+  </div>
+</div>
+
+<div fxLayout="row wrap">
+  <div fxFlex="100" fxFlex.gt-sm="100" fxFlex.sm="100"
+    [@animate]="{ value: '*', params: { y: '50px', delay: '600ms' } }">
+    <mat-card class="p-0 table-card">
+      <mat-toolbar>
+        <mat-toolbar-row>
+          <span>Products Summary</span>
+          <span class="dashboard-widget-toolbar-spacer"></span>
+          <mat-icon class="dashboard-widget-toolbar-icon" aria-hidden="false" aria-label="Chart"
+            (click)="getOrderForMonth(getOrderForMonthType)">
+            <ng-container *ngIf="getOrderForMonthType === 'Amount'">
+              <span class="material-icons">
+                attach_money
+              </span>
+            </ng-container>
+            <ng-container *ngIf="getOrderForMonthType === 'Count'">
+              <span class="material-icons">
+                numbers
+              </span>
+            </ng-container>
+          </mat-icon>
+        </mat-toolbar-row>
+      </mat-toolbar>
+      <div echarts [options]="orderByMonthsOptions" [merge]="orderByMonths" [autoResize]="true" style="height: 255px;">
+      </div>
+    </mat-card>
+  </div>
+</div>

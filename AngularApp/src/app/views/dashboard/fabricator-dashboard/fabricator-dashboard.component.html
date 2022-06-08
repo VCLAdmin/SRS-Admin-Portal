@@ -1,0 +1,105 @@
+<div class="m-033">
+  <div fxLayout="row wrap">
+    <div fxFlex="100" fxFlex.gt-md="100" fxFlex.md="100">
+      <div fxLayout="row wrap">
+        <div fxFlex="50">
+          <mat-card class="schuco-color p-24 d-flex align-items-center table-card">
+            <div class="w-40 h-40 mr-16 rounded-circle d-flex align-items-center justify-content-center">
+              <span class="text-white font-weight-bold text-18"></span>
+            </div>
+            <div class="flex-grow-1">
+              <h2 class="text-white m-0">Total Products to Date</h2>
+              <p class="text-white font-weight-bold text-18">{{ordersPlaced}}</p>
+            </div>
+            <!-- <button mat-icon-button>
+              <mat-icon class="text-muted-white">play_arrow</mat-icon>
+            </button> -->
+          </mat-card>
+        </div>
+        <div fxFlex="50">
+          <mat-card class="schuco-color p-24 d-flex align-items-center table-card">
+            <div class="w-40 h-40 mr-16 rounded-circle d-flex align-items-center justify-content-center">
+              <span class="text-white font-weight-bold text-18"></span>
+            </div>
+            <div class="flex-grow-1">
+              <h2 class="text-white m-0">Total Products Delivered</h2>
+              <p class="text-white font-weight-bold text-18">{{ordersCompleted}}</p>
+            </div>
+            <!-- <button mat-icon-button>
+              <mat-icon class="text-muted-white">play_arrow</mat-icon>
+            </button> -->
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div fxLayout="row wrap">
+  <div fxFlex="100" [fxFlex.gt-sm]="100" [fxFlex.sm]="100"
+    [@animate]="{ value: '*', params: { y: '50px', delay: '600ms' } }">
+    <mat-card class="p-0 table-card">
+      <mat-toolbar>
+        <mat-toolbar-row>
+          <span>Products By Status</span>
+          <span class="dashboard-widget-toolbar-spacer"></span>
+        </mat-toolbar-row>
+      </mat-toolbar>
+      <div echarts [options]="orderByStatusOptions" [merge]="orderByStatus" [autoResize]="true" style="height: 255px;">
+      </div>
+    </mat-card>
+  </div>
+  <div fxFlex="100" fxFlex.gt-sm="100" fxFlex.sm="100"
+    [@animate]="{ value: '*', params: { y: '50px', delay: '600ms' } }" *ngIf="fabricatorUser">
+    <mat-card class="p-0 table-card">
+      <mat-toolbar>
+        <mat-toolbar-row>
+          <span>Dealer Summary</span>
+          <span class="dashboard-widget-toolbar-spacer"></span>
+          <mat-icon class="dashboard-widget-toolbar-icon" aria-hidden="false" aria-label="Chart"
+            (click)="getFabricatorOrders(getFabricatorOrdersType)">
+            <ng-container *ngIf="getFabricatorOrdersType === 'Amount'">
+              <span class="material-icons">
+                attach_money
+              </span>
+            </ng-container>
+            <ng-container *ngIf="getFabricatorOrdersType === 'Count'">
+              <span class="material-icons">
+                numbers
+              </span>
+            </ng-container>
+          </mat-icon>
+        </mat-toolbar-row>
+      </mat-toolbar>
+      <div echarts [options]="fabricatorOrdersOptions" [merge]="fabricatorOrders" class="chart-container"
+        [autoResize]="true" style="height: 255px;"></div>
+    </mat-card>
+  </div>
+</div>
+<div fxLayout="row wrap">
+  <div fxFlex="100" [fxFlex.gt-sm]="100" [fxFlex.sm]="100"
+    [@animate]="{ value: '*', params: { y: '50px', delay: '600ms' } }">
+    <mat-card class="p-0 table-card">
+      <mat-toolbar>
+        <mat-toolbar-row>
+          <span>Products Summary</span>
+          <span class="dashboard-widget-toolbar-spacer"></span>
+          <mat-icon class="dashboard-widget-toolbar-icon" aria-hidden="false" aria-label="Chart"
+            (click)="getOrderForMonth(getOrderForMonthType)">
+            <ng-container *ngIf="getOrderForMonthType === 'Amount'">
+              <span class="material-icons">
+                attach_money
+              </span>
+            </ng-container>
+            <ng-container *ngIf="getOrderForMonthType === 'Count'">
+              <span class="material-icons">
+                numbers
+              </span>
+            </ng-container>
+          </mat-icon>
+        </mat-toolbar-row>
+      </mat-toolbar>
+      <div echarts [options]="orderByMonthsOptions" [merge]="orderByMonths" [autoResize]="true" style="height: 255px;">
+      </div>
+    </mat-card>
+  </div>
+</div>

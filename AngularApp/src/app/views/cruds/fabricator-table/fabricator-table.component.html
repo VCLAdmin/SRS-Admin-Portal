@@ -1,0 +1,53 @@
+<div class="m-333 topPadding">
+  <button mat-flat-button class="mb-8 table-action-button" color="primary" (click)="onOpenSideNav({}, true)">
+    {{"ADD" | translate }} {{"Fabricator" | translate }}</button>
+</div>
+
+<mat-card-content class="p-0">
+  <mat-sidenav-container class="example-container" (backdropClick)="onCloseSideNav('backdrop')">
+    <mat-sidenav #sidenav (keydown.escape)="onCloseSideNav('escape')" position="end" mode="over" disableClose>
+      <div class="fabricator-table-sidenav">
+        <app-fabricator-table-sidenav *ngIf="selectedRow" [data]="selectedRow" [title]="title"
+          (onCloseSideNav)="onCloseSideNav($event)" (onSubmitData)="onSubmitData($event)">
+        </app-fabricator-table-sidenav>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content class="sidenav-main-content">
+      <mat-card class="p-0 table-card" [@animate]="{value:'*',params:{y:'50px',delay:'300ms'}}">
+        <ngx-datatable class="material ml-0 mr-0" [rows]="items" [columnMode]="'force'" [headerHeight]="50"
+          [footerHeight]="50" [scrollbarH]="true" [limit]="10" [rowHeight]="50">
+          <ngx-datatable-column name="Name" [flexGrow]="1" [sortable]="false">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              {{ row.Name }}
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Contact Name" [flexGrow]="1" [sortable]="false">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              {{ row?.PrimaryContactName }}
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Contact Email" [flexGrow]="1" [sortable]="false">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              {{ row?.PrimaryContactEmail }}
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Contact Phone" [flexGrow]="1" [sortable]="false">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              {{ row?.PrimaryContactPhone }}
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Actions" [flexGrow]="1" [maxWidth]="100" [sortable]="false">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              <button mat-icon-button mat-sm-button class="mr-16 table-icon" (click)="onOpenSideNav(row)">
+                <mat-icon>edit</mat-icon>
+              </button>
+              <button mat-icon-button mat-sm-button color="warn" (click)="deleteItem(row)">
+                <mat-icon>delete</mat-icon>
+              </button>
+            </ng-template>
+          </ngx-datatable-column>
+        </ngx-datatable>
+      </mat-card>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</mat-card-content>

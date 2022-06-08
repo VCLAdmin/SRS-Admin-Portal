@@ -1,0 +1,115 @@
+<form class="sidenavForm" *ngIf="data" [formGroup]="itemForm" (ngSubmit)="submit()">
+    <div class="sideNav-flex-container">
+        <div>
+            <div fxLayout="row wrap" fxLayout.lt-sm="column">
+                <div fxFlex="80">
+                    <h1 matDialogTitle>{{title}}</h1>
+                </div>
+                <div fxFlex="20">
+                    <button mat-flat-button class="mb-8 table-action-button closeIcon" color="primary"
+                        (click)="close('toggle button')">
+                        <span class="material-icons">
+                            clear
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="sideNav-main">
+            <div fxLayout="row wrap" fxLayout.lt-sm="column">
+                <div fxFlex="100" class="pr-16">
+                    <mat-form-field class="full-width">
+                        <input matInput name="Name" [formControl]="itemForm.controls['Name']"
+                            placeholder="Fabricator Name">
+                    </mat-form-field>
+                </div>
+                <div fxFlex="50" class="pr-16">
+                    <mat-form-field class="full-width">
+                        <input matInput name="PrimaryContactName"
+                            [formControl]="itemForm.controls['PrimaryContactName']" placeholder="Primary Contact Name">
+                    </mat-form-field>
+                </div>
+
+                <div fxFlex="50" class="pr-16">
+                    <div *ngIf="!editing">
+                        <mat-form-field class="full-width">
+                            <input matInput type="email" name="PrimaryContactEmail"
+                                [formControl]="itemForm.controls['PrimaryContactEmail']"
+                                placeholder="Primary Contact Email">
+                        </mat-form-field>
+                    </div>
+                    <div *ngIf="editing">
+                        <mat-form-field class="full-width" appearance="none">
+                            <mat-label>Primary Contact Email</mat-label>
+                            <input matInput name="PrimaryContactEmail"
+                                [formControl]="itemForm.controls['PrimaryContactEmail']"
+                                placeholder="Primary Contact Email" [readonly]='true'>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div fxFlex="50" class="pr-16">
+                    <mat-form-field class="full-width">
+                        <input matInput name="PrimaryContactPhone"
+                            [formControl]="itemForm.controls['PrimaryContactPhone']" placeholder="Primary Contact Phone"
+                            type="tel"
+                            pattern="^\s*(?:\+?(\d{1,3}))?([-. (]*(\d{3})[-. )]*)?((\d{3})[-. ]*(\d{2,4})(?:[-.x ]*(\d+))?)\s*$"
+                            prefix="+1" mask="(000) 000-0000" [clearIfNotMatch]="true" [showMaskTyped]="true">
+                    </mat-form-field>
+                </div>
+                <div fxFlex="50" class="pr-16">
+                    <mat-form-field class="full-width">
+                        <mat-select matInput multiple name="SupportedProductType" placeholder="Supported Product Types"
+                            [formControl]="itemForm.controls['SupportedProductType']"
+                            [(ngModel)]="selectedSRSProductType">
+                            <mat-option value="AWS">AWS</mat-option>
+                            <mat-option value="ADS">ADS</mat-option>
+                            <mat-option value="ASS">ASS</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div fxFlex="100" class="pr-16">
+                    <mat-form-field class="full-width">
+                        <input matInput name="Line1" [formControl]="itemForm.controls['Line1']"
+                            placeholder="Address Line 1" #addressText autocomplete="off">
+                        <!-- <div #gmap style="width:100%;" id="map" [ngClass]="{'show': showGoogleMap, 'hide': !showGoogleMap}">
+        </div> -->
+                    </mat-form-field>
+                </div>
+
+                <div fxFlex="100" class="pr-16">
+                    <mat-form-field class="full-width">
+                        <input matInput name="Line2" [formControl]="itemForm.controls['Line2']"
+                            placeholder="Address Line 2">
+                    </mat-form-field>
+                </div>
+
+                <div fxFlex="50" class="pr-16">
+                    <mat-form-field class="full-width">
+                        <input matInput name="City" [formControl]="itemForm.controls['City']" placeholder="City">
+                    </mat-form-field>
+                </div>
+
+                <div fxFlex="50" class="pr-16">
+                    <mat-form-field class="full-width">
+                        <input matInput name="State" [formControl]="itemForm.controls['State']" placeholder="State">
+                    </mat-form-field>
+                </div>
+
+                <div fxFlex="50" class="pr-16">
+                    <mat-form-field class="full-width">
+                        <input matInput name="PostalCode" type="number" [formControl]="itemForm.controls['PostalCode']"
+                            placeholder="Postal Code" maxlength="5">
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+        <div class="item3">
+            <div fxFlex="100" class="mt-16">
+                <button mat-raised-button color="primary" [disabled]="itemForm.invalid">
+                    {{"SAVE" | translate}}</button>
+                <span fxFlex></span>
+                <button mat-button color="warn" type="button" (click)="close('toggle button')">Cancel</button>
+            </div>
+        </div>
+    </div>
+</form>
