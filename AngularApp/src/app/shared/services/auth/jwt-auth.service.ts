@@ -78,9 +78,9 @@ export class JwtAuthService {
             if (user && user.UserGuid) {
               this.loginService.currentUser = user;
               currentAccount.User = user;
-              this.loginService.ValidateHash(currentAccount).subscribe((isValid: boolean) => {
+              //this.loginService.ValidateHash(currentAccount).subscribe((isValid: boolean) => {
 
-                if (isValid) {
+                //if (isValid) {
                   //this.ls.setValue<any>('currentUser', JSON.stringify(currentAccount.User));
                   this.ls.setValue<User>('currentUser', currentAccount.User);
 
@@ -110,11 +110,11 @@ export class JwtAuthService {
 
                   this.router.navigateByUrl(returnURL);
 
-                }
-              }, error => {
-                console.log(error);
-                // this.showLoader = false;
-              });
+                //}
+              // }, error => {
+              //   console.log(error);
+              //   // this.showLoader = false;
+              // });
             } else {
               // this.showLoader = false
               // this.username = '';
