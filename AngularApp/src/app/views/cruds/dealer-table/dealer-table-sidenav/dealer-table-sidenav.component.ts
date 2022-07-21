@@ -41,7 +41,9 @@ export class DealerTableSidenavComponent implements OnInit, OnDestroy, OnChanges
       }
     }
   }
-
+ /**
+ * This function is used to initiate the dealer form with the default values.
+ */
   buildInitialForm() {
     this.itemForm = this.fb.group({
       Name: ['', Validators.required],
@@ -73,6 +75,12 @@ export class DealerTableSidenavComponent implements OnInit, OnDestroy, OnChanges
       this.getItemSub.unsubscribe()
     }
   }
+
+ /**
+ * This function is used to initialize the dealer form with the selected dealer details
+ * 
+ * @param {any} item is the dealer object which has the selected dealer details.
+ */
   buildItemForm(item) {
     if (item.PrimaryContactEmail != undefined) {
       this.editing = true;
@@ -106,14 +114,32 @@ export class DealerTableSidenavComponent implements OnInit, OnDestroy, OnChanges
       })
     }
   }
+
+ /**
+ * This function is called when user changes the fabricator in the dealer form
+ * 
+ * @param {any} event is the fabricator object which is selected by the user in the dealer form.
+ */
   ChangeFabricator(event: any) {
     if (event.isUserInput && event.source.selected) {
       //this.getProductTypeList(event.source.value);
     }
   }
+
+ /**
+ * This function has the output event emitter to submit the form data in the parent component.
+ * 
+ * it submits the form data which was edited by the user.
+ */
   submit() {
     this.onSubmitData.emit(this.itemForm.value);
   }
+
+ /**
+ * This function has the output event emitter to close the side nav of selected dealer.
+ * 
+ * it closes the selected dealer side nav which has the dealer details.
+ */
   close(reason: string) {
     this.onCloseSideNav.emit(false);
   }
@@ -122,6 +148,11 @@ export class DealerTableSidenavComponent implements OnInit, OnDestroy, OnChanges
   _address: Address;
   @ViewChild('addressText') addressText: any;
   autocomplete: google.maps.places.Autocomplete;
+
+ /**
+ * This function is used to search the address using google address api to enter the address for dealer.
+ * 
+ */
   googleSearchAddress() {
     this.showGoogleMap = false;
     const self = this;
@@ -142,6 +173,12 @@ export class DealerTableSidenavComponent implements OnInit, OnDestroy, OnChanges
     }
   }
 
+ /**
+ * This function is used to get the google address auto complete in which the google returned address is mapped to the
+ * 
+ * form fields which was there in the dealer form.
+ * 
+ */
   private getPlaceAutocomplete(): void {
     setTimeout(() => {
       if (this.addressText) {
@@ -231,6 +268,11 @@ export class DealerTableSidenavComponent implements OnInit, OnDestroy, OnChanges
   //     }
   //   });
   // }
+
+ /**
+ * This function is used to set the address fields of the form.
+ * 
+ */
   onAddressAutocomplete(event: Address): void {
     this.itemForm.controls.Line1.setValue(event.Line1);
     this.itemForm.controls.Line2.setValue(event.Line2);

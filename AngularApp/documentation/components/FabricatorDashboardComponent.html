@@ -1,0 +1,1960 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>egret documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">egret documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  FabricatorDashboardComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-fabricator-dashboard</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./fabricator-dashboard.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./fabricator-dashboard.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#colorPalette" >colorPalette</a>
+                            </li>
+                            <li>
+                                <a href="#fabricatorOrders" >fabricatorOrders</a>
+                            </li>
+                            <li>
+                                <a href="#fabricatorOrdersData" >fabricatorOrdersData</a>
+                            </li>
+                            <li>
+                                <a href="#fabricatorOrdersOptions" >fabricatorOrdersOptions</a>
+                            </li>
+                            <li>
+                                <a href="#fabricatorUser" >fabricatorUser</a>
+                            </li>
+                            <li>
+                                <a href="#getFabricatorOrdersType" >getFabricatorOrdersType</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getItem1Sub" >getItem1Sub</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getItem2Sub" >getItem2Sub</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getItemSub" >getItemSub</a>
+                            </li>
+                            <li>
+                                <a href="#getOrderForMonthType" >getOrderForMonthType</a>
+                            </li>
+                            <li>
+                                <a href="#orderByMonths" >orderByMonths</a>
+                            </li>
+                            <li>
+                                <a href="#orderByMonthsData" >orderByMonthsData</a>
+                            </li>
+                            <li>
+                                <a href="#orderByMonthsOptions" >orderByMonthsOptions</a>
+                            </li>
+                            <li>
+                                <a href="#orderByStatus" >orderByStatus</a>
+                            </li>
+                            <li>
+                                <a href="#orderByStatusData" >orderByStatusData</a>
+                            </li>
+                            <li>
+                                <a href="#orderByStatusOptions" >orderByStatusOptions</a>
+                            </li>
+                            <li>
+                                <a href="#ordersCompleted" >ordersCompleted</a>
+                            </li>
+                            <li>
+                                <a href="#ordersPlaced" >ordersPlaced</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getAllOrders" >getAllOrders</a>
+                            </li>
+                            <li>
+                                <a href="#getFabricatorOrders" >getFabricatorOrders</a>
+                            </li>
+                            <li>
+                                <a href="#getItemsForFabricatorDashboard" >getItemsForFabricatorDashboard</a>
+                            </li>
+                            <li>
+                                <a href="#getItemsForOrder" >getItemsForOrder</a>
+                            </li>
+                            <li>
+                                <a href="#getOrderForMonth" >getOrderForMonth</a>
+                            </li>
+                            <li>
+                                <a href="#initfabricatorOrdersChart" >initfabricatorOrdersChart</a>
+                            </li>
+                            <li>
+                                <a href="#initOrderByMonthChart" >initOrderByMonthChart</a>
+                            </li>
+                            <li>
+                                <a href="#initOrderByStatusChart" >initOrderByStatusChart</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(appConstantService: <a href="../injectables/AppconstantsService.html" target="_self">AppconstantsService</a>, jwtAuth: <a href="../injectables/AuthService.html" target="_self">AuthService</a>, http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>, themeService: <a href="../injectables/ThemeService.html" target="_self">ThemeService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>appConstantService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppconstantsService.html" target="_self" >AppconstantsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>jwtAuth</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>themeService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ThemeService.html" target="_self" >ThemeService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllOrders"></a>
+                    <span class="name">
+                        <span ><b>getAllOrders</b></span>
+                        <a href="#getAllOrders"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAllOrders(getType: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="150"
+                            class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:150</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>getType</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;any[]&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getFabricatorOrders"></a>
+                    <span class="name">
+                        <span ><b>getFabricatorOrders</b></span>
+                        <a href="#getFabricatorOrders"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getFabricatorOrders(getType: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="155"
+                            class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:155</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>getType</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getItemsForFabricatorDashboard"></a>
+                    <span class="name">
+                        <span ><b>getItemsForFabricatorDashboard</b></span>
+                        <a href="#getItemsForFabricatorDashboard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getItemsForFabricatorDashboard(getType: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="77"
+                            class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:77</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>getType</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;number[]&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getItemsForOrder"></a>
+                    <span class="name">
+                        <span ><b>getItemsForOrder</b></span>
+                        <a href="#getItemsForOrder"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getItemsForOrder(getType: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="60"
+                            class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:60</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>getType</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getOrderForMonth"></a>
+                    <span class="name">
+                        <span ><b>getOrderForMonth</b></span>
+                        <a href="#getOrderForMonth"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getOrderForMonth(getType: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="225"
+                            class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:225</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>getType</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initfabricatorOrdersChart"></a>
+                    <span class="name">
+                        <span ><b>initfabricatorOrdersChart</b></span>
+                        <a href="#initfabricatorOrdersChart"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initfabricatorOrdersChart(theme)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="164"
+                            class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:164</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>theme</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initOrderByMonthChart"></a>
+                    <span class="name">
+                        <span ><b>initOrderByMonthChart</b></span>
+                        <a href="#initOrderByMonthChart"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initOrderByMonthChart(theme)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="233"
+                            class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:233</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>theme</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initOrderByStatusChart"></a>
+                    <span class="name">
+                        <span ><b>initOrderByStatusChart</b></span>
+                        <a href="#initOrderByStatusChart"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initOrderByStatusChart(theme)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:82</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>theme</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:45</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="colorPalette"></a>
+                    <span class="name">
+                        <span ><b>colorPalette</b></span>
+                        <a href="#colorPalette"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[&#x27;#9ACD32&#x27;, &#x27;#556B2F&#x27;, &#x27;#6B8E23&#x27;, &#x27;#7CFC00&#x27;, &#x27;#7FFF00&#x27;, &#x27;#ADFF2F&#x27;, &#x27;#006400&#x27;, &#x27;#008000&#x27;,
+    &#x27;#228B22&#x27;, &#x27;#00FF00&#x27;, &#x27;#32CD32&#x27;, &#x27;#90EE90&#x27;, &#x27;#98FB98&#x27;, &#x27;#8FBC8F&#x27;, &#x27;#00FA9A&#x27;, &#x27;#00FF7F&#x27;, &#x27;#2E8B57&#x27;,
+    &#x27;#66CDAA&#x27;, &#x27;#3CB371&#x27;, &#x27;#20B2AA&#x27;, &#x27;#2F4F4F&#x27;, &#x27;#008080&#x27;, &#x27;#008B8B&#x27;, &#x27;#00FFFF&#x27;, &#x27;#00FFFF&#x27;, &#x27;#E0FFFF&#x27;,
+    &#x27;#00CED1&#x27;, &#x27;#40E0D0&#x27;, &#x27;#48D1CC&#x27;, &#x27;#AFEEEE&#x27;, &#x27;#7FFFD4&#x27;]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fabricatorOrders"></a>
+                    <span class="name">
+                        <span ><b>fabricatorOrders</b></span>
+                        <a href="#fabricatorOrders"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fabricatorOrdersData"></a>
+                    <span class="name">
+                        <span ><b>fabricatorOrdersData</b></span>
+                        <a href="#fabricatorOrdersData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:21</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fabricatorOrdersOptions"></a>
+                    <span class="name">
+                        <span ><b>fabricatorOrdersOptions</b></span>
+                        <a href="#fabricatorOrdersOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fabricatorUser"></a>
+                    <span class="name">
+                        <span ><b>fabricatorUser</b></span>
+                        <a href="#fabricatorUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getFabricatorOrdersType"></a>
+                    <span class="name">
+                        <span ><b>getFabricatorOrdersType</b></span>
+                        <a href="#getFabricatorOrdersType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;Count&quot;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getItem1Sub"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>getItem1Sub</b></span>
+                        <a href="#getItem1Sub"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getItem2Sub"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>getItem2Sub</b></span>
+                        <a href="#getItem2Sub"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getItemSub"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>getItemSub</b></span>
+                        <a href="#getItemSub"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getOrderForMonthType"></a>
+                    <span class="name">
+                        <span ><b>getOrderForMonthType</b></span>
+                        <a href="#getOrderForMonthType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;Count&quot;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:43</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="orderByMonths"></a>
+                    <span class="name">
+                        <span ><b>orderByMonths</b></span>
+                        <a href="#orderByMonths"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="orderByMonthsData"></a>
+                    <span class="name">
+                        <span ><b>orderByMonthsData</b></span>
+                        <a href="#orderByMonthsData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="orderByMonthsOptions"></a>
+                    <span class="name">
+                        <span ><b>orderByMonthsOptions</b></span>
+                        <a href="#orderByMonthsOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="orderByStatus"></a>
+                    <span class="name">
+                        <span ><b>orderByStatus</b></span>
+                        <a href="#orderByStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="orderByStatusData"></a>
+                    <span class="name">
+                        <span ><b>orderByStatusData</b></span>
+                        <a href="#orderByStatusData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="orderByStatusOptions"></a>
+                    <span class="name">
+                        <span ><b>orderByStatusOptions</b></span>
+                        <a href="#orderByStatusOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ordersCompleted"></a>
+                    <span class="name">
+                        <span ><b>ordersCompleted</b></span>
+                        <a href="#ordersCompleted"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:41</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ordersPlaced"></a>
+                    <span class="name">
+                        <span ><b>ordersPlaced</b></span>
+                        <a href="#ordersPlaced"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/views/dashboard/fabricator-dashboard/fabricator-dashboard.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { HttpClient } from &#x27;@angular/common/http&#x27;;
+import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { AppconstantsService } from &#x27;app/shared/services/appconstants.service&#x27;;
+import { AuthService } from &#x27;app/shared/services/auth/auth.service&#x27;;
+import { ThemeService } from &#x27;app/shared/services/theme.service&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+import { Observable } from &#x27;rxjs&#x27;;
+
+@Component({
+  selector: &#x27;app-fabricator-dashboard&#x27;,
+  templateUrl: &#x27;./fabricator-dashboard.component.html&#x27;,
+  styleUrls: [&#x27;./fabricator-dashboard.component.scss&#x27;],
+})
+export class FabricatorDashboardComponent implements OnInit {
+  colorPalette &#x3D; [&#x27;#9ACD32&#x27;, &#x27;#556B2F&#x27;, &#x27;#6B8E23&#x27;, &#x27;#7CFC00&#x27;, &#x27;#7FFF00&#x27;, &#x27;#ADFF2F&#x27;, &#x27;#006400&#x27;, &#x27;#008000&#x27;,
+    &#x27;#228B22&#x27;, &#x27;#00FF00&#x27;, &#x27;#32CD32&#x27;, &#x27;#90EE90&#x27;, &#x27;#98FB98&#x27;, &#x27;#8FBC8F&#x27;, &#x27;#00FA9A&#x27;, &#x27;#00FF7F&#x27;, &#x27;#2E8B57&#x27;,
+    &#x27;#66CDAA&#x27;, &#x27;#3CB371&#x27;, &#x27;#20B2AA&#x27;, &#x27;#2F4F4F&#x27;, &#x27;#008080&#x27;, &#x27;#008B8B&#x27;, &#x27;#00FFFF&#x27;, &#x27;#00FFFF&#x27;, &#x27;#E0FFFF&#x27;,
+    &#x27;#00CED1&#x27;, &#x27;#40E0D0&#x27;, &#x27;#48D1CC&#x27;, &#x27;#AFEEEE&#x27;, &#x27;#7FFFD4&#x27;]
+
+  public getItem2Sub: Subscription;
+  fabricatorOrdersData: any;
+  fabricatorOrdersOptions: any;
+  fabricatorOrders: any;
+
+  public getItemSub: Subscription;
+  orderByStatusData: any;
+  orderByStatusOptions: any;
+  orderByStatus: any;
+
+  public getItem1Sub: Subscription;
+  orderByMonthsOptions: any;
+  orderByMonths: any;
+  orderByMonthsData: any;
+  fabricatorUser &#x3D; false;
+  constructor(private appConstantService: AppconstantsService,
+    private jwtAuth: AuthService,
+    private http: HttpClient,
+    private themeService: ThemeService) { }
+
+  ordersPlaced &#x3D; 0;
+  ordersCompleted &#x3D; 0;
+  getFabricatorOrdersType &#x3D; &quot;Count&quot;;
+  getOrderForMonthType &#x3D; &quot;Count&quot;;
+
+  ngOnInit(): void {
+    this.getItemsForOrder(&quot;Count&quot;);
+    this.getFabricatorOrders(this.getFabricatorOrdersType);
+    this.getOrderForMonth(this.getOrderForMonthType);
+    this.themeService.onThemeChange.subscribe(activeTheme &#x3D;&gt; {
+      this.initOrderByStatusChart(activeTheme);
+      this.initOrderByMonthChart(activeTheme);
+      this.initfabricatorOrdersChart(activeTheme);
+    });
+
+    var user &#x3D; this.jwtAuth.getCurrentUserData();
+    this.fabricatorUser &#x3D; user.AccessRoles.includes(&quot;Fabricator&quot;) ? true : false;
+  }
+
+  /*-- Start Items Per Orders -------------------------------------------------------*/
+  getItemsForOrder(getType: string) {
+    this.ordersPlaced &#x3D; 0;
+    this.ordersCompleted &#x3D; 0;
+    this.getItemSub &#x3D; this.getItemsForFabricatorDashboard(getType)
+      .subscribe(data &#x3D;&gt; {
+        console.log(&#x27;order data by status&#x27;, data);
+        var i &#x3D; 0;
+        data.forEach(element &#x3D;&gt; {
+          this.ordersPlaced +&#x3D; element;
+          if (i &#x3D;&#x3D; 5)
+            this.ordersCompleted +&#x3D; element;
+          i++;
+        });
+        this.orderByStatusData &#x3D; data;
+        this.initOrderByStatusChart(this.themeService.activatedTheme);
+      })
+  }
+  getItemsForFabricatorDashboard(getType: string): Observable&lt;number[]&gt; {
+    // return  of(this.items.slice())
+    let url: string &#x3D; this.appConstantService.APP_DOMAIN + &quot;api/Order/GetOrderDashboard/&quot; + getType;
+    return this.http.get&lt;number[]&gt;(url);
+  }
+  initOrderByStatusChart(theme) {
+    this.orderByStatusOptions &#x3D; {
+      color: this.colorPalette,
+      tooltip: {
+        trigger: &quot;axis&quot;,
+        axisPointer: {
+          type: &quot;shadow&quot;,
+          animation: true
+        }
+      },
+      grid: {
+        top: &quot;10%&quot;,
+        left: &#x27;3%&#x27;,
+        right: &#x27;4%&#x27;,
+        bottom: &#x27;10%&#x27;,
+        containLabel: true
+      },
+      xAxis: {
+        type: &quot;category&quot;,
+        data: [
+          this.orderByStatusData[0]&gt;1 ? &#x27;Products Ordered&#x27; : &#x27;Product Ordered&#x27;,
+          this.orderByStatusData[1]&gt;1 ?&#x27;Products In Pre-production&#x27;: &#x27;Product In Pre-production&#x27;,
+          this.orderByStatusData[2]&gt;1 ?&#x27;Products In Fabrication&#x27; : &#x27;Product In Fabrication&#x27;,
+          this.orderByStatusData[3]&gt;1 ?&#x27;Products In Assembly&#x27; : &#x27;Product In Assembly&#x27;,
+          this.orderByStatusData[4]&gt;1 ?&#x27;Products Shipped&#x27; : &#x27;Product Shipped&#x27;,
+          this.orderByStatusData[5]&gt;1 ?&#x27;Products Delivered&#x27; : &#x27;Product Delivered&#x27;
+        ],
+      },
+      yAxis: {
+        type: &quot;value&quot;,
+        axisLine: {
+          show: false
+        },
+        axisLabel: {
+          show: true,
+          margin: 30,
+          color: &quot;#888&quot;
+        },
+        axisTick: {
+          show: false
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            type: &quot;dashed&quot;
+          }
+        }
+      },
+      series: [
+        {
+          name: &quot;Traffic&quot;,
+          label: { show: false, color: &quot;#0168c1&quot; },
+          type: &quot;bar&quot;,
+          barGap: 0,
+          smooth: true
+        },
+      ]
+    };
+
+    this.orderByStatus &#x3D; {
+      series: [
+        {
+          data: this.orderByStatusData
+        },
+      ]
+    };
+  }
+  /*-- End Items Per Orders -------------------------------------------------------*/
+  getAllOrders(getType: string): Observable&lt;any[]&gt; {
+    // return  of(this.items.slice())
+    let url: string &#x3D; this.appConstantService.APP_DOMAIN + &quot;api/Order/GetOrderByDealer/&quot; + getType;
+    return this.http.get&lt;any[]&gt;(url);
+  }
+  getFabricatorOrders(getType: string) {
+    this.getFabricatorOrdersType &#x3D; getType &#x3D;&#x3D; &quot;Count&quot; ? &quot;Amount&quot; : &quot;Count&quot;;
+    this.getItem2Sub &#x3D; this.getAllOrders(getType)
+      .subscribe(data &#x3D;&gt; {
+        console.log(&#x27;fabricator data&#x27;, data);
+        this.fabricatorOrdersData &#x3D; data;
+        this.initfabricatorOrdersChart(this.themeService.activatedTheme);
+      })
+  }
+  initfabricatorOrdersChart(theme) {
+    let dealersList &#x3D; [];
+    let dealersTotalOrders &#x3D; [];
+    this.fabricatorOrdersData.forEach(i &#x3D;&gt; {
+      dealersList.push(i.DealerName);
+      dealersTotalOrders.push(i.TotalOrders);
+    });
+
+    this.fabricatorOrdersOptions &#x3D; {
+      color: this.colorPalette,
+      tooltip: {
+        trigger: &quot;axis&quot;,
+        axisPointer: {
+          type: &quot;shadow&quot;,
+          animation: true
+        }
+      },
+      grid: {
+        top: &quot;10%&quot;,
+        left: &#x27;3%&#x27;,
+        right: &#x27;4%&#x27;,
+        bottom: &#x27;10%&#x27;,
+        containLabel: true
+      },
+      xAxis: {
+        type: &quot;category&quot;,
+        data: dealersList
+      },
+      yAxis: {
+        type: &quot;value&quot;,
+        axisLine: {
+          show: false
+        },
+        axisLabel: {
+          show: true,
+          margin: 30,
+          color: &quot;#888&quot;
+        },
+        axisTick: {
+          show: false
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            type: &quot;dashed&quot;
+          }
+        }
+      },
+      series: [
+        {
+          label: { show: false, color: &quot;#0168c1&quot; },
+          type: &quot;bar&quot;,
+          barGap: 0,
+          smooth: true
+        },
+      ]
+    };
+    this.fabricatorOrders &#x3D; {
+      series: { name: &#x27;Orders&#x27;, type: &#x27;bar&#x27;, stack: &#x27;month&#x27;, data: dealersTotalOrders }
+    };
+  }
+  getOrderForMonth(getType: string) {
+    this.getOrderForMonthType &#x3D; getType &#x3D;&#x3D; &quot;Count&quot; ? &quot;Amount&quot; : &quot;Count&quot;;
+    this.getItem1Sub &#x3D; this.getAllOrders(getType)
+      .subscribe(data &#x3D;&gt; {
+        this.orderByMonthsData &#x3D; data;
+        this.initOrderByMonthChart(this.themeService.activatedTheme);
+      })
+  }
+  initOrderByMonthChart(theme) {
+    this.orderByMonthsOptions &#x3D; {
+      color: this.colorPalette,
+      tooltip: {
+        trigger: &quot;axis&quot;,
+        axisPointer: {
+          type: &quot;shadow&quot;,
+          animation: true
+        }
+      },
+      grid: {
+        top: &quot;10%&quot;,
+        left: &#x27;3%&#x27;,
+        right: &#x27;4%&#x27;,
+        bottom: &#x27;10%&#x27;,
+        containLabel: true
+      },
+      xAxis: {
+        type: &quot;category&quot;,
+        data: [
+          &#x27;Jan&#x27;, &#x27;Feb&#x27;, &#x27;Mar&#x27;, &#x27;Apr&#x27;, &#x27;May&#x27;, &#x27;Jun&#x27;, &#x27;Jul&#x27;, &#x27;Aug&#x27;, &#x27;Sep&#x27;, &#x27;Oct&#x27;, &#x27;Nov&#x27;, &#x27;Dec&#x27;
+        ]
+      },
+      yAxis: {
+        type: &quot;value&quot;,
+        axisLine: {
+          show: false
+        },
+        axisLabel: {
+          show: true,
+          margin: 30,
+          color: &quot;#888&quot;
+        },
+        axisTick: {
+          show: false
+        },
+        splitLine: {
+          show: false,
+          lineStyle: {
+            type: &quot;dashed&quot;
+          }
+        }
+      },
+      series: [
+        {
+          type: &quot;bar&quot;,
+          barGap: 0,
+          smooth: true
+        },
+      ]
+    };
+    //console.log(this.orderByMonthsData)
+    let seriesData &#x3D; [];
+    this.orderByMonthsData.forEach(element &#x3D;&gt; {
+      seriesData.push({ name: element.DealerName, type: &#x27;bar&#x27;, stack: &#x27;month&#x27;, data: element.MonthOrders });
+    });
+    this.orderByMonths &#x3D; {
+      series: seriesData
+    };
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;m-033&quot;&gt;
+  &lt;div fxLayout&#x3D;&quot;row wrap&quot;&gt;
+    &lt;div fxFlex&#x3D;&quot;100&quot; fxFlex.gt-md&#x3D;&quot;100&quot; fxFlex.md&#x3D;&quot;100&quot;&gt;
+      &lt;div fxLayout&#x3D;&quot;row wrap&quot;&gt;
+        &lt;div fxFlex&#x3D;&quot;50&quot;&gt;
+          &lt;mat-card class&#x3D;&quot;schuco-color p-24 d-flex align-items-center table-card&quot;&gt;
+            &lt;div class&#x3D;&quot;w-40 h-40 mr-16 rounded-circle d-flex align-items-center justify-content-center&quot;&gt;
+              &lt;span class&#x3D;&quot;text-white font-weight-bold text-18&quot;&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;flex-grow-1&quot;&gt;
+              &lt;h2 class&#x3D;&quot;text-white m-0&quot;&gt;Total Products to Date&lt;/h2&gt;
+              &lt;p class&#x3D;&quot;text-white font-weight-bold text-18&quot;&gt;{{ordersPlaced}}&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;!-- &lt;button mat-icon-button&gt;
+              &lt;mat-icon class&#x3D;&quot;text-muted-white&quot;&gt;play_arrow&lt;/mat-icon&gt;
+            &lt;/button&gt; --&gt;
+          &lt;/mat-card&gt;
+        &lt;/div&gt;
+        &lt;div fxFlex&#x3D;&quot;50&quot;&gt;
+          &lt;mat-card class&#x3D;&quot;schuco-color p-24 d-flex align-items-center table-card&quot;&gt;
+            &lt;div class&#x3D;&quot;w-40 h-40 mr-16 rounded-circle d-flex align-items-center justify-content-center&quot;&gt;
+              &lt;span class&#x3D;&quot;text-white font-weight-bold text-18&quot;&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;flex-grow-1&quot;&gt;
+              &lt;h2 class&#x3D;&quot;text-white m-0&quot;&gt;Total Products Delivered&lt;/h2&gt;
+              &lt;p class&#x3D;&quot;text-white font-weight-bold text-18&quot;&gt;{{ordersCompleted}}&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;!-- &lt;button mat-icon-button&gt;
+              &lt;mat-icon class&#x3D;&quot;text-muted-white&quot;&gt;play_arrow&lt;/mat-icon&gt;
+            &lt;/button&gt; --&gt;
+          &lt;/mat-card&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div fxLayout&#x3D;&quot;row wrap&quot;&gt;
+  &lt;div fxFlex&#x3D;&quot;100&quot; [fxFlex.gt-sm]&#x3D;&quot;100&quot; [fxFlex.sm]&#x3D;&quot;100&quot;
+    [@animate]&#x3D;&quot;{ value: &#x27;*&#x27;, params: { y: &#x27;50px&#x27;, delay: &#x27;600ms&#x27; } }&quot;&gt;
+    &lt;mat-card class&#x3D;&quot;p-0 table-card&quot;&gt;
+      &lt;mat-toolbar&gt;
+        &lt;mat-toolbar-row&gt;
+          &lt;span&gt;Products By Status&lt;/span&gt;
+          &lt;span class&#x3D;&quot;dashboard-widget-toolbar-spacer&quot;&gt;&lt;/span&gt;
+        &lt;/mat-toolbar-row&gt;
+      &lt;/mat-toolbar&gt;
+      &lt;div echarts [options]&#x3D;&quot;orderByStatusOptions&quot; [merge]&#x3D;&quot;orderByStatus&quot; [autoResize]&#x3D;&quot;true&quot; style&#x3D;&quot;height: 255px;&quot;&gt;
+      &lt;/div&gt;
+    &lt;/mat-card&gt;
+  &lt;/div&gt;
+  &lt;div fxFlex&#x3D;&quot;100&quot; fxFlex.gt-sm&#x3D;&quot;100&quot; fxFlex.sm&#x3D;&quot;100&quot;
+    [@animate]&#x3D;&quot;{ value: &#x27;*&#x27;, params: { y: &#x27;50px&#x27;, delay: &#x27;600ms&#x27; } }&quot; *ngIf&#x3D;&quot;fabricatorUser&quot;&gt;
+    &lt;mat-card class&#x3D;&quot;p-0 table-card&quot;&gt;
+      &lt;mat-toolbar&gt;
+        &lt;mat-toolbar-row&gt;
+          &lt;span&gt;Dealer Summary&lt;/span&gt;
+          &lt;span class&#x3D;&quot;dashboard-widget-toolbar-spacer&quot;&gt;&lt;/span&gt;
+          &lt;mat-icon class&#x3D;&quot;dashboard-widget-toolbar-icon&quot; aria-hidden&#x3D;&quot;false&quot; aria-label&#x3D;&quot;Chart&quot;
+            (click)&#x3D;&quot;getFabricatorOrders(getFabricatorOrdersType)&quot;&gt;
+            &lt;ng-container *ngIf&#x3D;&quot;getFabricatorOrdersType &#x3D;&#x3D;&#x3D; &#x27;Amount&#x27;&quot;&gt;
+              &lt;span class&#x3D;&quot;material-icons&quot;&gt;
+                attach_money
+              &lt;/span&gt;
+            &lt;/ng-container&gt;
+            &lt;ng-container *ngIf&#x3D;&quot;getFabricatorOrdersType &#x3D;&#x3D;&#x3D; &#x27;Count&#x27;&quot;&gt;
+              &lt;span class&#x3D;&quot;material-icons&quot;&gt;
+                numbers
+              &lt;/span&gt;
+            &lt;/ng-container&gt;
+          &lt;/mat-icon&gt;
+        &lt;/mat-toolbar-row&gt;
+      &lt;/mat-toolbar&gt;
+      &lt;div echarts [options]&#x3D;&quot;fabricatorOrdersOptions&quot; [merge]&#x3D;&quot;fabricatorOrders&quot; class&#x3D;&quot;chart-container&quot;
+        [autoResize]&#x3D;&quot;true&quot; style&#x3D;&quot;height: 255px;&quot;&gt;&lt;/div&gt;
+    &lt;/mat-card&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div fxLayout&#x3D;&quot;row wrap&quot;&gt;
+  &lt;div fxFlex&#x3D;&quot;100&quot; [fxFlex.gt-sm]&#x3D;&quot;100&quot; [fxFlex.sm]&#x3D;&quot;100&quot;
+    [@animate]&#x3D;&quot;{ value: &#x27;*&#x27;, params: { y: &#x27;50px&#x27;, delay: &#x27;600ms&#x27; } }&quot;&gt;
+    &lt;mat-card class&#x3D;&quot;p-0 table-card&quot;&gt;
+      &lt;mat-toolbar&gt;
+        &lt;mat-toolbar-row&gt;
+          &lt;span&gt;Products Summary&lt;/span&gt;
+          &lt;span class&#x3D;&quot;dashboard-widget-toolbar-spacer&quot;&gt;&lt;/span&gt;
+          &lt;mat-icon class&#x3D;&quot;dashboard-widget-toolbar-icon&quot; aria-hidden&#x3D;&quot;false&quot; aria-label&#x3D;&quot;Chart&quot;
+            (click)&#x3D;&quot;getOrderForMonth(getOrderForMonthType)&quot;&gt;
+            &lt;ng-container *ngIf&#x3D;&quot;getOrderForMonthType &#x3D;&#x3D;&#x3D; &#x27;Amount&#x27;&quot;&gt;
+              &lt;span class&#x3D;&quot;material-icons&quot;&gt;
+                attach_money
+              &lt;/span&gt;
+            &lt;/ng-container&gt;
+            &lt;ng-container *ngIf&#x3D;&quot;getOrderForMonthType &#x3D;&#x3D;&#x3D; &#x27;Count&#x27;&quot;&gt;
+              &lt;span class&#x3D;&quot;material-icons&quot;&gt;
+                numbers
+              &lt;/span&gt;
+            &lt;/ng-container&gt;
+          &lt;/mat-icon&gt;
+        &lt;/mat-toolbar-row&gt;
+      &lt;/mat-toolbar&gt;
+      &lt;div echarts [options]&#x3D;&quot;orderByMonthsOptions&quot; [merge]&#x3D;&quot;orderByMonths&quot; [autoResize]&#x3D;&quot;true&quot; style&#x3D;&quot;height: 255px;&quot;&gt;
+      &lt;/div&gt;
+    &lt;/mat-card&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./fabricator-dashboard.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.schuco-color {
+    background-color:#78b928;
+  }
+
+  .green-progress .mat-progress-bar-fill::after {
+    background-color: green !important;
+}
+
+.chart-container {
+  width: 100% !important;
+
+  div {
+    width: 100%;
+  }
+}
+
+.chart-container::ng-deep * {
+  max-width: 100% !important;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="m-033">  <div fxLayout="row wrap">    <div fxFlex="100" fxFlex.gt-md="100" fxFlex.md="100">      <div fxLayout="row wrap">        <div fxFlex="50">          <mat-card class="schuco-color p-24 d-flex align-items-center table-card">            <div class="w-40 h-40 mr-16 rounded-circle d-flex align-items-center justify-content-center">              <span class="text-white font-weight-bold text-18"></span>            </div>            <div class="flex-grow-1">              <h2 class="text-white m-0">Total Products to Date</h2>              <p class="text-white font-weight-bold text-18">{{ordersPlaced}}</p>            </div>            <!-- <button mat-icon-button>              <mat-icon class="text-muted-white">play_arrow</mat-icon>            </button> -->          </mat-card>        </div>        <div fxFlex="50">          <mat-card class="schuco-color p-24 d-flex align-items-center table-card">            <div class="w-40 h-40 mr-16 rounded-circle d-flex align-items-center justify-content-center">              <span class="text-white font-weight-bold text-18"></span>            </div>            <div class="flex-grow-1">              <h2 class="text-white m-0">Total Products Delivered</h2>              <p class="text-white font-weight-bold text-18">{{ordersCompleted}}</p>            </div>            <!-- <button mat-icon-button>              <mat-icon class="text-muted-white">play_arrow</mat-icon>            </button> -->          </mat-card>        </div>      </div>    </div>  </div></div><div fxLayout="row wrap">  <div fxFlex="100" [fxFlex.gt-sm]="100" [fxFlex.sm]="100"    [@animate]="{ value: \'*\', params: { y: \'50px\', delay: \'600ms\' } }">    <mat-card class="p-0 table-card">      <mat-toolbar>        <mat-toolbar-row>          <span>Products By Status</span>          <span class="dashboard-widget-toolbar-spacer"></span>        </mat-toolbar-row>      </mat-toolbar>      <div echarts [options]="orderByStatusOptions" [merge]="orderByStatus" [autoResize]="true" style="height: 255px;">      </div>    </mat-card>  </div>  <div fxFlex="100" fxFlex.gt-sm="100" fxFlex.sm="100"    [@animate]="{ value: \'*\', params: { y: \'50px\', delay: \'600ms\' } }" *ngIf="fabricatorUser">    <mat-card class="p-0 table-card">      <mat-toolbar>        <mat-toolbar-row>          <span>Dealer Summary</span>          <span class="dashboard-widget-toolbar-spacer"></span>          <mat-icon class="dashboard-widget-toolbar-icon" aria-hidden="false" aria-label="Chart"            (click)="getFabricatorOrders(getFabricatorOrdersType)">            <ng-container *ngIf="getFabricatorOrdersType === \'Amount\'">              <span class="material-icons">                attach_money              </span>            </ng-container>            <ng-container *ngIf="getFabricatorOrdersType === \'Count\'">              <span class="material-icons">                numbers              </span>            </ng-container>          </mat-icon>        </mat-toolbar-row>      </mat-toolbar>      <div echarts [options]="fabricatorOrdersOptions" [merge]="fabricatorOrders" class="chart-container"        [autoResize]="true" style="height: 255px;"></div>    </mat-card>  </div></div><div fxLayout="row wrap">  <div fxFlex="100" [fxFlex.gt-sm]="100" [fxFlex.sm]="100"    [@animate]="{ value: \'*\', params: { y: \'50px\', delay: \'600ms\' } }">    <mat-card class="p-0 table-card">      <mat-toolbar>        <mat-toolbar-row>          <span>Products Summary</span>          <span class="dashboard-widget-toolbar-spacer"></span>          <mat-icon class="dashboard-widget-toolbar-icon" aria-hidden="false" aria-label="Chart"            (click)="getOrderForMonth(getOrderForMonthType)">            <ng-container *ngIf="getOrderForMonthType === \'Amount\'">              <span class="material-icons">                attach_money              </span>            </ng-container>            <ng-container *ngIf="getOrderForMonthType === \'Count\'">              <span class="material-icons">                numbers              </span>            </ng-container>          </mat-icon>        </mat-toolbar-row>      </mat-toolbar>      <div echarts [options]="orderByMonthsOptions" [merge]="orderByMonths" [autoResize]="true" style="height: 255px;">      </div>    </mat-card>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AccordinExpansionPanelComponent', 'selector': 'app-accordin-expansion-panel'},{'name': 'AdminLayoutComponent', 'selector': 'app-admin-layout'},{'name': 'AlignTabGroupComponent', 'selector': 'app-align-tab-group'},{'name': 'AnalyticsComponent', 'selector': 'app-analytics'},{'name': 'AnimationTabGroupComponent', 'selector': 'app-animation-tab-group'},{'name': 'AppBlankComponent', 'selector': 'app-blank'},{'name': 'AppCalendarComponent', 'selector': 'app-calendar'},{'name': 'AppChatsComponent', 'selector': 'app-chats'},{'name': 'AppComfirmComponent', 'selector': 'app-confirm'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppearanceFormFieldComponent', 'selector': 'app-appearance-form-field'},{'name': 'AppGalleryComponent', 'selector': 'app-gallery'},{'name': 'AppInboxComponent', 'selector': 'app-inbox'},{'name': 'AppLoaderComponent', 'selector': 'app-app-loader'},{'name': 'AppPricingComponent', 'selector': 'app-pricing'},{'name': 'AppTourComponent', 'selector': 'app-app-tour'},{'name': 'AppUsersComponent', 'selector': 'app-users'},{'name': 'AuthLayoutComponent', 'selector': 'app-auth-layout'},{'name': 'AutocompleteChipComponent', 'selector': 'app-autocomplete-chip'},{'name': 'AutocompleteOverviewComponent', 'selector': 'app-autocomplete-overview'},{'name': 'AutoHideTooltipComponent', 'selector': 'app-auto-hide-tooltip'},{'name': 'AutoresizeSidenavComponent', 'selector': 'app-autoresize-sidenav'},{'name': 'AutoResizingTexareaComponent', 'selector': 'app-auto-resizing-texarea'},{'name': 'BasicBadgeComponent', 'selector': 'app-basic-badge'},{'name': 'BasicBarComponent', 'selector': 'app-basic-bar'},{'name': 'BasicButtonToggleComponent', 'selector': 'app-basic-button-toggle'},{'name': 'BasicCardComponent', 'selector': 'app-basic-card'},{'name': 'BasicCheckboxComponent', 'selector': 'app-basic-checkbox'},{'name': 'BasicChipComponent', 'selector': 'app-basic-chip'},{'name': 'BasicDatepickerComponent', 'selector': 'app-basic-datepicker'},{'name': 'BasicDialogComponent', 'selector': 'app-basic-dialog'},{'name': 'BasicDialogOverviewComponent', 'selector': 'app-basic-dialog-overview'},{'name': 'BasicDividerComponent', 'selector': 'app-basic-divider'},{'name': 'BasicExpansionPanelComponent', 'selector': 'app-basic-expansion-panel'},{'name': 'BasicFormComponent', 'selector': 'app-basic-form'},{'name': 'BasicGridComponent', 'selector': 'app-basic-grid'},{'name': 'BasicIconComponent', 'selector': 'app-basic-icon'},{'name': 'BasicInputComponent', 'selector': 'app-basic-input'},{'name': 'BasicListComponent', 'selector': 'app-basic-list'},{'name': 'BasicMenuComponent', 'selector': 'app-basic-menu'},{'name': 'BasicPaginatorComponent', 'selector': 'app-basic-paginator'},{'name': 'BasicRadioComponent', 'selector': 'app-basic-radio'},{'name': 'BasicSelectComponent', 'selector': 'app-basic-select'},{'name': 'BasicSidenavComponent', 'selector': 'app-basic-sidenav'},{'name': 'BasicSliderComponent', 'selector': 'app-basic-slider'},{'name': 'BasicSnackbarComponent', 'selector': 'app-basic-snackbar'},{'name': 'BasicSnackbarComponent', 'selector': 'app-basic-snackbar'},{'name': 'BasicSortHeaderComponent', 'selector': 'app-basic-sort-header'},{'name': 'BasicSpinnerComponent', 'selector': 'app-basic-spinner'},{'name': 'BasicStepperComponent', 'selector': 'app-basic-stepper'},{'name': 'BasicTabGroupComponent', 'selector': 'app-basic-tab-group'},{'name': 'BasicTableComponent', 'selector': 'app-basic-table'},{'name': 'BasicToggleComponent', 'selector': 'app-basic-toggle'},{'name': 'BasicToolbarComponent', 'selector': 'app-basic-toolbar'},{'name': 'BasicTooltipComponent', 'selector': 'app-basic-tooltip'},{'name': 'BorderComponent', 'selector': 'app-border'},{'name': 'BottomSheetComponent', 'selector': 'app-bottom-sheet'},{'name': 'BottomSheetOverviewComponent', 'selector': 'app-bottom-sheet-overview'},{'name': 'BottomSheetShareComponent', 'selector': 'app-bottom-sheet-share'},{'name': 'BreadcrumbComponent', 'selector': 'app-breadcrumb'},{'name': 'ButtonExamplesComponent', 'selector': 'app-button-examples'},{'name': 'ButtonLoadingComponent', 'selector': 'button-loading'},{'name': 'ButtonsComponent', 'selector': 'app-buttons'},{'name': 'ButtonToggleComponent', 'selector': 'app-button-toggle'},{'name': 'CalendarFormDialogComponent', 'selector': 'app-calendar-form-dialog'},{'name': 'CartComponent', 'selector': 'app-cart'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ChangingTooltipComponent', 'selector': 'app-changing-tooltip'},{'name': 'ChartExampleViewComponent', 'selector': 'app-chart-example-view'},{'name': 'ChartsComponent', 'selector': 'app-charts'},{'name': 'ChatContentsComponent', 'selector': 'app-chat-contents'},{'name': 'ChatLeftSidenavComponent', 'selector': 'app-chat-left-sidenav'},{'name': 'CheckboxTreeComponent', 'selector': 'app-checkbox-tree'},{'name': 'CheckoutComponent', 'selector': 'app-checkout'},{'name': 'ClearButtonInputComponent', 'selector': 'app-clear-button-input'},{'name': 'ColorsComponent', 'selector': 'app-colors'},{'name': 'ConfigurableCheckboxComponent', 'selector': 'app-configurable-checkbox'},{'name': 'ConfigurableSidenavComponent', 'selector': 'app-configurable-sidenav'},{'name': 'ConfigurableToggleComponent', 'selector': 'app-configurable-toggle'},{'name': 'ConfirmDialogComponent', 'selector': 'app-confirm-dialog'},{'name': 'CrudNgxTableComponent', 'selector': 'app-crud-ngx-table'},{'name': 'CryptocurrencyComponent', 'selector': 'app-cryptocurrency'},{'name': 'CustomBarComponent', 'selector': 'app-custom-bar'},{'name': 'CustomClassTooltipComponent', 'selector': 'app-custom-class-tooltip'},{'name': 'CustomDatepickerComponent', 'selector': 'app-custom-datepicker'},{'name': 'CustomizedStepperComponent', 'selector': 'app-customized-stepper'},{'name': 'CustomizerComponent', 'selector': 'app-customizer'},{'name': 'CustomLoadingButtonsComponent', 'selector': 'app-custom-loading-buttons'},{'name': 'CustomPaginatorComponent', 'selector': 'app-custom-paginator'},{'name': 'CustomPanelSelectComponent', 'selector': 'app-custom-panel-select'},{'name': 'CustomPositionTooltipComponent', 'selector': 'app-custom-position-tooltip'},{'name': 'CustomRipplesComponent', 'selector': 'app-custom-ripples'},{'name': 'CustomSnackbarComponent', 'selector': 'app-custom-snackbar'},{'name': 'CustomSnackbarOverviewComponent', 'selector': 'app-custom-snackbar-overview'},{'name': 'CustomSpinnerComponent', 'selector': 'app-custom-spinner'},{'name': 'CustomTabGroupComponent', 'selector': 'app-custom-tab-group'},{'name': 'DashboardDarkComponent', 'selector': 'app-dashboard-dark'},{'name': 'DataDialogComponent', 'selector': 'app-data-dialog'},{'name': 'DataDialogOverviewComponent', 'selector': 'app-data-dialog-overview'},{'name': 'DealerTableComponent', 'selector': 'app-dealer-table'},{'name': 'DealerTablePopupComponent', 'selector': 'app-dealer-table-popup'},{'name': 'DealerTableSidenavComponent', 'selector': 'app-dealer-table-sidenav'},{'name': 'DefaultDashboardComponent', 'selector': 'app-default-dashboard'},{'name': 'DefaultDashboardComponent', 'selector': 'app-default-dashboard'},{'name': 'DelayTooltipComponent', 'selector': 'app-delay-tooltip'},{'name': 'DifferentLocaleDatepickerComponent', 'selector': 'app-different-locale-datepicker'},{'name': 'DisabledDatepickerComponent', 'selector': 'app-disabled-datepicker'},{'name': 'DisabledSelectComponent', 'selector': 'app-disabled-select'},{'name': 'DisabledTooltipComponent', 'selector': 'app-disabled-tooltip'},{'name': 'DisplayValueAutocompleteComponent', 'selector': 'app-display-value-autocomplete'},{'name': 'DragndropComponent', 'selector': 'app-dragndrop'},{'name': 'DrawerSidenavComponent', 'selector': 'app-drawer-sidenav'},{'name': 'DynamicDataTreeComponent', 'selector': 'app-dynamic-data-tree'},{'name': 'DynamicGridComponent', 'selector': 'app-dynamic-grid'},{'name': 'DynamicTabGroupComponent', 'selector': 'app-dynamic-tab-group'},{'name': 'EchartBarComponent', 'selector': 'app-echart-bar'},{'name': 'EchartHeatmapComponent', 'selector': 'app-echart-heatmap'},{'name': 'EchartPieComponent', 'selector': 'app-echart-pie'},{'name': 'EchartRadarComponent', 'selector': 'app-echart-radar'},{'name': 'EgretExampleViewerComponent', 'selector': 'egret-example-viewer'},{'name': 'EgretExampleViewerTemplateComponent', 'selector': 'egret-example-viewer-template'},{'name': 'EgretNotifications2Component', 'selector': 'egret-notifications2'},{'name': 'EgretSidebarComponent', 'selector': 'egret-sidebar'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'ErrorFormFieldComponent', 'selector': 'app-error-form-field'},{'name': 'ErrorInputComponent', 'selector': 'app-error-input'},{'name': 'ErrorMessageInputComponent', 'selector': 'app-error-message-input'},{'name': 'ErrorSelectComponent', 'selector': 'app-error-select'},{'name': 'ErrorStepperComponent', 'selector': 'app-error-stepper'},{'name': 'EscapeBackdropSidenavComponent', 'selector': 'app-escape-backdrop-sidenav'},{'name': 'EventDatepickerComponent', 'selector': 'app-event-datepicker'},{'name': 'FabricatorDashboardComponent', 'selector': 'app-fabricator-dashboard'},{'name': 'FabricatorTableComponent', 'selector': 'app-fabricator-table'},{'name': 'FabricatorTablePopupComponent', 'selector': 'app-fabricator-table-popup'},{'name': 'FabricatorTableSidenavComponent', 'selector': 'app-fabricator-table-sidenav'},{'name': 'FeatureSelectComponent', 'selector': 'app-feature-select'},{'name': 'FileUploadComponent', 'selector': 'app-file-upload'},{'name': 'FilterAutocompleteComponent', 'selector': 'app-filter-autocomplete'},{'name': 'FilterDatepickerComponent', 'selector': 'app-filter-datepicker'},{'name': 'FilterTableComponent', 'selector': 'app-filter-table'},{'name': 'FilterTableComponent', 'selector': 'app-filter-table'},{'name': 'FinancialDealerComponent', 'selector': 'app-financial-dealer'},{'name': 'FinancialTableComponent', 'selector': 'app-financial-table'},{'name': 'FinancialTablePopupComponent', 'selector': 'app-financial-table-popup'},{'name': 'FinancialTableSidenavComponent', 'selector': 'app-financial-table-sidenav'},{'name': 'FixedSidenavComponent', 'selector': 'app-fixed-sidenav'},{'name': 'FlatTreeComponent', 'selector': 'app-flat-tree'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FooterTableComponent', 'selector': 'app-footer-table'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'FormInputComponent', 'selector': 'app-form-input'},{'name': 'FormSelectComponent', 'selector': 'app-form-select'},{'name': 'FullscreenTableComponent', 'selector': 'app-fullscreen-table'},{'name': 'FullWidthCardComponent', 'selector': 'app-full-width-card'},{'name': 'FullWidthCardTabComponent', 'selector': 'app-full-width-card-tab'},{'name': 'FullWidthPlainComponent', 'selector': 'app-full-width-plain'},{'name': 'HeaderSideComponent', 'selector': 'app-header-side'},{'name': 'HeaderTopComponent', 'selector': 'app-header-top'},{'name': 'HighlightFirstAutocompleteComponent', 'selector': 'app-highlight-first-autocomplete'},{'name': 'HintsFormFieldComponent', 'selector': 'app-hints-form-field'},{'name': 'HintsInputComponent', 'selector': 'app-hints-input'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'IconMenuComponent', 'selector': 'app-icon-menu'},{'name': 'IndeterminateBarComponent', 'selector': 'app-indeterminate-bar'},{'name': 'InputChipComponent', 'selector': 'app-input-chip'},{'name': 'InvoiceDetailsComponent', 'selector': 'app-invoice-details'},{'name': 'InvoiceListComponent', 'selector': 'app-invoice-list'},{'name': 'LabelFormFieldComponent', 'selector': 'app-label-form-field'},{'name': 'LearningManagementComponent', 'selector': 'app-learning-management'},{'name': 'LeftSidebarCardComponent', 'selector': 'app-left-sidebar-card'},{'name': 'LeftSidebarPlainComponent', 'selector': 'app-left-sidebar-plain'},{'name': 'LoaderDialogComponent', 'selector': 'app-loader-dialog'},{'name': 'LockscreenComponent', 'selector': 'app-lockscreen'},{'name': 'MailComposeComponent', 'selector': 'mail-compose'},{'name': 'ManualHideTooltipComponent', 'selector': 'app-manual-hide-tooltip'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'MaterialExampleViewComponent', 'selector': 'app-material-example-view'},{'name': 'MaterialTableComponent', 'selector': 'app-material-table'},{'name': 'MatIconsComponent', 'selector': 'app-mat-icons'},{'name': 'MinMaxDatepickerComponent', 'selector': 'app-min-max-datepicker'},{'name': 'MomentJsDatepickerComponent', 'selector': 'app-moment-js-datepicker'},{'name': 'MultipleSelectComponent', 'selector': 'app-multiple-select'},{'name': 'MultiRowToolbarComponent', 'selector': 'app-multi-row-toolbar'},{'name': 'MultiSectionCardComponent', 'selector': 'app-multi-section-card'},{'name': 'NavTabGroupComponent', 'selector': 'app-nav-tab-group'},{'name': 'Nested1Component', 'selector': 'app-nested1'},{'name': 'Nested2Component', 'selector': 'app-nested2'},{'name': 'Nested3Component', 'selector': 'app-nested3'},{'name': 'NestedMenuComponent', 'selector': 'app-nested-menu'},{'name': 'NestedTreeComponent', 'selector': 'app-nested-tree'},{'name': 'NgmodelRadioComponent', 'selector': 'app-ngmodel-radio'},{'name': 'NgxTablePopupComponent', 'selector': 'app-ngx-table-popup'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'NotificationsComponent', 'selector': 'app-notifications'},{'name': 'OpenCloseSidenavComponent', 'selector': 'app-open-close-sidenav'},{'name': 'OpenMethodDatepickerComponent', 'selector': 'app-open-method-datepicker'},{'name': 'OptionGroupAutocompleteComponent', 'selector': 'app-option-group-autocomplete'},{'name': 'OptionGroupSelectComponent', 'selector': 'app-option-group-select'},{'name': 'OrderCostListComponent', 'selector': 'app-order-cost-list'},{'name': 'OrderDetailComponent', 'selector': 'app-order-detail'},{'name': 'OrderListComponent', 'selector': 'app-order-list'},{'name': 'OrderTableComponent', 'selector': 'app-order-table'},{'name': 'OrderTablePopupComponent', 'selector': 'app-order-table-popup'},{'name': 'OrderTableSidenavComponent', 'selector': 'app-order-table-sidenav'},{'name': 'PaginationTableComponent', 'selector': 'app-pagination-table'},{'name': 'PagingTableComponent', 'selector': 'app-paging-table'},{'name': 'PrefixSuffixFormFieldComponent', 'selector': 'app-prefix-suffix-form-field'},{'name': 'ProductDetailsComponent', 'selector': 'app-product-details'},{'name': 'ProductsComponent', 'selector': 'app-products'},{'name': 'ProfileBlankComponent', 'selector': 'app-profile-blank'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ProfileOverviewComponent', 'selector': 'app-profile-overview'},{'name': 'ProfileSettingsComponent', 'selector': 'app-profile-settings'},{'name': 'ResetSelectComponent', 'selector': 'app-reset-select'},{'name': 'ResponsiveSidenavComponent', 'selector': 'app-responsive-sidenav'},{'name': 'ResultPageComponent', 'selector': 'app-result-page'},{'name': 'RichTextEditorComponent', 'selector': 'app-rich-text-editor'},{'name': 'RightSidebarCardComponent', 'selector': 'app-right-sidebar-card'},{'name': 'RipplelessSelectComponent', 'selector': 'app-rippleless-select'},{'name': 'ScrollableDialogComponent', 'selector': 'app-scrollable-dialog'},{'name': 'ScrollableDialogOverviewComponent', 'selector': 'app-scrollable-dialog-overview'},{'name': 'SearchInputOverComponent', 'selector': 'egret-search-input-over'},{'name': 'SectionListComponent', 'selector': 'app-section-list'},{'name': 'SelectedValueDatepickerComponent', 'selector': 'app-selected-value-datepicker'},{'name': 'SelectionTableComponent', 'selector': 'app-selection-table'},{'name': 'SidebarSideComponent', 'selector': 'app-sidebar-side'},{'name': 'SidebarTopComponent', 'selector': 'app-sidebar-top'},{'name': 'SidenavComponent', 'selector': 'app-sidenav'},{'name': 'Signin2Component', 'selector': 'app-signin2'},{'name': 'Signin3Component', 'selector': 'app-signin3'},{'name': 'Signin4Component', 'selector': 'app-signin4'},{'name': 'SigninComponent', 'selector': 'app-signin'},{'name': 'Signup2Component', 'selector': 'app-signup2'},{'name': 'Signup3Component', 'selector': 'app-signup3'},{'name': 'Signup4Component', 'selector': 'app-signup4'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SimpleAutocompleteComponent', 'selector': 'app-simple-autocomplete'},{'name': 'SimpleFormFieldComponent', 'selector': 'app-simple-form-field'},{'name': 'SliderComponent', 'selector': 'app-slider'},{'name': 'SortingTableComponent', 'selector': 'app-sorting-table'},{'name': 'SpacingComponent', 'selector': 'app-spacing'},{'name': 'StackedChipComponent', 'selector': 'app-stacked-chip'},{'name': 'StartDateDatepickerComponent', 'selector': 'app-start-date-datepicker'},{'name': 'StickyColumnTableComponent', 'selector': 'app-sticky-column-table'},{'name': 'StickyFooterTableComponent', 'selector': 'app-sticky-footer-table'},{'name': 'StickyHeaderTableComponent', 'selector': 'app-sticky-header-table'},{'name': 'SuffixPrefixInputComponent', 'selector': 'app-suffix-prefix-input'},{'name': 'SvgIconComponent', 'selector': 'app-svg-icon'},{'name': 'TableSortingComponent', 'selector': 'app-table-sorting'},{'name': 'TagDialogueComponent', 'selector': 'app-tag-dialogue'},{'name': 'ThemingFormFieldComponent', 'selector': 'app-theming-form-field'},{'name': 'TodoComponent', 'selector': 'app-todo'},{'name': 'TodoDetailsComponent', 'selector': 'app-todo-details'},{'name': 'TodoListComponent', 'selector': 'app-todo-list'},{'name': 'TouchDatepickerComponent', 'selector': 'app-touch-datepicker'},{'name': 'TriggerSelectComponent', 'selector': 'app-trigger-select'},{'name': 'TwoSidenavComponent', 'selector': 'app-two-sidenav'},{'name': 'TwoWayBindingSelectComponent', 'selector': 'app-two-way-binding-select'},{'name': 'TypographyComponent', 'selector': 'app-typography'},{'name': 'UILibIconsComponent', 'selector': 'app-uilib-icons'},{'name': 'UserTableComponent', 'selector': 'app-user-table'},{'name': 'UserTablePopupComponent', 'selector': 'app-user-table-popup'},{'name': 'UserTableSidenavComponent', 'selector': 'app-user-table-sidenav'},{'name': 'VerticalStepperComponent', 'selector': 'app-vertical-stepper'},{'name': 'WizardComponent', 'selector': 'app-wizard'}];
+    var DIRECTIVES = [{'name': 'AppDropdownDirective', 'selector': '[appDropdown]'},{'name': 'DropdownAnchorDirective', 'selector': '[appDropdownToggle]'},{'name': 'DropdownLinkDirective', 'selector': '[appDropdownLink]'},{'name': 'EgretHighlightDirective', 'selector': '[egretHighlight]'},{'name': 'EgretSidebarTogglerDirective', 'selector': '[egretSidebarToggler]'},{'name': 'EgretSidenavHelperDirective', 'selector': '[egretSidenavHelper]'},{'name': 'EgretSideNavToggleDirective', 'selector': '[EgretSideNavToggle]'},{'name': 'EgretSidenavTogglerDirective', 'selector': '[egretSidenavToggler]'},{'name': 'FontSizeDirective', 'selector': '[fontSize]'},{'name': 'ScrollToDirective', 'selector': '[scrollTo]'}];
+    var ACTUAL_COMPONENT = {'name': 'FabricatorDashboardComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'FabricatorDashboardComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

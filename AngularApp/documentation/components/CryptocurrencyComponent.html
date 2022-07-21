@@ -1,0 +1,1318 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>egret documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">egret documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  CryptocurrencyComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/views/dashboard/cryptocurrency/cryptocurrency.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-cryptocurrency</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./cryptocurrency.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./cryptocurrency.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#activeTrades" >activeTrades</a>
+                            </li>
+                            <li>
+                                <a href="#cryptoChart" >cryptoChart</a>
+                            </li>
+                            <li>
+                                <a href="#cryptoDonutChart" >cryptoDonutChart</a>
+                            </li>
+                            <li>
+                                <a href="#trendingCurrencies" >trendingCurrencies</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#initCryptoChart" >initCryptoChart</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(themeService: <a href="../injectables/ThemeService.html" target="_self">ThemeService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/views/dashboard/cryptocurrency/cryptocurrency.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>themeService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ThemeService.html" target="_self" >ThemeService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initCryptoChart"></a>
+                    <span class="name">
+                        <span ><b>initCryptoChart</b></span>
+                        <a href="#initCryptoChart"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initCryptoChart(theme)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="176"
+                            class="link-to-prism">src/app/views/dashboard/cryptocurrency/cryptocurrency.component.ts:176</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>theme</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="22"
+                            class="link-to-prism">src/app/views/dashboard/cryptocurrency/cryptocurrency.component.ts:22</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="activeTrades"></a>
+                    <span class="name">
+                        <span ><b>activeTrades</b></span>
+                        <a href="#activeTrades"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/views/dashboard/cryptocurrency/cryptocurrency.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cryptoChart"></a>
+                    <span class="name">
+                        <span ><b>cryptoChart</b></span>
+                        <a href="#cryptoChart"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/views/dashboard/cryptocurrency/cryptocurrency.component.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cryptoDonutChart"></a>
+                    <span class="name">
+                        <span ><b>cryptoDonutChart</b></span>
+                        <a href="#cryptoDonutChart"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/views/dashboard/cryptocurrency/cryptocurrency.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="trendingCurrencies"></a>
+                    <span class="name">
+                        <span ><b>trendingCurrencies</b></span>
+                        <a href="#trendingCurrencies"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/views/dashboard/cryptocurrency/cryptocurrency.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &quot;@angular/core&quot;;
+import { egretAnimations } from &quot;app/shared/animations/egret-animations&quot;;
+import { ThemeService } from &quot;app/shared/services/theme.service&quot;;
+import tinyColor from &#x27;tinycolor2&#x27;;
+
+@Component({
+  selector: &quot;app-cryptocurrency&quot;,
+  templateUrl: &quot;./cryptocurrency.component.html&quot;,
+  styleUrls: [&quot;./cryptocurrency.component.scss&quot;],
+  animations: egretAnimations
+})
+export class CryptocurrencyComponent implements OnInit {
+  cryptoChart: any;
+  cryptoDonutChart: any;
+  activeTrades: any[];
+  trendingCurrencies: any[];
+  
+  constructor(    
+    private themeService: ThemeService
+  ) {}
+
+  ngOnInit() {
+    this.themeService.onThemeChange.subscribe(activeTheme &#x3D;&gt; {
+      this.initCryptoChart(activeTheme);
+    });
+    this.initCryptoChart(this.themeService.activatedTheme);
+
+    this.cryptoDonutChart &#x3D; {
+      grid: {
+        left: &quot;3%&quot;,
+        right: &quot;4%&quot;,
+        bottom: &quot;3%&quot;,
+        containLabel: true
+      },
+      color: [&quot;#03A9F4&quot;, &quot;#039BE5&quot;, &quot;#fcc02e&quot;],
+      tooltip: {
+        show: false,
+        trigger: &quot;item&quot;,
+        formatter: &quot;{a} &lt;br/&gt;{b}: {c} ({d}%)&quot;
+      },
+      xAxis: [
+        {
+          axisLine: {
+            show: false
+          },
+          splitLine: {
+            show: false
+          }
+        }
+      ],
+      yAxis: [
+        {
+          axisLine: {
+            show: false
+          },
+          splitLine: {
+            show: false
+          }
+        }
+      ],
+
+      series: [
+        {
+          name: &quot;Sessions&quot;,
+          type: &quot;pie&quot;,
+          radius: [&quot;65%&quot;, &quot;85%&quot;],
+          center: [&quot;50%&quot;, &quot;50%&quot;],
+          avoidLabelOverlap: false,
+          hoverOffset: 5,
+          stillShowZeroSum: false,
+          label: {
+            normal: {
+              show: false,
+              position: &quot;center&quot;,
+              textStyle: {
+                fontSize: &quot;13&quot;,
+                fontWeight: &quot;normal&quot;
+              },
+              formatter: &quot;{a}&quot;
+            },
+            emphasis: {
+              show: true,
+              textStyle: {
+                fontSize: &quot;15&quot;,
+                fontWeight: &quot;normal&quot;,
+                color: &quot;rgba(0, 0, 0, 0.8)&quot;
+              },
+              formatter: &quot;{b} \n{c} ({d}%)&quot;
+            }
+          },
+          labelLine: {
+            normal: {
+              show: false
+            }
+          },
+          data: [
+            {
+              value: 335,
+              name: &quot;Direct&quot;
+            },
+            {
+              value: 310,
+              name: &quot;Search Eng.&quot;
+            },
+            { value: 148, name: &quot;Social&quot; }
+          ],
+          itemStyle: {
+            emphasis: {
+              shadowBlur: 10,
+              shadowOffsetX: 0,
+              shadowColor: &quot;rgba(0, 0, 0, 0.5)&quot;
+            }
+          }
+        }
+      ]
+    };
+    this.activeTrades &#x3D; [
+      {
+        icon: &quot;assets/images/cryptocurrencies/BTC.png&quot;,
+        currency: &quot;Bitcoin&quot;,
+        balance: 3000,
+        buyingRate: 450,
+        currentRate: 450,
+        profitLoss: 400,
+        lastPrice: 300
+      },
+      {
+        icon: &quot;assets/images/cryptocurrencies/ADA.png&quot;,
+        currency: &quot;Bitcoin&quot;,
+        balance: 3000,
+        buyingRate: 450,
+        currentRate: 450,
+        profitLoss: 400,
+        lastPrice: 300
+      },
+      {
+        icon: &quot;assets/images/cryptocurrencies/LTC.png&quot;,
+        currency: &quot;Bitcoin&quot;,
+        balance: 3000,
+        buyingRate: 450,
+        currentRate: 450,
+        profitLoss: 400,
+        lastPrice: 300
+      },
+      {
+        icon: &quot;assets/images/cryptocurrencies/AE.png&quot;,
+        currency: &quot;Bitcoin&quot;,
+        balance: 3000,
+        buyingRate: 450,
+        currentRate: 450,
+        profitLoss: 400,
+        lastPrice: 300
+      }
+    ];
+
+    this.trendingCurrencies &#x3D; [
+      {
+        currency: &quot;Bitcoin&quot;,
+        rate: 3800
+      },
+      {
+        currency: &quot;Bitcoin&quot;,
+        rate: 3800
+      },
+      {
+        currency: &quot;Bitcoin&quot;,
+        rate: 3800
+      },
+      {
+        currency: &quot;Bitcoin&quot;,
+        rate: 3800
+      }
+    ];
+  }
+
+  initCryptoChart(theme) {
+    this.cryptoChart &#x3D; {
+      tooltip: {
+        show: true,
+        trigger: &quot;axis&quot;,
+        backgroundColor: &quot;#fff&quot;,
+        extraCssText: &quot;box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); color: #444&quot;,
+        axisPointer: {
+          type: &quot;line&quot;,
+          animation: true
+        }
+      },
+      grid: {
+        top: &quot;10%&quot;,
+        left: &quot;60&quot;,
+        right: &quot;20&quot;,
+        bottom: &quot;60&quot;
+      },
+      xAxis: {
+        type: &quot;category&quot;,
+        data: [
+          &quot;1&quot;,
+          &quot;2&quot;,
+          &quot;3&quot;,
+          &quot;4&quot;,
+          &quot;5&quot;,
+          &quot;6&quot;,
+          &quot;7&quot;,
+          &quot;8&quot;,
+          &quot;9&quot;,
+          &quot;10&quot;,
+          &quot;11&quot;,
+          &quot;12&quot;,
+          &quot;13&quot;,
+          &quot;14&quot;,
+          &quot;15&quot;,
+          &quot;16&quot;,
+          &quot;17&quot;,
+          &quot;18&quot;,
+          &quot;19&quot;,
+          &quot;20&quot;,
+          &quot;21&quot;,
+          &quot;22&quot;,
+          &quot;23&quot;,
+          &quot;24&quot;,
+          &quot;25&quot;,
+          &quot;26&quot;,
+          &quot;27&quot;,
+          &quot;28&quot;,
+          &quot;29&quot;,
+          &quot;30&quot;
+        ],
+        axisLine: {
+          show: false
+        },
+        axisLabel: {
+          show: true,
+          margin: 30,
+          color: &quot;#888&quot;
+        },
+        axisTick: {
+          show: false
+        }
+      },
+      yAxis: {
+        type: &quot;value&quot;,
+        axisLine: {
+          show: false
+        },
+        axisLabel: {
+          show: true,
+          margin: 20,
+          color: &quot;#888&quot;
+        },
+        axisTick: {
+          show: false
+        },
+        splitLine: {
+          show: true,
+          lineStyle: {
+            type: &quot;dashed&quot;
+          }
+        }
+      },
+      series: [
+        {
+          data: [
+            640,
+            1040,
+            840,
+            1240,
+            1040,
+            1440,
+            1240,
+            1640,
+            1440,
+            1840,
+            1640,
+            2040,
+            1840,
+            2240,
+            2040,
+            2440,
+            2240,
+            2640,
+            2440,
+            2840,
+            2640,
+            3040,
+            2840,
+            3240,
+            3040,
+            3440,
+            3240,
+            3640,
+            3440,
+            3840
+          ],
+          type: &quot;line&quot;,
+          name: &quot;Bitcoin&quot;,
+          smooth: true,
+          color: tinyColor(theme.baseColor).toString(),
+          lineStyle: {
+            opacity: 1,
+            width: 3
+          },
+          itemStyle: {
+            opacity: 0
+          },
+          emphasis: {
+            itemStyle: {
+              color: tinyColor(theme.baseColor).toString(),
+              borderColor: tinyColor(theme.baseColor).setAlpha(.4).toString(),
+              opacity: 1,
+              borderWidth: 8
+            },
+            label: {
+              show: false,
+              backgroundColor: &quot;#fff&quot;
+            }
+          }
+        },
+        {
+          data: [
+            240,
+            640,
+            440,
+            840,
+            640,
+            1040,
+            840,
+            1240,
+            1040,
+            1440,
+            1240,
+            1640,
+            1440,
+            1840,
+            1640,
+            2040,
+            1840,
+            2240,
+            2040,
+            2440,
+            2240,
+            2640,
+            2440,
+            2840,
+            2640,
+            3040,
+            2840,
+            3240,
+            3040,
+            3440
+          ],
+          type: &quot;line&quot;,
+          name: &quot;Ethereum (ETH)&quot;,
+          smooth: true,
+          color: &quot;rgba(0, 0, 0, .3)&quot;,
+          lineStyle: {
+            opacity: 1,
+            width: 3
+          },
+          itemStyle: {
+            opacity: 0
+          },
+          emphasis: {
+            itemStyle: {
+              color: &quot;rgba(0, 0, 0, .5)&quot;,
+              borderColor: &quot;rgba(0, 0, 0, .2)&quot;,
+              opacity: 1,
+              borderWidth: 8
+            },
+            label: {
+              show: false,
+              backgroundColor: &quot;#fff&quot;
+            }
+          }
+        }
+      ]
+    };
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;mat-card class&#x3D;&quot;p-0&quot; [@animate]&#x3D;&quot;{ value: &#x27;*&#x27;, params: { scale: &#x27;.9&#x27;, delay: &#x27;200ms&#x27; } }&quot;&gt;
+  &lt;div fxLayout&#x3D;&quot;row wrap&quot;&gt;
+      &lt;div
+          fxFlex&#x3D;&quot;100&quot;
+          fxFlex.gt-sm&#x3D;&quot;20&quot;
+          fxFlex.sm&#x3D;&quot;50&quot;
+      &gt;
+          &lt;div class&#x3D;&quot;text-center pt-16 pb-16 border-right-light&quot;&gt;
+              &lt;mat-icon class&#x3D;&quot;text-blue&quot;&gt;account_balance_wallet&lt;/mat-icon&gt;
+              &lt;h4 class&#x3D;&quot;m-0&quot;&gt;5040&lt;/h4&gt;
+              &lt;small class&#x3D;&quot;m-0 text-muted&quot;&gt;Bitcoin Balance&lt;/small&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div
+          fxFlex&#x3D;&quot;100&quot;
+          fxFlex.gt-sm&#x3D;&quot;20&quot;
+          fxFlex.sm&#x3D;&quot;50&quot;
+      &gt;
+          &lt;div class&#x3D;&quot;text-center pt-16 pb-16 border-right-light&quot;&gt;
+              &lt;mat-icon class&#x3D;&quot;text-orange&quot;&gt;attach_money&lt;/mat-icon&gt;
+              &lt;h4 class&#x3D;&quot;m-0 &quot;&gt;1200&lt;/h4&gt;
+              &lt;small class&#x3D;&quot;m-0 text-muted&quot;&gt;USD Balance&lt;/small&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div
+          fxFlex&#x3D;&quot;100&quot;
+          fxFlex.gt-sm&#x3D;&quot;20&quot;
+          fxFlex.sm&#x3D;&quot;50&quot;
+      &gt;
+          &lt;div class&#x3D;&quot;text-center pt-16 pb-16 border-right-light&quot;&gt;
+              &lt;mat-icon class&#x3D;&quot;text-blue&quot;&gt;business_center&lt;/mat-icon&gt;
+              &lt;h4 class&#x3D;&quot;m-0 &quot;&gt;16420&lt;/h4&gt;
+              &lt;small class&#x3D;&quot;m-0 text-muted&quot;&gt;Invesment&lt;/small&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div
+          fxFlex&#x3D;&quot;100&quot;
+          fxFlex.gt-sm&#x3D;&quot;20&quot;
+          fxFlex.sm&#x3D;&quot;50&quot;
+      &gt;
+          &lt;div class&#x3D;&quot;text-center pt-16 pb-16 border-right-light&quot;&gt;
+              &lt;mat-icon class&#x3D;&quot;text-blue&quot;&gt;add&lt;/mat-icon&gt;
+              &lt;h4 class&#x3D;&quot;m-0 &quot;&gt;3010&lt;/h4&gt;
+              &lt;small class&#x3D;&quot;m-0 text-muted&quot;&gt;Profit&lt;/small&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div
+          fxFlex&#x3D;&quot;100&quot;
+          fxFlex.gt-sm&#x3D;&quot;20&quot;
+          fxFlex.sm&#x3D;&quot;50&quot;
+      &gt;
+          &lt;div class&#x3D;&quot;text-center pt-16 pb-16&quot;&gt;
+              &lt;mat-icon class&#x3D;&quot;text-orange&quot;&gt;compare_arrows&lt;/mat-icon&gt;
+              &lt;h4 class&#x3D;&quot;m-0 &quot;&gt;270&lt;/h4&gt;
+              &lt;small class&#x3D;&quot;m-0 text-muted&quot;&gt;Transactions&lt;/small&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/mat-card&gt;
+
+
+
+
+&lt;div fxLayout&#x3D;&quot;row wrap&quot;&gt;
+  &lt;div fxFlex&#x3D;&quot;100&quot; fxFlex.gt-sm&#x3D;&quot;66.67&quot; fxFlex.sm&#x3D;&quot;50&quot; 
+  [@animate]&#x3D;&quot;{value:&#x27;*&#x27;,params:{delay:&#x27;400ms&#x27;,scale:&#x27;.9&#x27;}}&quot;&gt;
+  &lt;mat-card&gt;
+    &lt;div fxLayout&#x3D;&quot;row wrap&quot; fxLayoutAlign&#x3D;&quot;start center&quot;&gt;
+      &lt;h6 class&#x3D;&quot;m-0&quot;&gt;Bitcoin vs Ethereum &lt;/h6&gt;
+      &lt;span fxFlex&gt;&lt;/span&gt;
+      &lt;button mat-icon-button [matMenuTriggerFor]&#x3D;&quot;chartMenu&quot;&gt;
+        &lt;mat-icon&gt;more_vert&lt;/mat-icon&gt;
+      &lt;/button&gt;
+      &lt;mat-menu #chartMenu&#x3D;&quot;matMenu&quot;&gt;
+        &lt;button mat-menu-item&gt;
+          &lt;span&gt;Last 7 days&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button mat-menu-item&gt;
+          &lt;span&gt;Last 30 days&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/mat-menu&gt;
+    &lt;/div&gt;
+
+    &lt;div echarts [options]&#x3D;&quot;cryptoChart&quot; [autoResize]&#x3D;&quot;true&quot; style&#x3D;&quot;height: 340px;&quot;&gt;&lt;/div&gt;
+  &lt;/mat-card&gt;
+  &lt;/div&gt;
+
+  &lt;div fxFlex&#x3D;&quot;100&quot; fxFlex.gt-sm&#x3D;&quot;33.3&quot; fxFlex.sm&#x3D;&quot;50&quot; [@animate]&#x3D;&quot;{value:&#x27;*&#x27;,params:{delay:&#x27;400ms&#x27;,scale:&#x27;.9&#x27;}}&quot;&gt;
+    &lt;div class&#x3D;&quot;m-333&quot;&gt;
+        &lt;mat-accordion multi&#x3D;&quot;false&quot;&gt;
+            &lt;mat-expansion-panel expanded&#x3D;&quot;true&quot;&gt;
+              &lt;mat-expansion-panel-header&gt;
+                &lt;mat-panel-title&gt;
+                  BTC
+                &lt;/mat-panel-title&gt;
+              &lt;/mat-expansion-panel-header&gt;
+              &lt;div class&#x3D;&quot;border-bottom pb-16 mb-16&quot;&gt;
+                  &lt;div fxLyout&#x3D;&quot;row wrap&quot; class&#x3D;&quot;text-blue font-weight-bold&quot;&gt;
+                      &lt;span&gt;BTC vs USD&lt;/span&gt;
+                      &lt;span fxFlex&gt;&lt;/span&gt;
+                      &lt;span&gt;8897.45&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div fxLyout&#x3D;&quot;row wrap&quot; class&#x3D;&quot;text-muted&quot;&gt;
+                      &lt;small&gt;24 hour change&lt;/small&gt;
+                      &lt;span fxFlex&gt;&lt;/span&gt;
+                      &lt;small class&#x3D;&quot;text-green&quot;&gt;530(+3.73%)&lt;/small&gt;
+                    &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;border-bottom pb-16 mb-16&quot;&gt;
+                  &lt;div fxLyout&#x3D;&quot;row wrap&quot; class&#x3D;&quot;text-blue font-weight-bold&quot;&gt;
+                      &lt;span&gt;BTC vs EUR&lt;/span&gt;
+                      &lt;span fxFlex&gt;&lt;/span&gt;
+                      &lt;span&gt;3829.23&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div fxLyout&#x3D;&quot;row wrap&quot; class&#x3D;&quot;text-muted&quot;&gt;
+                      &lt;small&gt;24 hour change&lt;/small&gt;
+                      &lt;span fxFlex&gt;&lt;/span&gt;
+                      &lt;small class&#x3D;&quot;text-red&quot;&gt;430(-1.43%)&lt;/small&gt;
+                    &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;&quot;&gt;
+                  &lt;div fxLyout&#x3D;&quot;row wrap&quot; class&#x3D;&quot;text-blue font-weight-bold&quot;&gt;
+                      &lt;span&gt;BTC vs GBP&lt;/span&gt;
+                      &lt;span fxFlex&gt;&lt;/span&gt;
+                      &lt;span&gt;5836.79&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div fxLyout&#x3D;&quot;row wrap&quot; class&#x3D;&quot;text-muted&quot;&gt;
+                      &lt;small&gt;24 hour change&lt;/small&gt;
+                      &lt;span fxFlex&gt;&lt;/span&gt;
+                      &lt;small class&#x3D;&quot;text-green&quot;&gt;210(+2.23%)&lt;/small&gt;
+                    &lt;/div&gt;
+              &lt;/div&gt;
+
+            &lt;/mat-expansion-panel&gt;
+            &lt;mat-expansion-panel&gt;
+              &lt;mat-expansion-panel-header&gt;
+                &lt;mat-panel-title&gt;
+                  ETH
+                &lt;/mat-panel-title&gt;
+              &lt;/mat-expansion-panel-header&gt;
+
+              &lt;div class&#x3D;&quot;border-bottom pb-16 mb-16&quot;&gt;
+                  &lt;div fxLyout&#x3D;&quot;row wrap&quot; class&#x3D;&quot;text-blue font-weight-bold&quot;&gt;
+                      &lt;span&gt;ETH vs USD&lt;/span&gt;
+                      &lt;span fxFlex&gt;&lt;/span&gt;
+                      &lt;span&gt;8897.45&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div fxLyout&#x3D;&quot;row wrap&quot; class&#x3D;&quot;text-muted&quot;&gt;
+                      &lt;small&gt;24 hour change&lt;/small&gt;
+                      &lt;span fxFlex&gt;&lt;/span&gt;
+                      &lt;small class&#x3D;&quot;text-green&quot;&gt;530(+3.73%)&lt;/small&gt;
+                    &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;border-bottom pb-16 mb-16&quot;&gt;
+                  &lt;div fxLyout&#x3D;&quot;row wrap&quot; class&#x3D;&quot;text-blue font-weight-bold&quot;&gt;
+                      &lt;span&gt;ETH vs EUR&lt;/span&gt;
+                      &lt;span fxFlex&gt;&lt;/span&gt;
+                      &lt;span&gt;3829.23&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div fxLyout&#x3D;&quot;row wrap&quot; class&#x3D;&quot;text-muted&quot;&gt;
+                      &lt;small&gt;24 hour change&lt;/small&gt;
+                      &lt;span fxFlex&gt;&lt;/span&gt;
+                      &lt;small class&#x3D;&quot;text-red&quot;&gt;430(-1.43%)&lt;/small&gt;
+                    &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;&quot;&gt;
+                  &lt;div fxLyout&#x3D;&quot;row wrap&quot; class&#x3D;&quot;text-blue font-weight-bold&quot;&gt;
+                      &lt;span&gt;ETH vs GBP&lt;/span&gt;
+                      &lt;span fxFlex&gt;&lt;/span&gt;
+                      &lt;span&gt;5836.79&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div fxLyout&#x3D;&quot;row wrap&quot; class&#x3D;&quot;text-muted&quot;&gt;
+                      &lt;small&gt;24 hour change&lt;/small&gt;
+                      &lt;span fxFlex&gt;&lt;/span&gt;
+                      &lt;small class&#x3D;&quot;text-green&quot;&gt;210(+2.23%)&lt;/small&gt;
+                    &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/mat-expansion-panel&gt;
+            &lt;mat-expansion-panel&gt;
+                &lt;mat-expansion-panel-header&gt;
+                  &lt;mat-panel-title&gt;
+                    LTC
+                  &lt;/mat-panel-title&gt;
+                &lt;/mat-expansion-panel-header&gt;
+  
+                &lt;div class&#x3D;&quot;border-bottom pb-16 mb-16&quot;&gt;
+                    &lt;div fxLyout&#x3D;&quot;row wrap&quot; class&#x3D;&quot;text-blue font-weight-bold&quot;&gt;
+                        &lt;span&gt;LTC vs USD&lt;/span&gt;
+                        &lt;span fxFlex&gt;&lt;/span&gt;
+                        &lt;span&gt;8897.45&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div fxLyout&#x3D;&quot;row wrap&quot; class&#x3D;&quot;text-muted&quot;&gt;
+                        &lt;small&gt;24 hour change&lt;/small&gt;
+                        &lt;span fxFlex&gt;&lt;/span&gt;
+                        &lt;small class&#x3D;&quot;text-green&quot;&gt;530(+3.73%)&lt;/small&gt;
+                      &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;border-bottom pb-16 mb-16&quot;&gt;
+                    &lt;div fxLyout&#x3D;&quot;row wrap&quot; class&#x3D;&quot;text-blue font-weight-bold&quot;&gt;
+                        &lt;span&gt;LTC vs EUR&lt;/span&gt;
+                        &lt;span fxFlex&gt;&lt;/span&gt;
+                        &lt;span&gt;3829.23&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div fxLyout&#x3D;&quot;row wrap&quot; class&#x3D;&quot;text-muted&quot;&gt;
+                        &lt;small&gt;24 hour change&lt;/small&gt;
+                        &lt;span fxFlex&gt;&lt;/span&gt;
+                        &lt;small class&#x3D;&quot;text-red&quot;&gt;430(-1.43%)&lt;/small&gt;
+                      &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;&quot;&gt;
+                    &lt;div fxLyout&#x3D;&quot;row wrap&quot; class&#x3D;&quot;text-blue font-weight-bold&quot;&gt;
+                        &lt;span&gt;LTC vs GBP&lt;/span&gt;
+                        &lt;span fxFlex&gt;&lt;/span&gt;
+                        &lt;span&gt;5836.79&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div fxLyout&#x3D;&quot;row wrap&quot; class&#x3D;&quot;text-muted&quot;&gt;
+                        &lt;small&gt;24 hour change&lt;/small&gt;
+                        &lt;span fxFlex&gt;&lt;/span&gt;
+                        &lt;small class&#x3D;&quot;text-green&quot;&gt;210(+2.23%)&lt;/small&gt;
+                      &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/mat-expansion-panel&gt;
+          &lt;/mat-accordion&gt;
+    &lt;/div&gt;
+ 
+    &lt;!-- &lt;mat-card&gt;
+        &lt;div fxLayout&#x3D;&quot;row wrap&quot; fxLayoutAlign&#x3D;&quot;start center&quot;&gt;
+            &lt;h6 class&#x3D;&quot;m-0&quot;&gt;Balance &lt;/h6&gt;
+          &lt;/div&gt;
+        &lt;div echarts [options]&#x3D;&quot;cryptoDonutChart&quot; [autoResize]&#x3D;&quot;true&quot; style&#x3D;&quot;height: 318px;&quot;&gt;&lt;/div&gt;
+    &lt;/mat-card&gt; --&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- COIN ROW --&gt;
+
+&lt;div fxLayout&#x3D;&quot;row wrap&quot; [@animate]&#x3D;&quot;{value:&#x27;*&#x27;,params:{delay:&#x27;600ms&#x27;,scale:&#x27;.9&#x27;}}&quot;&gt;
+  &lt;div fxFlex&#x3D;&quot;100&quot; fxFlex.gt-sm&#x3D;&quot;20&quot; fxFlex.sm&#x3D;&quot;50&quot; &gt;
+    &lt;mat-card class&#x3D;&quot;rounded-circle&quot; fxLayout&#x3D;&quot;row wrap&quot; fxLayoutAlign&#x3D;&quot;start center&quot;&gt;
+      &lt;img class&#x3D;&quot;avatar-md rounded-circle&quot; src&#x3D;&quot;assets/images/cryptocurrencies/BTC.png&quot; alt&#x3D;&quot;&quot;&gt;
+      &lt;span style&#x3D;&quot;width: 20px&quot;&gt;&lt;/span&gt;
+      &lt;div&gt;
+        &lt;p class&#x3D;&quot;m-0 text-14 text-muted line-height-1&quot;&gt;Bitcoin&lt;/p&gt;
+        &lt;span class&#x3D;&quot;text-18 font-weight-bold text-green&quot;&gt;$254 &lt;span class&#x3D;&quot;material-icons mat-icon-18&quot;&gt;arrow_drop_up&lt;/span&gt;&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/mat-card&gt;
+  &lt;/div&gt;
+  &lt;div fxFlex&#x3D;&quot;100&quot; fxFlex.gt-sm&#x3D;&quot;20&quot; fxFlex.sm&#x3D;&quot;50&quot; &gt;
+    &lt;mat-card class&#x3D;&quot;rounded-circle&quot; fxLayout&#x3D;&quot;row wrap&quot; fxLayoutAlign&#x3D;&quot;start center&quot;&gt;
+      &lt;img class&#x3D;&quot;avatar-md rounded-circle&quot; src&#x3D;&quot;assets/images/cryptocurrencies/ETH.png&quot; alt&#x3D;&quot;&quot;&gt;
+      &lt;span style&#x3D;&quot;width: 20px&quot;&gt;&lt;/span&gt;
+      &lt;div&gt;
+        &lt;p class&#x3D;&quot;m-0 text-14 text-muted line-height-1&quot;&gt;Ethereum&lt;/p&gt;
+        &lt;span class&#x3D;&quot;text-18 font-weight-bold text-red&quot;&gt;$64 &lt;span class&#x3D;&quot;material-icons mat-icon-18&quot;&gt;arrow_drop_down&lt;/span&gt;&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/mat-card&gt;
+  &lt;/div&gt;
+  &lt;div fxFlex&#x3D;&quot;100&quot; fxFlex.gt-sm&#x3D;&quot;20&quot; fxFlex.sm&#x3D;&quot;50&quot; &gt;
+    &lt;mat-card class&#x3D;&quot;rounded-circle&quot; fxLayout&#x3D;&quot;row wrap&quot; fxLayoutAlign&#x3D;&quot;start center&quot;&gt;
+      &lt;img class&#x3D;&quot;avatar-md rounded-circle&quot; src&#x3D;&quot;assets/images/cryptocurrencies/LTC.png&quot; alt&#x3D;&quot;&quot;&gt;
+      &lt;span style&#x3D;&quot;width: 20px&quot;&gt;&lt;/span&gt;
+      &lt;div&gt;
+        &lt;p class&#x3D;&quot;m-0 text-14 text-muted line-height-1&quot;&gt;Litecoin&lt;/p&gt;
+        &lt;span class&#x3D;&quot;text-18 font-weight-bold text-green&quot;&gt;$45 &lt;span class&#x3D;&quot;material-icons mat-icon-18&quot;&gt;arrow_drop_up&lt;/span&gt;&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/mat-card&gt;
+  &lt;/div&gt;
+  &lt;div fxFlex&#x3D;&quot;100&quot; fxFlex.gt-sm&#x3D;&quot;20&quot; fxFlex.sm&#x3D;&quot;50&quot; &gt;
+    &lt;mat-card class&#x3D;&quot;rounded-circle&quot; fxLayout&#x3D;&quot;row wrap&quot; fxLayoutAlign&#x3D;&quot;start center&quot;&gt;
+      &lt;img class&#x3D;&quot;avatar-md rounded-circle&quot; src&#x3D;&quot;assets/images/cryptocurrencies/BTS.png&quot; alt&#x3D;&quot;&quot;&gt;
+      &lt;span style&#x3D;&quot;width: 20px&quot;&gt;&lt;/span&gt;
+      &lt;div&gt;
+        &lt;p class&#x3D;&quot;m-0 text-14 text-muted line-height-1&quot;&gt;BTS&lt;/p&gt;
+        &lt;span class&#x3D;&quot;text-18 font-weight-bold text-red&quot;&gt;$10 &lt;span class&#x3D;&quot;material-icons mat-icon-18&quot;&gt;arrow_drop_down&lt;/span&gt;&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/mat-card&gt;
+  &lt;/div&gt;
+  &lt;div fxFlex&#x3D;&quot;100&quot; fxFlex.gt-sm&#x3D;&quot;20&quot; fxFlex.sm&#x3D;&quot;50&quot; &gt;
+    &lt;mat-card class&#x3D;&quot;rounded-circle&quot; fxLayout&#x3D;&quot;row wrap&quot; fxLayoutAlign&#x3D;&quot;start center&quot;&gt;
+      &lt;img class&#x3D;&quot;avatar-md rounded-circle&quot; src&#x3D;&quot;assets/images/cryptocurrencies/CNX.png&quot; alt&#x3D;&quot;&quot;&gt;
+      &lt;span style&#x3D;&quot;width: 20px&quot;&gt;&lt;/span&gt;
+      &lt;div&gt;
+        &lt;p class&#x3D;&quot;m-0 text-14 text-muted line-height-1&quot;&gt;CNX&lt;/p&gt;
+        &lt;span class&#x3D;&quot;text-18 font-weight-bold text-green&quot;&gt;$80 &lt;span class&#x3D;&quot;material-icons mat-icon-18&quot;&gt;arrow_drop_up&lt;/span&gt;&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/mat-card&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--/ COIN ROW --&gt;
+
+&lt;!-- Table row --&gt;
+&lt;div fxLayout&#x3D;&quot;row wrap&quot; [@animate]&#x3D;&quot;{value:&#x27;*&#x27;,params:{delay:&#x27;800ms&#x27;,scale:&#x27;.9&#x27;}}&quot;&gt;
+  &lt;div fxFlex&#x3D;&quot;100&quot; fxFlex.gt-sm&#x3D;&quot;66.67&quot;&gt;
+      &lt;mat-card class&#x3D;&quot;p-0 &quot;&gt;
+          &lt;h6 class&#x3D;&quot;pl-16 pt-16 m-0 &quot;&gt;Active Trades&lt;/h6&gt;
+          &lt;ngx-datatable
+          class&#x3D;&quot;material ml-0 mr-0&quot;
+          [rows]&#x3D;&quot;activeTrades&quot;
+          [columnMode]&#x3D;&quot;&#x27;flex&#x27;&quot;
+          [headerHeight]&#x3D;&quot;50&quot;
+          [footerHeight]&#x3D;&quot;0&quot;
+          [rowHeight]&#x3D;&quot;&#x27;auto&#x27;&quot;&gt;
+          
+          &lt;ngx-datatable-column name&#x3D;&quot;Currency&quot; [flexGrow]&#x3D;&quot;1&quot;&gt;
+            &lt;ng-template let-row&#x3D;&quot;row&quot; ngx-datatable-cell-template&gt;
+              &lt;div fxLayout&#x3D;&quot;row wrap&quot; fxLayoutAlign&#x3D;&quot;start center&quot;&gt;
+                  &lt;img [src]&#x3D;&quot;row.icon&quot; alt&#x3D;&quot;&quot; class&#x3D;&quot;avatar-xs mr-8&quot;&gt;
+                  {{ row?.currency }}
+              &lt;/div&gt;
+            &lt;/ng-template&gt;
+          &lt;/ngx-datatable-column&gt;
+          &lt;ngx-datatable-column name&#x3D;&quot;Balance&quot; [flexGrow]&#x3D;&quot;1&quot;&gt;
+            &lt;ng-template let-row&#x3D;&quot;row&quot; ngx-datatable-cell-template&gt;
+              {{row?.balance}}
+            &lt;/ng-template&gt;
+          &lt;/ngx-datatable-column&gt;
+          &lt;ngx-datatable-column name&#x3D;&quot;Buying Rate&quot; [flexGrow]&#x3D;&quot;1&quot;&gt;
+              &lt;ng-template let-row&#x3D;&quot;row&quot; ngx-datatable-cell-template&gt;
+                    {{row?.buyingRate}}
+              &lt;/ng-template&gt;
+          &lt;/ngx-datatable-column&gt;
+          &lt;ngx-datatable-column name&#x3D;&quot;Current Rate&quot; [flexGrow]&#x3D;&quot;1&quot;&gt;
+                  &lt;ng-template let-row&#x3D;&quot;row&quot; ngx-datatable-cell-template&gt;
+                        {{row?.currentRate}}
+                  &lt;/ng-template&gt;
+          &lt;/ngx-datatable-column&gt;
+          &lt;ngx-datatable-column name&#x3D;&quot;Action&quot; [flexGrow]&#x3D;&quot;1&quot;&gt;
+                  &lt;ng-template let-row&#x3D;&quot;row&quot; ngx-datatable-cell-template&gt;
+                        &lt;button mat-stroked-button color&#x3D;&quot;primary&quot;&gt;Close&lt;/button&gt;
+                  &lt;/ng-template&gt;
+          &lt;/ngx-datatable-column&gt;
+        &lt;/ngx-datatable&gt;    
+      &lt;/mat-card&gt;
+  &lt;/div&gt;
+
+  &lt;div fxFlex&#x3D;&quot;100&quot; fxFlex.gt-sm&#x3D;&quot;33.33&quot;&gt;
+      &lt;mat-card class&#x3D;&quot;p-0 &quot;&gt;
+          &lt;h6 class&#x3D;&quot;ml-16 mt-16&quot;&gt;Trending Currencies&lt;/h6&gt;
+          &lt;ngx-datatable
+          class&#x3D;&quot;material ml-0 mr-0&quot;
+          [rows]&#x3D;&quot;trendingCurrencies&quot;
+          [columnMode]&#x3D;&quot;&#x27;flex&#x27;&quot;
+          [headerHeight]&#x3D;&quot;50&quot;
+          [footerHeight]&#x3D;&quot;0&quot;
+          [rowHeight]&#x3D;&quot;&#x27;auto&#x27;&quot;&gt;
+          
+          &lt;ngx-datatable-column name&#x3D;&quot;Currency&quot; [flexGrow]&#x3D;&quot;1&quot;&gt;
+            &lt;ng-template let-row&#x3D;&quot;row&quot; ngx-datatable-cell-template&gt;
+                {{ row?.currency }}
+            &lt;/ng-template&gt;
+          &lt;/ngx-datatable-column&gt;
+          &lt;ngx-datatable-column name&#x3D;&quot;Balance&quot; [flexGrow]&#x3D;&quot;1&quot;&gt;
+            &lt;ng-template let-row&#x3D;&quot;row&quot; ngx-datatable-cell-template&gt;
+              {{row?.rate}}
+            &lt;/ng-template&gt;
+          &lt;/ngx-datatable-column&gt;
+          
+          &lt;ngx-datatable-column name&#x3D;&quot;Action&quot; [flexGrow]&#x3D;&quot;1&quot;&gt;
+                  &lt;ng-template let-row&#x3D;&quot;row&quot; ngx-datatable-cell-template&gt;
+                        &lt;button mat-stroked-button color&#x3D;&quot;warn&quot;&gt;Buy&lt;/button&gt;
+                  &lt;/ng-template&gt;
+          &lt;/ngx-datatable-column&gt;
+        &lt;/ngx-datatable&gt;    
+      &lt;/mat-card&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./cryptocurrency.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><mat-card class="p-0" [@animate]="{ value: \'*\', params: { scale: \'.9\', delay: \'200ms\' } }">  <div fxLayout="row wrap">      <div          fxFlex="100"          fxFlex.gt-sm="20"          fxFlex.sm="50"      >          <div class="text-center pt-16 pb-16 border-right-light">              <mat-icon class="text-blue">account_balance_wallet</mat-icon>              <h4 class="m-0">5040</h4>              <small class="m-0 text-muted">Bitcoin Balance</small>          </div>      </div>      <div          fxFlex="100"          fxFlex.gt-sm="20"          fxFlex.sm="50"      >          <div class="text-center pt-16 pb-16 border-right-light">              <mat-icon class="text-orange">attach_money</mat-icon>              <h4 class="m-0 ">1200</h4>              <small class="m-0 text-muted">USD Balance</small>          </div>      </div>      <div          fxFlex="100"          fxFlex.gt-sm="20"          fxFlex.sm="50"      >          <div class="text-center pt-16 pb-16 border-right-light">              <mat-icon class="text-blue">business_center</mat-icon>              <h4 class="m-0 ">16420</h4>              <small class="m-0 text-muted">Invesment</small>          </div>      </div>      <div          fxFlex="100"          fxFlex.gt-sm="20"          fxFlex.sm="50"      >          <div class="text-center pt-16 pb-16 border-right-light">              <mat-icon class="text-blue">add</mat-icon>              <h4 class="m-0 ">3010</h4>              <small class="m-0 text-muted">Profit</small>          </div>      </div>      <div          fxFlex="100"          fxFlex.gt-sm="20"          fxFlex.sm="50"      >          <div class="text-center pt-16 pb-16">              <mat-icon class="text-orange">compare_arrows</mat-icon>              <h4 class="m-0 ">270</h4>              <small class="m-0 text-muted">Transactions</small>          </div>      </div>  </div></mat-card><div fxLayout="row wrap">  <div fxFlex="100" fxFlex.gt-sm="66.67" fxFlex.sm="50"   [@animate]="{value:\'*\',params:{delay:\'400ms\',scale:\'.9\'}}">  <mat-card>    <div fxLayout="row wrap" fxLayoutAlign="start center">      <h6 class="m-0">Bitcoin vs Ethereum </h6>      <span fxFlex></span>      <button mat-icon-button [matMenuTriggerFor]="chartMenu">        <mat-icon>more_vert</mat-icon>      </button>      <mat-menu #chartMenu="matMenu">        <button mat-menu-item>          <span>Last 7 days</span>        </button>        <button mat-menu-item>          <span>Last 30 days</span>        </button>      </mat-menu>    </div>    <div echarts [options]="cryptoChart" [autoResize]="true" style="height: 340px;"></div>  </mat-card>  </div>  <div fxFlex="100" fxFlex.gt-sm="33.3" fxFlex.sm="50" [@animate]="{value:\'*\',params:{delay:\'400ms\',scale:\'.9\'}}">    <div class="m-333">        <mat-accordion multi="false">            <mat-expansion-panel expanded="true">              <mat-expansion-panel-header>                <mat-panel-title>                  BTC                </mat-panel-title>              </mat-expansion-panel-header>              <div class="border-bottom pb-16 mb-16">                  <div fxLyout="row wrap" class="text-blue font-weight-bold">                      <span>BTC vs USD</span>                      <span fxFlex></span>                      <span>8897.45</span>                    </div>                    <div fxLyout="row wrap" class="text-muted">                      <small>24 hour change</small>                      <span fxFlex></span>                      <small class="text-green">530(+3.73%)</small>                    </div>              </div>              <div class="border-bottom pb-16 mb-16">                  <div fxLyout="row wrap" class="text-blue font-weight-bold">                      <span>BTC vs EUR</span>                      <span fxFlex></span>                      <span>3829.23</span>                    </div>                    <div fxLyout="row wrap" class="text-muted">                      <small>24 hour change</small>                      <span fxFlex></span>                      <small class="text-red">430(-1.43%)</small>                    </div>              </div>              <div class="">                  <div fxLyout="row wrap" class="text-blue font-weight-bold">                      <span>BTC vs GBP</span>                      <span fxFlex></span>                      <span>5836.79</span>                    </div>                    <div fxLyout="row wrap" class="text-muted">                      <small>24 hour change</small>                      <span fxFlex></span>                      <small class="text-green">210(+2.23%)</small>                    </div>              </div>            </mat-expansion-panel>            <mat-expansion-panel>              <mat-expansion-panel-header>                <mat-panel-title>                  ETH                </mat-panel-title>              </mat-expansion-panel-header>              <div class="border-bottom pb-16 mb-16">                  <div fxLyout="row wrap" class="text-blue font-weight-bold">                      <span>ETH vs USD</span>                      <span fxFlex></span>                      <span>8897.45</span>                    </div>                    <div fxLyout="row wrap" class="text-muted">                      <small>24 hour change</small>                      <span fxFlex></span>                      <small class="text-green">530(+3.73%)</small>                    </div>              </div>              <div class="border-bottom pb-16 mb-16">                  <div fxLyout="row wrap" class="text-blue font-weight-bold">                      <span>ETH vs EUR</span>                      <span fxFlex></span>                      <span>3829.23</span>                    </div>                    <div fxLyout="row wrap" class="text-muted">                      <small>24 hour change</small>                      <span fxFlex></span>                      <small class="text-red">430(-1.43%)</small>                    </div>              </div>              <div class="">                  <div fxLyout="row wrap" class="text-blue font-weight-bold">                      <span>ETH vs GBP</span>                      <span fxFlex></span>                      <span>5836.79</span>                    </div>                    <div fxLyout="row wrap" class="text-muted">                      <small>24 hour change</small>                      <span fxFlex></span>                      <small class="text-green">210(+2.23%)</small>                    </div>              </div>            </mat-expansion-panel>            <mat-expansion-panel>                <mat-expansion-panel-header>                  <mat-panel-title>                    LTC                  </mat-panel-title>                </mat-expansion-panel-header>                  <div class="border-bottom pb-16 mb-16">                    <div fxLyout="row wrap" class="text-blue font-weight-bold">                        <span>LTC vs USD</span>                        <span fxFlex></span>                        <span>8897.45</span>                      </div>                      <div fxLyout="row wrap" class="text-muted">                        <small>24 hour change</small>                        <span fxFlex></span>                        <small class="text-green">530(+3.73%)</small>                      </div>                </div>                <div class="border-bottom pb-16 mb-16">                    <div fxLyout="row wrap" class="text-blue font-weight-bold">                        <span>LTC vs EUR</span>                        <span fxFlex></span>                        <span>3829.23</span>                      </div>                      <div fxLyout="row wrap" class="text-muted">                        <small>24 hour change</small>                        <span fxFlex></span>                        <small class="text-red">430(-1.43%)</small>                      </div>                </div>                <div class="">                    <div fxLyout="row wrap" class="text-blue font-weight-bold">                        <span>LTC vs GBP</span>                        <span fxFlex></span>                        <span>5836.79</span>                      </div>                      <div fxLyout="row wrap" class="text-muted">                        <small>24 hour change</small>                        <span fxFlex></span>                        <small class="text-green">210(+2.23%)</small>                      </div>                </div>              </mat-expansion-panel>          </mat-accordion>    </div>     <!-- <mat-card>        <div fxLayout="row wrap" fxLayoutAlign="start center">            <h6 class="m-0">Balance </h6>          </div>        <div echarts [options]="cryptoDonutChart" [autoResize]="true" style="height: 318px;"></div>    </mat-card> -->  </div></div><!-- COIN ROW --><div fxLayout="row wrap" [@animate]="{value:\'*\',params:{delay:\'600ms\',scale:\'.9\'}}">  <div fxFlex="100" fxFlex.gt-sm="20" fxFlex.sm="50" >    <mat-card class="rounded-circle" fxLayout="row wrap" fxLayoutAlign="start center">      <img class="avatar-md rounded-circle" src="assets/images/cryptocurrencies/BTC.png" alt="">      <span style="width: 20px"></span>      <div>        <p class="m-0 text-14 text-muted line-height-1">Bitcoin</p>        <span class="text-18 font-weight-bold text-green">$254 <span class="material-icons mat-icon-18">arrow_drop_up</span></span>      </div>    </mat-card>  </div>  <div fxFlex="100" fxFlex.gt-sm="20" fxFlex.sm="50" >    <mat-card class="rounded-circle" fxLayout="row wrap" fxLayoutAlign="start center">      <img class="avatar-md rounded-circle" src="assets/images/cryptocurrencies/ETH.png" alt="">      <span style="width: 20px"></span>      <div>        <p class="m-0 text-14 text-muted line-height-1">Ethereum</p>        <span class="text-18 font-weight-bold text-red">$64 <span class="material-icons mat-icon-18">arrow_drop_down</span></span>      </div>    </mat-card>  </div>  <div fxFlex="100" fxFlex.gt-sm="20" fxFlex.sm="50" >    <mat-card class="rounded-circle" fxLayout="row wrap" fxLayoutAlign="start center">      <img class="avatar-md rounded-circle" src="assets/images/cryptocurrencies/LTC.png" alt="">      <span style="width: 20px"></span>      <div>        <p class="m-0 text-14 text-muted line-height-1">Litecoin</p>        <span class="text-18 font-weight-bold text-green">$45 <span class="material-icons mat-icon-18">arrow_drop_up</span></span>      </div>    </mat-card>  </div>  <div fxFlex="100" fxFlex.gt-sm="20" fxFlex.sm="50" >    <mat-card class="rounded-circle" fxLayout="row wrap" fxLayoutAlign="start center">      <img class="avatar-md rounded-circle" src="assets/images/cryptocurrencies/BTS.png" alt="">      <span style="width: 20px"></span>      <div>        <p class="m-0 text-14 text-muted line-height-1">BTS</p>        <span class="text-18 font-weight-bold text-red">$10 <span class="material-icons mat-icon-18">arrow_drop_down</span></span>      </div>    </mat-card>  </div>  <div fxFlex="100" fxFlex.gt-sm="20" fxFlex.sm="50" >    <mat-card class="rounded-circle" fxLayout="row wrap" fxLayoutAlign="start center">      <img class="avatar-md rounded-circle" src="assets/images/cryptocurrencies/CNX.png" alt="">      <span style="width: 20px"></span>      <div>        <p class="m-0 text-14 text-muted line-height-1">CNX</p>        <span class="text-18 font-weight-bold text-green">$80 <span class="material-icons mat-icon-18">arrow_drop_up</span></span>      </div>    </mat-card>  </div></div><!--/ COIN ROW --><!-- Table row --><div fxLayout="row wrap" [@animate]="{value:\'*\',params:{delay:\'800ms\',scale:\'.9\'}}">  <div fxFlex="100" fxFlex.gt-sm="66.67">      <mat-card class="p-0 ">          <h6 class="pl-16 pt-16 m-0 ">Active Trades</h6>          <ngx-datatable          class="material ml-0 mr-0"          [rows]="activeTrades"          [columnMode]="\'flex\'"          [headerHeight]="50"          [footerHeight]="0"          [rowHeight]="\'auto\'">                    <ngx-datatable-column name="Currency" [flexGrow]="1">            <ng-template let-row="row" ngx-datatable-cell-template>              <div fxLayout="row wrap" fxLayoutAlign="start center">                  <img [src]="row.icon" alt="" class="avatar-xs mr-8">                  {{ row?.currency }}              </div>            </ng-template>          </ngx-datatable-column>          <ngx-datatable-column name="Balance" [flexGrow]="1">            <ng-template let-row="row" ngx-datatable-cell-template>              {{row?.balance}}            </ng-template>          </ngx-datatable-column>          <ngx-datatable-column name="Buying Rate" [flexGrow]="1">              <ng-template let-row="row" ngx-datatable-cell-template>                    {{row?.buyingRate}}              </ng-template>          </ngx-datatable-column>          <ngx-datatable-column name="Current Rate" [flexGrow]="1">                  <ng-template let-row="row" ngx-datatable-cell-template>                        {{row?.currentRate}}                  </ng-template>          </ngx-datatable-column>          <ngx-datatable-column name="Action" [flexGrow]="1">                  <ng-template let-row="row" ngx-datatable-cell-template>                        <button mat-stroked-button color="primary">Close</button>                  </ng-template>          </ngx-datatable-column>        </ngx-datatable>          </mat-card>  </div>  <div fxFlex="100" fxFlex.gt-sm="33.33">      <mat-card class="p-0 ">          <h6 class="ml-16 mt-16">Trending Currencies</h6>          <ngx-datatable          class="material ml-0 mr-0"          [rows]="trendingCurrencies"          [columnMode]="\'flex\'"          [headerHeight]="50"          [footerHeight]="0"          [rowHeight]="\'auto\'">                    <ngx-datatable-column name="Currency" [flexGrow]="1">            <ng-template let-row="row" ngx-datatable-cell-template>                {{ row?.currency }}            </ng-template>          </ngx-datatable-column>          <ngx-datatable-column name="Balance" [flexGrow]="1">            <ng-template let-row="row" ngx-datatable-cell-template>              {{row?.rate}}            </ng-template>          </ngx-datatable-column>                    <ngx-datatable-column name="Action" [flexGrow]="1">                  <ng-template let-row="row" ngx-datatable-cell-template>                        <button mat-stroked-button color="warn">Buy</button>                  </ng-template>          </ngx-datatable-column>        </ngx-datatable>          </mat-card>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AccordinExpansionPanelComponent', 'selector': 'app-accordin-expansion-panel'},{'name': 'AdminLayoutComponent', 'selector': 'app-admin-layout'},{'name': 'AlignTabGroupComponent', 'selector': 'app-align-tab-group'},{'name': 'AnalyticsComponent', 'selector': 'app-analytics'},{'name': 'AnimationTabGroupComponent', 'selector': 'app-animation-tab-group'},{'name': 'AppBlankComponent', 'selector': 'app-blank'},{'name': 'AppCalendarComponent', 'selector': 'app-calendar'},{'name': 'AppChatsComponent', 'selector': 'app-chats'},{'name': 'AppComfirmComponent', 'selector': 'app-confirm'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppearanceFormFieldComponent', 'selector': 'app-appearance-form-field'},{'name': 'AppGalleryComponent', 'selector': 'app-gallery'},{'name': 'AppInboxComponent', 'selector': 'app-inbox'},{'name': 'AppLoaderComponent', 'selector': 'app-app-loader'},{'name': 'AppPricingComponent', 'selector': 'app-pricing'},{'name': 'AppTourComponent', 'selector': 'app-app-tour'},{'name': 'AppUsersComponent', 'selector': 'app-users'},{'name': 'AuthLayoutComponent', 'selector': 'app-auth-layout'},{'name': 'AutocompleteChipComponent', 'selector': 'app-autocomplete-chip'},{'name': 'AutocompleteOverviewComponent', 'selector': 'app-autocomplete-overview'},{'name': 'AutoHideTooltipComponent', 'selector': 'app-auto-hide-tooltip'},{'name': 'AutoresizeSidenavComponent', 'selector': 'app-autoresize-sidenav'},{'name': 'AutoResizingTexareaComponent', 'selector': 'app-auto-resizing-texarea'},{'name': 'BasicBadgeComponent', 'selector': 'app-basic-badge'},{'name': 'BasicBarComponent', 'selector': 'app-basic-bar'},{'name': 'BasicButtonToggleComponent', 'selector': 'app-basic-button-toggle'},{'name': 'BasicCardComponent', 'selector': 'app-basic-card'},{'name': 'BasicCheckboxComponent', 'selector': 'app-basic-checkbox'},{'name': 'BasicChipComponent', 'selector': 'app-basic-chip'},{'name': 'BasicDatepickerComponent', 'selector': 'app-basic-datepicker'},{'name': 'BasicDialogComponent', 'selector': 'app-basic-dialog'},{'name': 'BasicDialogOverviewComponent', 'selector': 'app-basic-dialog-overview'},{'name': 'BasicDividerComponent', 'selector': 'app-basic-divider'},{'name': 'BasicExpansionPanelComponent', 'selector': 'app-basic-expansion-panel'},{'name': 'BasicFormComponent', 'selector': 'app-basic-form'},{'name': 'BasicGridComponent', 'selector': 'app-basic-grid'},{'name': 'BasicIconComponent', 'selector': 'app-basic-icon'},{'name': 'BasicInputComponent', 'selector': 'app-basic-input'},{'name': 'BasicListComponent', 'selector': 'app-basic-list'},{'name': 'BasicMenuComponent', 'selector': 'app-basic-menu'},{'name': 'BasicPaginatorComponent', 'selector': 'app-basic-paginator'},{'name': 'BasicRadioComponent', 'selector': 'app-basic-radio'},{'name': 'BasicSelectComponent', 'selector': 'app-basic-select'},{'name': 'BasicSidenavComponent', 'selector': 'app-basic-sidenav'},{'name': 'BasicSliderComponent', 'selector': 'app-basic-slider'},{'name': 'BasicSnackbarComponent', 'selector': 'app-basic-snackbar'},{'name': 'BasicSnackbarComponent', 'selector': 'app-basic-snackbar'},{'name': 'BasicSortHeaderComponent', 'selector': 'app-basic-sort-header'},{'name': 'BasicSpinnerComponent', 'selector': 'app-basic-spinner'},{'name': 'BasicStepperComponent', 'selector': 'app-basic-stepper'},{'name': 'BasicTabGroupComponent', 'selector': 'app-basic-tab-group'},{'name': 'BasicTableComponent', 'selector': 'app-basic-table'},{'name': 'BasicToggleComponent', 'selector': 'app-basic-toggle'},{'name': 'BasicToolbarComponent', 'selector': 'app-basic-toolbar'},{'name': 'BasicTooltipComponent', 'selector': 'app-basic-tooltip'},{'name': 'BorderComponent', 'selector': 'app-border'},{'name': 'BottomSheetComponent', 'selector': 'app-bottom-sheet'},{'name': 'BottomSheetOverviewComponent', 'selector': 'app-bottom-sheet-overview'},{'name': 'BottomSheetShareComponent', 'selector': 'app-bottom-sheet-share'},{'name': 'BreadcrumbComponent', 'selector': 'app-breadcrumb'},{'name': 'ButtonExamplesComponent', 'selector': 'app-button-examples'},{'name': 'ButtonLoadingComponent', 'selector': 'button-loading'},{'name': 'ButtonsComponent', 'selector': 'app-buttons'},{'name': 'ButtonToggleComponent', 'selector': 'app-button-toggle'},{'name': 'CalendarFormDialogComponent', 'selector': 'app-calendar-form-dialog'},{'name': 'CartComponent', 'selector': 'app-cart'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ChangingTooltipComponent', 'selector': 'app-changing-tooltip'},{'name': 'ChartExampleViewComponent', 'selector': 'app-chart-example-view'},{'name': 'ChartsComponent', 'selector': 'app-charts'},{'name': 'ChatContentsComponent', 'selector': 'app-chat-contents'},{'name': 'ChatLeftSidenavComponent', 'selector': 'app-chat-left-sidenav'},{'name': 'CheckboxTreeComponent', 'selector': 'app-checkbox-tree'},{'name': 'CheckoutComponent', 'selector': 'app-checkout'},{'name': 'ClearButtonInputComponent', 'selector': 'app-clear-button-input'},{'name': 'ColorsComponent', 'selector': 'app-colors'},{'name': 'ConfigurableCheckboxComponent', 'selector': 'app-configurable-checkbox'},{'name': 'ConfigurableSidenavComponent', 'selector': 'app-configurable-sidenav'},{'name': 'ConfigurableToggleComponent', 'selector': 'app-configurable-toggle'},{'name': 'ConfirmDialogComponent', 'selector': 'app-confirm-dialog'},{'name': 'CrudNgxTableComponent', 'selector': 'app-crud-ngx-table'},{'name': 'CryptocurrencyComponent', 'selector': 'app-cryptocurrency'},{'name': 'CustomBarComponent', 'selector': 'app-custom-bar'},{'name': 'CustomClassTooltipComponent', 'selector': 'app-custom-class-tooltip'},{'name': 'CustomDatepickerComponent', 'selector': 'app-custom-datepicker'},{'name': 'CustomizedStepperComponent', 'selector': 'app-customized-stepper'},{'name': 'CustomizerComponent', 'selector': 'app-customizer'},{'name': 'CustomLoadingButtonsComponent', 'selector': 'app-custom-loading-buttons'},{'name': 'CustomPaginatorComponent', 'selector': 'app-custom-paginator'},{'name': 'CustomPanelSelectComponent', 'selector': 'app-custom-panel-select'},{'name': 'CustomPositionTooltipComponent', 'selector': 'app-custom-position-tooltip'},{'name': 'CustomRipplesComponent', 'selector': 'app-custom-ripples'},{'name': 'CustomSnackbarComponent', 'selector': 'app-custom-snackbar'},{'name': 'CustomSnackbarOverviewComponent', 'selector': 'app-custom-snackbar-overview'},{'name': 'CustomSpinnerComponent', 'selector': 'app-custom-spinner'},{'name': 'CustomTabGroupComponent', 'selector': 'app-custom-tab-group'},{'name': 'DashboardDarkComponent', 'selector': 'app-dashboard-dark'},{'name': 'DataDialogComponent', 'selector': 'app-data-dialog'},{'name': 'DataDialogOverviewComponent', 'selector': 'app-data-dialog-overview'},{'name': 'DealerTableComponent', 'selector': 'app-dealer-table'},{'name': 'DealerTablePopupComponent', 'selector': 'app-dealer-table-popup'},{'name': 'DealerTableSidenavComponent', 'selector': 'app-dealer-table-sidenav'},{'name': 'DefaultDashboardComponent', 'selector': 'app-default-dashboard'},{'name': 'DefaultDashboardComponent', 'selector': 'app-default-dashboard'},{'name': 'DelayTooltipComponent', 'selector': 'app-delay-tooltip'},{'name': 'DifferentLocaleDatepickerComponent', 'selector': 'app-different-locale-datepicker'},{'name': 'DisabledDatepickerComponent', 'selector': 'app-disabled-datepicker'},{'name': 'DisabledSelectComponent', 'selector': 'app-disabled-select'},{'name': 'DisabledTooltipComponent', 'selector': 'app-disabled-tooltip'},{'name': 'DisplayValueAutocompleteComponent', 'selector': 'app-display-value-autocomplete'},{'name': 'DragndropComponent', 'selector': 'app-dragndrop'},{'name': 'DrawerSidenavComponent', 'selector': 'app-drawer-sidenav'},{'name': 'DynamicDataTreeComponent', 'selector': 'app-dynamic-data-tree'},{'name': 'DynamicGridComponent', 'selector': 'app-dynamic-grid'},{'name': 'DynamicTabGroupComponent', 'selector': 'app-dynamic-tab-group'},{'name': 'EchartBarComponent', 'selector': 'app-echart-bar'},{'name': 'EchartHeatmapComponent', 'selector': 'app-echart-heatmap'},{'name': 'EchartPieComponent', 'selector': 'app-echart-pie'},{'name': 'EchartRadarComponent', 'selector': 'app-echart-radar'},{'name': 'EgretExampleViewerComponent', 'selector': 'egret-example-viewer'},{'name': 'EgretExampleViewerTemplateComponent', 'selector': 'egret-example-viewer-template'},{'name': 'EgretNotifications2Component', 'selector': 'egret-notifications2'},{'name': 'EgretSidebarComponent', 'selector': 'egret-sidebar'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'ErrorFormFieldComponent', 'selector': 'app-error-form-field'},{'name': 'ErrorInputComponent', 'selector': 'app-error-input'},{'name': 'ErrorMessageInputComponent', 'selector': 'app-error-message-input'},{'name': 'ErrorSelectComponent', 'selector': 'app-error-select'},{'name': 'ErrorStepperComponent', 'selector': 'app-error-stepper'},{'name': 'EscapeBackdropSidenavComponent', 'selector': 'app-escape-backdrop-sidenav'},{'name': 'EventDatepickerComponent', 'selector': 'app-event-datepicker'},{'name': 'FabricatorDashboardComponent', 'selector': 'app-fabricator-dashboard'},{'name': 'FabricatorTableComponent', 'selector': 'app-fabricator-table'},{'name': 'FabricatorTablePopupComponent', 'selector': 'app-fabricator-table-popup'},{'name': 'FabricatorTableSidenavComponent', 'selector': 'app-fabricator-table-sidenav'},{'name': 'FeatureSelectComponent', 'selector': 'app-feature-select'},{'name': 'FileUploadComponent', 'selector': 'app-file-upload'},{'name': 'FilterAutocompleteComponent', 'selector': 'app-filter-autocomplete'},{'name': 'FilterDatepickerComponent', 'selector': 'app-filter-datepicker'},{'name': 'FilterTableComponent', 'selector': 'app-filter-table'},{'name': 'FilterTableComponent', 'selector': 'app-filter-table'},{'name': 'FinancialDealerComponent', 'selector': 'app-financial-dealer'},{'name': 'FinancialTableComponent', 'selector': 'app-financial-table'},{'name': 'FinancialTablePopupComponent', 'selector': 'app-financial-table-popup'},{'name': 'FinancialTableSidenavComponent', 'selector': 'app-financial-table-sidenav'},{'name': 'FixedSidenavComponent', 'selector': 'app-fixed-sidenav'},{'name': 'FlatTreeComponent', 'selector': 'app-flat-tree'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FooterTableComponent', 'selector': 'app-footer-table'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'FormInputComponent', 'selector': 'app-form-input'},{'name': 'FormSelectComponent', 'selector': 'app-form-select'},{'name': 'FullscreenTableComponent', 'selector': 'app-fullscreen-table'},{'name': 'FullWidthCardComponent', 'selector': 'app-full-width-card'},{'name': 'FullWidthCardTabComponent', 'selector': 'app-full-width-card-tab'},{'name': 'FullWidthPlainComponent', 'selector': 'app-full-width-plain'},{'name': 'HeaderSideComponent', 'selector': 'app-header-side'},{'name': 'HeaderTopComponent', 'selector': 'app-header-top'},{'name': 'HighlightFirstAutocompleteComponent', 'selector': 'app-highlight-first-autocomplete'},{'name': 'HintsFormFieldComponent', 'selector': 'app-hints-form-field'},{'name': 'HintsInputComponent', 'selector': 'app-hints-input'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'IconMenuComponent', 'selector': 'app-icon-menu'},{'name': 'IndeterminateBarComponent', 'selector': 'app-indeterminate-bar'},{'name': 'InputChipComponent', 'selector': 'app-input-chip'},{'name': 'InvoiceDetailsComponent', 'selector': 'app-invoice-details'},{'name': 'InvoiceListComponent', 'selector': 'app-invoice-list'},{'name': 'LabelFormFieldComponent', 'selector': 'app-label-form-field'},{'name': 'LearningManagementComponent', 'selector': 'app-learning-management'},{'name': 'LeftSidebarCardComponent', 'selector': 'app-left-sidebar-card'},{'name': 'LeftSidebarPlainComponent', 'selector': 'app-left-sidebar-plain'},{'name': 'LoaderDialogComponent', 'selector': 'app-loader-dialog'},{'name': 'LockscreenComponent', 'selector': 'app-lockscreen'},{'name': 'MailComposeComponent', 'selector': 'mail-compose'},{'name': 'ManualHideTooltipComponent', 'selector': 'app-manual-hide-tooltip'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'MaterialExampleViewComponent', 'selector': 'app-material-example-view'},{'name': 'MaterialTableComponent', 'selector': 'app-material-table'},{'name': 'MatIconsComponent', 'selector': 'app-mat-icons'},{'name': 'MinMaxDatepickerComponent', 'selector': 'app-min-max-datepicker'},{'name': 'MomentJsDatepickerComponent', 'selector': 'app-moment-js-datepicker'},{'name': 'MultipleSelectComponent', 'selector': 'app-multiple-select'},{'name': 'MultiRowToolbarComponent', 'selector': 'app-multi-row-toolbar'},{'name': 'MultiSectionCardComponent', 'selector': 'app-multi-section-card'},{'name': 'NavTabGroupComponent', 'selector': 'app-nav-tab-group'},{'name': 'Nested1Component', 'selector': 'app-nested1'},{'name': 'Nested2Component', 'selector': 'app-nested2'},{'name': 'Nested3Component', 'selector': 'app-nested3'},{'name': 'NestedMenuComponent', 'selector': 'app-nested-menu'},{'name': 'NestedTreeComponent', 'selector': 'app-nested-tree'},{'name': 'NgmodelRadioComponent', 'selector': 'app-ngmodel-radio'},{'name': 'NgxTablePopupComponent', 'selector': 'app-ngx-table-popup'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'NotificationsComponent', 'selector': 'app-notifications'},{'name': 'OpenCloseSidenavComponent', 'selector': 'app-open-close-sidenav'},{'name': 'OpenMethodDatepickerComponent', 'selector': 'app-open-method-datepicker'},{'name': 'OptionGroupAutocompleteComponent', 'selector': 'app-option-group-autocomplete'},{'name': 'OptionGroupSelectComponent', 'selector': 'app-option-group-select'},{'name': 'OrderCostListComponent', 'selector': 'app-order-cost-list'},{'name': 'OrderDetailComponent', 'selector': 'app-order-detail'},{'name': 'OrderListComponent', 'selector': 'app-order-list'},{'name': 'OrderTableComponent', 'selector': 'app-order-table'},{'name': 'OrderTablePopupComponent', 'selector': 'app-order-table-popup'},{'name': 'OrderTableSidenavComponent', 'selector': 'app-order-table-sidenav'},{'name': 'PaginationTableComponent', 'selector': 'app-pagination-table'},{'name': 'PagingTableComponent', 'selector': 'app-paging-table'},{'name': 'PrefixSuffixFormFieldComponent', 'selector': 'app-prefix-suffix-form-field'},{'name': 'ProductDetailsComponent', 'selector': 'app-product-details'},{'name': 'ProductsComponent', 'selector': 'app-products'},{'name': 'ProfileBlankComponent', 'selector': 'app-profile-blank'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ProfileOverviewComponent', 'selector': 'app-profile-overview'},{'name': 'ProfileSettingsComponent', 'selector': 'app-profile-settings'},{'name': 'ResetSelectComponent', 'selector': 'app-reset-select'},{'name': 'ResponsiveSidenavComponent', 'selector': 'app-responsive-sidenav'},{'name': 'ResultPageComponent', 'selector': 'app-result-page'},{'name': 'RichTextEditorComponent', 'selector': 'app-rich-text-editor'},{'name': 'RightSidebarCardComponent', 'selector': 'app-right-sidebar-card'},{'name': 'RipplelessSelectComponent', 'selector': 'app-rippleless-select'},{'name': 'ScrollableDialogComponent', 'selector': 'app-scrollable-dialog'},{'name': 'ScrollableDialogOverviewComponent', 'selector': 'app-scrollable-dialog-overview'},{'name': 'SearchInputOverComponent', 'selector': 'egret-search-input-over'},{'name': 'SectionListComponent', 'selector': 'app-section-list'},{'name': 'SelectedValueDatepickerComponent', 'selector': 'app-selected-value-datepicker'},{'name': 'SelectionTableComponent', 'selector': 'app-selection-table'},{'name': 'SidebarSideComponent', 'selector': 'app-sidebar-side'},{'name': 'SidebarTopComponent', 'selector': 'app-sidebar-top'},{'name': 'SidenavComponent', 'selector': 'app-sidenav'},{'name': 'Signin2Component', 'selector': 'app-signin2'},{'name': 'Signin3Component', 'selector': 'app-signin3'},{'name': 'Signin4Component', 'selector': 'app-signin4'},{'name': 'SigninComponent', 'selector': 'app-signin'},{'name': 'Signup2Component', 'selector': 'app-signup2'},{'name': 'Signup3Component', 'selector': 'app-signup3'},{'name': 'Signup4Component', 'selector': 'app-signup4'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SimpleAutocompleteComponent', 'selector': 'app-simple-autocomplete'},{'name': 'SimpleFormFieldComponent', 'selector': 'app-simple-form-field'},{'name': 'SliderComponent', 'selector': 'app-slider'},{'name': 'SortingTableComponent', 'selector': 'app-sorting-table'},{'name': 'SpacingComponent', 'selector': 'app-spacing'},{'name': 'StackedChipComponent', 'selector': 'app-stacked-chip'},{'name': 'StartDateDatepickerComponent', 'selector': 'app-start-date-datepicker'},{'name': 'StickyColumnTableComponent', 'selector': 'app-sticky-column-table'},{'name': 'StickyFooterTableComponent', 'selector': 'app-sticky-footer-table'},{'name': 'StickyHeaderTableComponent', 'selector': 'app-sticky-header-table'},{'name': 'SuffixPrefixInputComponent', 'selector': 'app-suffix-prefix-input'},{'name': 'SvgIconComponent', 'selector': 'app-svg-icon'},{'name': 'TableSortingComponent', 'selector': 'app-table-sorting'},{'name': 'TagDialogueComponent', 'selector': 'app-tag-dialogue'},{'name': 'ThemingFormFieldComponent', 'selector': 'app-theming-form-field'},{'name': 'TodoComponent', 'selector': 'app-todo'},{'name': 'TodoDetailsComponent', 'selector': 'app-todo-details'},{'name': 'TodoListComponent', 'selector': 'app-todo-list'},{'name': 'TouchDatepickerComponent', 'selector': 'app-touch-datepicker'},{'name': 'TriggerSelectComponent', 'selector': 'app-trigger-select'},{'name': 'TwoSidenavComponent', 'selector': 'app-two-sidenav'},{'name': 'TwoWayBindingSelectComponent', 'selector': 'app-two-way-binding-select'},{'name': 'TypographyComponent', 'selector': 'app-typography'},{'name': 'UILibIconsComponent', 'selector': 'app-uilib-icons'},{'name': 'UserTableComponent', 'selector': 'app-user-table'},{'name': 'UserTablePopupComponent', 'selector': 'app-user-table-popup'},{'name': 'UserTableSidenavComponent', 'selector': 'app-user-table-sidenav'},{'name': 'VerticalStepperComponent', 'selector': 'app-vertical-stepper'},{'name': 'WizardComponent', 'selector': 'app-wizard'}];
+    var DIRECTIVES = [{'name': 'AppDropdownDirective', 'selector': '[appDropdown]'},{'name': 'DropdownAnchorDirective', 'selector': '[appDropdownToggle]'},{'name': 'DropdownLinkDirective', 'selector': '[appDropdownLink]'},{'name': 'EgretHighlightDirective', 'selector': '[egretHighlight]'},{'name': 'EgretSidebarTogglerDirective', 'selector': '[egretSidebarToggler]'},{'name': 'EgretSidenavHelperDirective', 'selector': '[egretSidenavHelper]'},{'name': 'EgretSideNavToggleDirective', 'selector': '[EgretSideNavToggle]'},{'name': 'EgretSidenavTogglerDirective', 'selector': '[egretSidenavToggler]'},{'name': 'FontSizeDirective', 'selector': '[fontSize]'},{'name': 'ScrollToDirective', 'selector': '[scrollTo]'}];
+    var ACTUAL_COMPONENT = {'name': 'CryptocurrencyComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CryptocurrencyComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

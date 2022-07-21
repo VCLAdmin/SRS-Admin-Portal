@@ -1,0 +1,1433 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>egret documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">egret documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >OrderService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/views/cruds/order.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#items" >items</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#CancelAllProjectOrders" >CancelAllProjectOrders</a>
+                            </li>
+                            <li>
+                                <a href="#deleteOrderById" >deleteOrderById</a>
+                            </li>
+                            <li>
+                                <a href="#DownloadBomDocument" >DownloadBomDocument</a>
+                            </li>
+                            <li>
+                                <a href="#DownloadDesignDocument" >DownloadDesignDocument</a>
+                            </li>
+                            <li>
+                                <a href="#getCompleteList" >getCompleteList</a>
+                            </li>
+                            <li>
+                                <a href="#getItems" >getItems</a>
+                            </li>
+                            <li>
+                                <a href="#getItemsForOrderDashboard" >getItemsForOrderDashboard</a>
+                            </li>
+                            <li>
+                                <a href="#getProcessStatus" >getProcessStatus</a>
+                            </li>
+                            <li>
+                                <a href="#GetProposalFile" >GetProposalFile</a>
+                            </li>
+                            <li>
+                                <a href="#removeItem" >removeItem</a>
+                            </li>
+                            <li>
+                                <a href="#sendMailsforOrder" >sendMailsforOrder</a>
+                            </li>
+                            <li>
+                                <a href="#updateItem" >updateItem</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(appConstantService: <a href="../injectables/AppconstantsService.html" target="_self">AppconstantsService</a>, http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/views/cruds/order.service.ts:10</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>appConstantService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppconstantsService.html" target="_self" >AppconstantsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="CancelAllProjectOrders"></a>
+                    <span class="name">
+                        <span ><b>CancelAllProjectOrders</b></span>
+                        <a href="#CancelAllProjectOrders"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>CancelAllProjectOrders(ProjectId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="101"
+                            class="link-to-prism">src/app/views/cruds/order.service.ts:101</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This function calls the api to cancel all teh orders related to the given ProjectId .</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ProjectId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>is the projectId of whih all the orders needs to be cancelled through api call.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;number&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteOrderById"></a>
+                    <span class="name">
+                        <span ><b>deleteOrderById</b></span>
+                        <a href="#deleteOrderById"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteOrderById(row: <a href="../classes/OrderApiModel.html" target="_self">OrderApiModel</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="90"
+                            class="link-to-prism">src/app/views/cruds/order.service.ts:90</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This function calls the api to remove the order and will get the updated orders list .</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>row</td>
+                                    <td>
+                                                <code><a href="../classes/OrderApiModel.html" target="_self" >OrderApiModel</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>is the order object which needs to be deleted and it passed as input parameter through api call.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>returns the orders list with the updated list from API call.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="DownloadBomDocument"></a>
+                    <span class="name">
+                        <span ><b>DownloadBomDocument</b></span>
+                        <a href="#DownloadBomDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>DownloadBomDocument(orderDetailsId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="153"
+                            class="link-to-prism">src/app/views/cruds/order.service.ts:153</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This function calls the api to download the Bom document of given order Id</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>orderDetailsId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>is the Order Id of which the Bom document has to be downloaded</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="DownloadDesignDocument"></a>
+                    <span class="name">
+                        <span ><b>DownloadDesignDocument</b></span>
+                        <a href="#DownloadDesignDocument"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>DownloadDesignDocument(orderDetailsId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="143"
+                            class="link-to-prism">src/app/views/cruds/order.service.ts:143</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This function calls the api to download the design document of given order Id</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>orderDetailsId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>is the Order Id of which the design document has to be downloaded</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCompleteList"></a>
+                    <span class="name">
+                        <span ><b>getCompleteList</b></span>
+                        <a href="#getCompleteList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCompleteList()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="38"
+                            class="link-to-prism">src/app/views/cruds/order.service.ts:38</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This function is to get the list of complete orders from API call.</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/OrderApiModel.html" target="_self" >Observable&lt;OrderApiModel[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>returns the list of complete orders from API call.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getItems"></a>
+                    <span class="name">
+                        <span ><b>getItems</b></span>
+                        <a href="#getItems"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getItems()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="27"
+                            class="link-to-prism">src/app/views/cruds/order.service.ts:27</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This function is to get the list of orders from API call.</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/OrderApiModel.html" target="_self" >Observable&lt;OrderApiModel[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>returns the list of orders from API call.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getItemsForOrderDashboard"></a>
+                    <span class="name">
+                        <span ><b>getItemsForOrderDashboard</b></span>
+                        <a href="#getItemsForOrderDashboard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getItemsForOrderDashboard(getType: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="131"
+                            class="link-to-prism">src/app/views/cruds/order.service.ts:131</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This function calls the api to get teh orders for the dashboard with the given type</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>getType</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>is the type of which all the orders will be returned</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;number[]&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>returns list of order numbers of the given type.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getProcessStatus"></a>
+                    <span class="name">
+                        <span ><b>getProcessStatus</b></span>
+                        <a href="#getProcessStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getProcessStatus(status: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="177"
+                            class="link-to-prism">src/app/views/cruds/order.service.ts:177</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This function is used to get the Order process status list.</p>
+<p> @returns {string} returns the processed status.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>status</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>is the input status</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>returns the processed status.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetProposalFile"></a>
+                    <span class="name">
+                        <span ><b>GetProposalFile</b></span>
+                        <a href="#GetProposalFile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>GetProposalFile(problemGuid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, proposalOrBOM: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="164"
+                            class="link-to-prism">src/app/views/cruds/order.service.ts:164</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This function calls the api to get the proposal file for the given problem and Proposal</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>problemGuid</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>is the Problem Guid of which the proposal file will be extracted.</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>proposalOrBOM</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>is the proposal or Bom of which the proposal file will be extracted.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeItem"></a>
+                    <span class="name">
+                        <span ><b>removeItem</b></span>
+                        <a href="#removeItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeItem(row: <a href="../classes/OrderApiModel.html" target="_self">OrderApiModel</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="114"
+                            class="link-to-prism">src/app/views/cruds/order.service.ts:114</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This function calls the api to remove the order and will get the updated orders list .</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>row</td>
+                                    <td>
+                                                <code><a href="../classes/OrderApiModel.html" target="_self" >OrderApiModel</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>is the order object which needs to be deleted and it passed as input parameter through api call.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>returns the orders list with the updated list from API call.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sendMailsforOrder"></a>
+                    <span class="name">
+                        <span ><b>sendMailsforOrder</b></span>
+                        <a href="#sendMailsforOrder"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sendMailsforOrder(id, statusid, projectId, productId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">src/app/views/cruds/order.service.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This function calls the api to send the email notifications for admins, dealers and fabricators</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>is the order id for which the email notifications has to send through api call</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>statusid</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the id of the status for which the email notifications has to send.</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>projectId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the id of the project for which the email notifications has to send.</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>productId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>returns the api call status ok or not.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateItem"></a>
+                    <span class="name">
+                        <span ><b>updateItem</b></span>
+                        <a href="#updateItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateItem(id, item: <a href="../classes/OrderApiModel.html" target="_self">OrderApiModel</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="53"
+                            class="link-to-prism">src/app/views/cruds/order.service.ts:53</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This function calls the api to update the order and will get the updated orders list .</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the id of the selected order by which order details will be updated.</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>item</td>
+                                    <td>
+                                                <code><a href="../classes/OrderApiModel.html" target="_self" >OrderApiModel</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>is the order object which needs to be updated and it passed as input parameter throuh api call</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>returns the orders list with the updated order from API call.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="items"></a>
+                    <span class="name">
+                        <span ><b>items</b></span>
+                        <a href="#items"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/views/cruds/order.service.ts:10</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { HttpClient } from &#x27;@angular/common/http&#x27;;
+import { Observable, of } from &#x27;rxjs&#x27;;
+import { OrderApiModel } from &#x27;app/shared/models/OrderApiModel&#x27;
+import { delay } from &#x27;rxjs/operators&#x27;;
+import { AppconstantsService } from &#x27;app/shared/services/appconstants.service&#x27;;
+
+@Injectable()
+export class OrderService {
+  items: any[];
+  constructor(
+    private appConstantService: AppconstantsService,
+    private http: HttpClient
+  ) {
+    // let userDB &#x3D; new UserDB();
+    // this.items &#x3D; userDB.users;
+  }
+
+  //******* Implement your APIs ********
+
+ /**
+ * This function is to get the list of orders from API call.
+ * 
+ * @returns {OrderApiModel} returns the list of orders from API call.
+ * 
+ */
+  getItems(): Observable&lt;OrderApiModel[]&gt; {
+    let url: string &#x3D; this.appConstantService.APP_DOMAIN + &quot;api/Order/Get&quot;;
+    return this.http.get&lt;OrderApiModel[]&gt;(url);
+  }
+
+ /**
+ * This function is to get the list of complete orders from API call.
+ * 
+ * @returns {OrderApiModel} returns the list of complete orders from API call.
+ * 
+ */
+  getCompleteList(): Observable&lt;OrderApiModel[]&gt; {
+    let url: string &#x3D; this.appConstantService.APP_DOMAIN + &quot;api/Order/GetCompleteList&quot;;
+    return this.http.get&lt;OrderApiModel[]&gt;(url);
+  }
+
+ /**
+ * This function calls the api to update the order and will get the updated orders list .
+ * 
+ * @param {OrderApiModel} item is the order object which needs to be updated and it passed as input parameter throuh api call
+ * 
+ * @param {any} id the id of the selected order by which order details will be updated.
+ * 
+ * @returns {any} returns the orders list with the updated order from API call.
+ * 
+ */
+  updateItem(id, item: OrderApiModel): Observable&lt;any&gt; {
+    let url: string &#x3D; this.appConstantService.APP_DOMAIN + &quot;api/Order/Put/&quot; + id;
+    return this.http.put&lt;OrderApiModel[]&gt;(url, item);
+  }
+
+ /**
+ * This function calls the api to send the email notifications for admins, dealers and fabricators
+ * 
+ * @param {any} id is the order id for which the email notifications has to send through api call
+ * 
+ * @param {any} statusid the id of the status for which the email notifications has to send.
+ * 
+ * @param {any} projectId the id of the project for which the email notifications has to send.
+ * 
+ * @param {any} productid the id of the product for which the email notifications has to send.
+ * 
+ * @returns {any} returns the api call status ok or not.
+ * 
+ */
+  sendMailsforOrder(id, statusid, projectId, productId): Observable&lt;boolean&gt; {
+    let url: string &#x3D; this.appConstantService.APP_DOMAIN + &quot;api/Order/SendMail/&quot; + id + &quot;/&quot; + statusid + &quot;/&quot; + projectId + &quot;/&quot; + productId;
+    return this.http.get&lt;boolean&gt;(url);
+  }
+
+  // updateItemById(id, item: OrderApiModel): Observable&lt;any&gt; {
+  //   let url: string &#x3D; this.appConstantService.APP_DOMAIN + &quot;api/Order/UpdateOrderById/&quot; + id;
+  //   return this.http.post&lt;OrderApiModel[]&gt;(url, item);
+  // }
+ 
+ /**
+ * This function calls the api to remove the order and will get the updated orders list .
+ * 
+ * @param {OrderApiModel} row is the order object which needs to be deleted and it passed as input parameter through api call.
+ * 
+ * @returns {any} returns the orders list with the updated list from API call.
+ * 
+ */ 
+  deleteOrderById(row: OrderApiModel) {
+    let url: string &#x3D; this.appConstantService.APP_DOMAIN + &quot;api/BpsProject/DeleteOrderById/&quot; + row.OrderDetails[0].ProductId;
+    return this.http.delete&lt;OrderApiModel[]&gt;(url);
+  }
+
+ /**
+ * This function calls the api to cancel all teh orders related to the given ProjectId .
+ * 
+ * @param {number} ProjectId is the projectId of whih all the orders needs to be cancelled through api call.
+ * 
+ */ 
+  CancelAllProjectOrders(ProjectId: number): Observable&lt;number&gt; {
+    let url: string &#x3D; this.appConstantService.APP_DOMAIN + &quot;api/BpsProject/CancelAllProjectOrders/&quot; + ProjectId;
+    return this.http.get&lt;number&gt;(url);
+  }
+
+ /**
+ * This function calls the api to remove the order and will get the updated orders list .
+ * 
+ * @param {OrderApiModel} row is the order object which needs to be deleted and it passed as input parameter through api call.
+ * 
+ * @returns {any} returns the orders list with the updated list from API call.
+ * 
+ */
+  removeItem(row: OrderApiModel) {
+
+    // let i &#x3D; this.items.indexOf(row);
+    // this.items.splice(i, 1);
+    // return of(this.items.slice()).pipe(delay(1000));
+    let url: string &#x3D; this.appConstantService.APP_DOMAIN + &quot;api/Order/Delete/&quot; + row.OrderExternalId;
+    return this.http.delete&lt;OrderApiModel[]&gt;(url);
+  }
+
+ /**
+ * This function calls the api to get teh orders for the dashboard with the given type
+ * 
+ * @param {string} getType is the type of which all the orders will be returned
+ * 
+ * @returns {number[]} returns list of order numbers of the given type.
+ * 
+ */
+  getItemsForOrderDashboard(getType: string): Observable&lt;number[]&gt; {
+    // return  of(this.items.slice())
+    let url: string &#x3D; this.appConstantService.APP_DOMAIN + &quot;api/Order/GetOrderDashboard/&quot; + getType;
+    return this.http.get&lt;number[]&gt;(url);
+  }
+
+ /**
+ * This function calls the api to download the design document of given order Id
+ * 
+ * @param {string} orderDetailsId is the Order Id of which the design document has to be downloaded
+ * 
+ */
+  DownloadDesignDocument(orderDetailsId: string): Observable&lt;any&gt; {
+    return this.http.get(this.appConstantService.APP_DOMAIN + &#x27;api/order/GetPresignedURL/&#x27; + orderDetailsId);
+  }
+
+ /**
+ * This function calls the api to download the Bom document of given order Id
+ * 
+ * @param {string} orderDetailsId is the Order Id of which the Bom document has to be downloaded
+ * 
+ */
+  DownloadBomDocument(orderDetailsId: string): Observable&lt;any&gt; {
+    return this.http.get(this.appConstantService.APP_DOMAIN + &#x27;api/order/GetPresignedExcelURL/&#x27; + orderDetailsId);
+  }
+
+ /**
+ * This function calls the api to get the proposal file for the given problem and Proposal
+ * 
+ * @param {string} problemGuid is the Problem Guid of which the proposal file will be extracted.
+ * 
+ * @param {string} proposalOrBOM is the proposal or Bom of which the proposal file will be extracted.
+ */
+  GetProposalFile(problemGuid: string, proposalOrBOM: string): Observable&lt;any&gt; {
+    return this.http.get(this.appConstantService.APP_DOMAIN + &quot;api/Order/GenerateProposalFile/&quot; + problemGuid + &quot;/&quot; + proposalOrBOM, {
+      responseType: &#x27;blob&#x27;
+    });
+  }
+
+ /**
+ * This function is used to get the Order process status list.
+ * 
+ * @param {string} status is the input status 
+ * 
+ *  @returns {string} returns the processed status.
+ */
+  getProcessStatus(status: string): string {
+    switch (status) {
+      case &quot;Order_Placed&quot;: return &quot;Pending&quot;; break;
+      case &quot;In_Pre_Production&quot;: return &quot;In Process&quot;; break;
+      case &quot;In_Fabrication&quot;: return &quot;In Process&quot;; break;
+      case &quot;In_Assembly&quot;: return &quot;In Process&quot;; break;
+      case &quot;Shipped&quot;: return &quot;In Process&quot;; break;
+      case &quot;Delivered&quot;: return &quot;Completed&quot;; break;
+      // case &quot;Completed&quot;: return &quot;Completed&quot;; break;
+      // case &quot;Cancelled&quot;: return &quot;Cancelled&quot;; break;
+      default: return &quot;&quot;; break;
+    }
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'OrderService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

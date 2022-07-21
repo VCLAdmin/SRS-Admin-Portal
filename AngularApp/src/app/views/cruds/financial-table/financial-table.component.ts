@@ -46,6 +46,11 @@ export class FinancialTableComponent implements OnInit, OnDestroy {
       this.getCompleteItemSub.unsubscribe()
     }
   }
+
+ /**
+ * This function is used to get the list of Financials
+ *
+ */
   getItems() {
     this.getItemSub = this.crudService.getFinancials()
       .subscribe(data => {
@@ -55,6 +60,11 @@ export class FinancialTableComponent implements OnInit, OnDestroy {
         this.getCompleteOrders();
       })
   }
+
+ /**
+ * This function is used to get the list of Complete Orders
+ *
+ */
   getCompleteOrders() {
     this.getCompleteItemSub = this.crudOrderService.getCompleteList()
       .subscribe(data => {
@@ -67,16 +77,32 @@ export class FinancialTableComponent implements OnInit, OnDestroy {
   title: string;
   selectedRow: FinancialApiModel = undefined;
   selectedDealerOrders: OrderApiModel[] = undefined;
+
+ /**
+ * This function is used to reset the side nav when user clicks on the Financials
+ *
+ */
   resetSideNav() {
     this.isNew = undefined;
     this.title = "";
     this.selectedRow = undefined;
     this.selectedDealerOrders = undefined;
   }
+
+ /**
+ * This function is used to close the side nav of a selected financial
+ *
+ */
   onCloseSideNav(reason: string) {
     this.resetSideNav();
     this.sidenav.close();
   }
+
+ /**
+ * This function is used to submit the financial form data when the user updates the financial data in the side nav
+ *
+ * @param {any} res is the form data which needs to be submitted.
+ */
   onSubmitData(res: any) {
     if (!res) {
       // If user press cancel
@@ -115,6 +141,15 @@ export class FinancialTableComponent implements OnInit, OnDestroy {
     }
   }
   openSideNavType = "";
+
+ /**
+ * This function is used to open the financial side nav when user selects the financial
+ *
+ * @param {any} data is the selected financial object to diplay in the form if it is in edit and this object will be empty if it is to add financial
+ * 
+ * @param {boolean} isNew this is the value which tells the Financial needs to open for update or create new.
+ * 
+ */
   onOpenSideNav(data: any = {}, isNew?) {
     this.openSideNavType = "EDIT";
     this.isNew = isNew;
@@ -122,13 +157,25 @@ export class FinancialTableComponent implements OnInit, OnDestroy {
     this.selectedRow = data;
     this.sidenav.open()
   }
+
+ /**
+ * This function is used to open the financial details in  side nav when user selects the financial
+ *
+ * @param {any} data is the selected financial object to diplay in the form 
+ * 
+ */
   onDetailsSideNav(data: any = {}) {
     this.openSideNavType = "ORDERDETAILS";
     this.selectedDealerOrders = this.completeItems.filter(f => f.DealerId == data.DealerId);
     this.sidenav.open()
   }
 
-
+ /**
+ * This function is used to filter the data with the given input by the user.
+ *
+ * @param {any} event is the input given by the user based on this the data will be filtered and displayed.
+ * 
+ */
   updateFilter(event) {
     const val = event.target.value.toLowerCase();
     this.items = this.completeFinancialItems;

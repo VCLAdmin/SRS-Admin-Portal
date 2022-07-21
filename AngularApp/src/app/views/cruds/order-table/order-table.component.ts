@@ -42,6 +42,11 @@ export class OrderTableComponent implements OnInit, OnDestroy {
       this.getItemSub.unsubscribe()
     }
   }
+
+ /**
+ * This function is used to get the list of Orders.
+ *
+ */
   getItems() {
     this.getItemSub = this.crudService.getItems()
       .subscribe(data => {
@@ -57,15 +62,32 @@ export class OrderTableComponent implements OnInit, OnDestroy {
   isNew: undefined;
   title: string;
   selectedRow: OrderApiModel = undefined;
+
+ /**
+ * This function is used to reset the side nav when user clicks on the Orders
+ *
+ */
   resetSideNav() {
     this.isNew = undefined;
     this.title = "";
     this.selectedRow = undefined;
   }
+
+ /**
+ * This function is used to close the side nav of a selected order
+ *
+ */  
   onCloseSideNav(reason: string) {
     this.resetSideNav();
     this.sidenav.close();
   }
+
+ /**
+ * This function is used to submit the order form data when the user updates the order data in the side nav
+ *
+ * @param {any} res is the order form object which needs to be submitted.
+ * 
+ */
   onSubmitData(res: any) {
     if (!res) {
       // If user press cancel
@@ -119,6 +141,15 @@ export class OrderTableComponent implements OnInit, OnDestroy {
         })
     }
   }
+
+ /**
+ * This function is used to open the order side nav when user selects the order
+ *
+ * @param {any} data is the selected order object to diplay in the form if it is in edit and this object will be empty if it is to add order
+ * 
+ * @param {boolean} isNew this is the value which tells the order needs to open for update or create new.
+ * 
+ */
   onOpenSideNav(data: any = {}, isNew?) {
     this.isNew = isNew;
     this.title = isNew ? 'Add New Order' : 'Edit Order';
@@ -127,6 +158,14 @@ export class OrderTableComponent implements OnInit, OnDestroy {
     this.sidenav.open()
   }
 
+ /**
+ * This function is called when user click on the delete icon of any particular order from the list.
+ * 
+ * It deletes the order from the list and the db is updated
+ *
+ * @param {any} row is the selected order object which is to delete
+ * 
+ */
   deleteItem(row) {
     var deleteorders = this.items.filter(f => f.ProjectId == row?.ProjectId);
     if (deleteorders.length > 1) {
@@ -165,6 +204,12 @@ export class OrderTableComponent implements OnInit, OnDestroy {
     }
   }
 
+ /**
+ * This function is used to download the proposal file of the selected order.
+ * 
+ * @param {any} row is the selected order object for which file has to be downloaded.
+ * 
+ */
   DownloadFile(row) {
     if (row.OrderId !== null) {
       this.crudService.DownloadDesignDocument(row.OrderId).subscribe(data => {
@@ -174,6 +219,12 @@ export class OrderTableComponent implements OnInit, OnDestroy {
     }
   }
 
+ /**
+ * This function is used to download the proposal Bom file of the selected order.
+ * 
+ * @param {any} row is the selected order object for which Bom file has to be downloaded.
+ * 
+ */
   DownloadBomFile(row) {
     if (row.OrderId !== null) {
       // this.crudService.DownloadBomDocument(row.OrderId).subscribe(data => {
@@ -188,6 +239,12 @@ export class OrderTableComponent implements OnInit, OnDestroy {
     }
   }
 
+ /**
+ * This function is used to open the proposal fileof the selected order.
+ *
+ * @param {any} row is the selected order obvject for which the proposal file has to open
+ * 
+ */
   OpenProposalFile(row) {
     if (row.OrderId !== null) {
       this.crudService.GetProposalFile(row?.OrderDetails[0].ProductGuid, "Proposal").subscribe(result => {
@@ -198,6 +255,12 @@ export class OrderTableComponent implements OnInit, OnDestroy {
     }
   }
 
+ /**
+ * This function is used to filter the data with the given input by the user.
+ *
+ * @param {any} event is the input given by the user based on this the data will be filtered and displayed.
+ * 
+ */
   updateFilter(event) {
     const val = event.target.value.toLowerCase();
     this.items = this.completeItems;

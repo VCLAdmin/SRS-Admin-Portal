@@ -13,7 +13,11 @@
     "format:fix": "pretty-quick --staged",
     "format:check": "prettier --config ./.prettierrc --list-different \"src/{app,environments,assets}/**/*{.ts,.js,.json,.css,.scss}\"",
     "precommit": "run-s format:fix lint",
-    "lint": "tslint --fix -c ./tslint.json 'src/**/*{.ts}'"
+    "lint": "tslint --fix -c ./tslint.json 'src/**/*{.ts}'",
+    "compodoc:build": "compodoc -p tsconfig.doc.json",
+    "compodoc:build-and-serve": "compodoc -p tsconfig.doc.json -s",
+    "compodoc:serve": "compodoc -s",
+    "doc": "npx compodoc -p tsconfig.doc.json -n \"SRS Fabricator documentation\""
   },
   "private": true,
   "dependencies": {
@@ -79,6 +83,7 @@
     "@angular/cli": "10.0.1",
     "@angular/compiler-cli": "10.0.2",
     "@angular/language-service": "10.0.2",
+    "@compodoc/compodoc": "^1.1.19",
     "@types/hopscotch": "0.2.30",
     "@types/jasmine": "2.5.38",
     "@types/node": "^12.11.1",

@@ -50,6 +50,14 @@ export class OrderTableSidenavComponent implements OnInit, OnChanges {
     }
   }
 
+ /**
+ * This function is used to format teh address details
+ * 
+ * @param {any} add is the address object which has the selected order address details.
+ * 
+ * @returns {string} returns the formatted complete address as string.
+ * 
+ */
   getFormattedAddress(add: any): string {
     return (add.Line1 === null || add.Line1 === undefined ? '' : add.Line1 + ', ') +
       (add.Line2 === null || add.Line2 === undefined ? '' : add.Line2 + ', ') +
@@ -59,6 +67,12 @@ export class OrderTableSidenavComponent implements OnInit, OnChanges {
       (add.Country === null || add.Country === undefined ? '' : add.Country + ', ') +
       (add.County === null || add.County === undefined ? '' : add.County);
   }
+
+ /**
+ * This function is used to initialize the order form with the selected order details
+ * 
+ * @param {any} item is the order object which has the selected order details.
+ */
   buildItemForm(item) {
     this.ShippingMethod = item.ShippingMethod ? 'STL - Shared Truckload' : 'TL - Truckload';
     this.AddressType = item.AddressType === 'STORE' ? 'Store' : 'Address';
@@ -111,6 +125,10 @@ export class OrderTableSidenavComponent implements OnInit, OnChanges {
 
   }
 
+ /**
+ * This function is used to download the proposal file of the selected order.
+ * 
+ */
   DownloadFile() {
     if (this.OrderDetailsId !== null) {
       this.crudService.DownloadDesignDocument(this.OrderDetailsId).subscribe(data => {
@@ -119,6 +137,11 @@ export class OrderTableSidenavComponent implements OnInit, OnChanges {
       });
     }
   }
+
+ /**
+ * This function is used to download the Bom file of the selected order.
+ * 
+ */
   DownloadBomFile() {
     if (this.OrderDetailsId !== null) {
       console.log(this.data);
@@ -134,10 +157,20 @@ export class OrderTableSidenavComponent implements OnInit, OnChanges {
     }
   }
 
+ /**
+ * This function has the output event emitter to close the side nav of selected order.
+ * 
+ * it closes the selected order side nav which has the order details.
+ */
   close(reason: string) {
     this.onCloseSideNav.emit(false);
   }
 
+ /**
+ * This function has the output event emitter to submit the form data in the parent component.
+ * 
+ * it submits the form data which was edited by the user.
+ */
   submit() {
     this.onSubmitData.emit(this.itemForm.value);
   }

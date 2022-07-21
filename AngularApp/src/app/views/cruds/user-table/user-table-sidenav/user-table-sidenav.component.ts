@@ -90,6 +90,10 @@ export class UserTableSidenavComponent implements OnInit, OnDestroy, OnChanges {
     }
   }
 
+ /**
+ * This function is called when the user switch on and off of user type Dealer.
+ * 
+ */
   public toggle() {
     this.isDealer = !this.isDealer;
     if (this.isDealer) {
@@ -100,6 +104,14 @@ export class UserTableSidenavComponent implements OnInit, OnDestroy, OnChanges {
     this.buildItemForm(this.data, this.isDealer);
   }
 
+ /**
+ * This function is used to initialize the user form with the selected user details
+ * 
+ * @param {any} item is the user object which has the selected user details.
+ * 
+ * @param {boolean} isDealer is the boolean value which gives the information whether user is saved as dealer or fabricator.
+ * 
+ */
   buildItemForm(item, isDealer) {
     if (item.Email != undefined) {
       this.editing = true;
@@ -131,6 +143,12 @@ export class UserTableSidenavComponent implements OnInit, OnDestroy, OnChanges {
     }
   }
 
+ /**
+ * This function is used to get the email of the selected user.
+ * 
+ * @param {any} item is the selected user object 
+ * 
+ */
   itemFormEmail(item: any) {
     if (this.updation)
       return [item.Email];
@@ -138,6 +156,12 @@ export class UserTableSidenavComponent implements OnInit, OnDestroy, OnChanges {
       return [item.Email || '', [Validators.required, Validators.email], this.validateNameViaServer.bind(this)];
   }
 
+ /**
+ * This function is used to validate the user name using server.
+ * 
+ * @param {any} value is the selected user object 
+ * 
+ */  
   validateNameViaServer({ value }: AbstractControl): Observable<ValidationErrors | null> {
     return this.srsUserService.isEmailDuplicate(value)
       .pipe(debounceTime(1000), map((nameExists: boolean) => {
@@ -149,10 +173,21 @@ export class UserTableSidenavComponent implements OnInit, OnDestroy, OnChanges {
         return null;
       }));
   }
+
+ /**
+ * This function has the output event emitter to close the side nav of selected user.
+ * 
+ * it closes the selected user side nav which has the user details.
+ */
   close(reason: string) {
     this.onCloseSideNav.emit(false);
   }
 
+ /**
+ * This function has the output event emitter to submit the form data in the parent component.
+ * 
+ * it submits the form data which was edited by the user.
+ */
   submit() {
     this.onSubmitData.emit({ dataInfo: this.itemForm.value, isDealer: this.isDealer });
   }

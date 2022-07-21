@@ -38,6 +38,11 @@ export class UserTableComponent implements OnInit, OnDestroy {
       this.getItemSub.unsubscribe()
     }
   }
+
+ /**
+ * This function is used to get the list of Users.
+ *
+ */
   getItems() {
     this.getItemSub = this.crudService.getItems()
       .subscribe(data => {
@@ -51,15 +56,32 @@ export class UserTableComponent implements OnInit, OnDestroy {
   isNew: undefined;
   title: string;
   selectedRow: SRSUserApiModel = undefined;
+
+ /**
+ * This function is used to reset the side nav when user clicks on the Users
+ *
+ */
   resetSideNav() {
     this.isNew = undefined;
     this.title = "";
     this.selectedRow = undefined;
   }
+
+ /**
+ * This function is used to close the side nav of a selected user
+ *
+ */
   onCloseSideNav(reason: string) {
     this.resetSideNav();
     this.sidenav.close();
   }
+
+ /**
+ * This function is used to submit the user form data when the user updates the user data in the side nav
+ *
+ * @param {any} res is the user form object which needs to be submitted.
+ * 
+ */
   onSubmitData(res: any) {
     if (!res) {
       return;
@@ -90,6 +112,15 @@ export class UserTableComponent implements OnInit, OnDestroy {
         })
     }
   }
+
+ /**
+ * This function is used to open the user side nav when user selects the user
+ *
+ * @param {any} data is the selected user object to diplay in the form if it is in edit and this object will be empty if it is to add user
+ * 
+ * @param {boolean} isNew this is the value which tells the user needs to open for update or create new.
+ * 
+ */
   onOpenSideNav(data: any = {}, isNew?) {
     this.isNew = isNew;
     this.title = isNew ? 'Add New Account' : 'Update Account';
@@ -97,6 +128,14 @@ export class UserTableComponent implements OnInit, OnDestroy {
     this.sidenav.open()
   }
 
+ /**
+ * This function is called when user click on the delete icon of any particular user from the list.
+ * 
+ * It deletes the user from the list and the db is updated
+ *
+ * @param {any} row is the selected user object which is to delete
+ * 
+ */
   deleteItem(row) {
     this.confirmService.confirm({ message: `Delete ${row.Email}?` })
       .subscribe(res => {
@@ -126,6 +165,13 @@ export class UserTableComponent implements OnInit, OnDestroy {
         }
       })
   }
+
+ /**
+ * This function is used to filter the data with the given input by the user.
+ *
+ * @param {any} event is the input given by the user based on this the data will be filtered and displayed.
+ * 
+ */
   updateFilter(event) {
     const val = event.target.value.toLowerCase();
     var columns = Object.keys(this.items[0]);
@@ -145,6 +191,13 @@ export class UserTableComponent implements OnInit, OnDestroy {
     });
     this.items = rows;
   }
+
+ /**
+ * This function is called when the user has changed the type of User.
+ *
+ * @param {any} event is the input selected by the user
+ * 
+ */
   UserTypeChanged(event) {
     switch (event) {
       case 'All':

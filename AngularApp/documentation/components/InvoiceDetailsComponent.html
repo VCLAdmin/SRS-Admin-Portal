@@ -1,0 +1,1806 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>egret documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">egret documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  InvoiceDetailsComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/views/invoice/invoice-details/invoice-details.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+            <tr>
+                <td class="col-md-3">changeDetection</td>
+                <td class="col-md-9"><code>ChangeDetectionStrategy.OnPush</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-invoice-details</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./invoice-details.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./invoice-details.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#cost" >cost</a>
+                            </li>
+                            <li>
+                                <a href="#currency" >currency</a>
+                            </li>
+                            <li>
+                                <a href="#emptyFormObject" >emptyFormObject</a>
+                            </li>
+                            <li>
+                                <a href="#invocieId" >invocieId</a>
+                            </li>
+                            <li>
+                                <a href="#invoice" >invoice</a>
+                            </li>
+                            <li>
+                                <a href="#invoiceForm" >invoiceForm</a>
+                            </li>
+                            <li>
+                                <a href="#invoiceFormSub" >invoiceFormSub</a>
+                            </li>
+                            <li>
+                                <a href="#isLoading" >isLoading</a>
+                            </li>
+                            <li>
+                                <a href="#itemTableColumn" >itemTableColumn</a>
+                            </li>
+                            <li>
+                                <a href="#showEditOption" >showEditOption</a>
+                            </li>
+                            <li>
+                                <a href="#vat" >vat</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addNewItem" >addNewItem</a>
+                            </li>
+                            <li>
+                                <a href="#buildInvoiceForm" >buildInvoiceForm</a>
+                            </li>
+                            <li>
+                                <a href="#calculateCost" >calculateCost</a>
+                            </li>
+                            <li>
+                                <a href="#deleteItemFromInvoice" >deleteItemFromInvoice</a>
+                            </li>
+                            <li>
+                                <a href="#getInvoice" >getInvoice</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#print" >print</a>
+                            </li>
+                            <li>
+                                <a href="#saveInvoice" >saveInvoice</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#invoiceItemFormArray" >invoiceItemFormArray</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, invoiceService: <a href="../injectables/InvoiceService.html" target="_self">InvoiceService</a>, cdr: <a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank">ChangeDetectorRef</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/views/invoice/invoice-details/invoice-details.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>invoiceService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/InvoiceService.html" target="_self" >InvoiceService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>cdr</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank" >ChangeDetectorRef</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addNewItem"></a>
+                    <span class="name">
+                        <span ><b>addNewItem</b></span>
+                        <a href="#addNewItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addNewItem(item: <a href="../interfaces/InvoiceItem.html" target="_self">InvoiceItem</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="112"
+                            class="link-to-prism">src/app/views/invoice/invoice-details/invoice-details.component.ts:112</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>item</td>
+                                    <td>
+                                                <code><a href="../interfaces/InvoiceItem.html" target="_self" >InvoiceItem</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buildInvoiceForm"></a>
+                    <span class="name">
+                        <span ><b>buildInvoiceForm</b></span>
+                        <a href="#buildInvoiceForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>buildInvoiceForm(invoice?: <a href="../interfaces/Invoice.html" target="_self">Invoice</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="70"
+                            class="link-to-prism">src/app/views/invoice/invoice-details/invoice-details.component.ts:70</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>invoice</td>
+                                    <td>
+                                                <code><a href="../interfaces/Invoice.html" target="_self" >Invoice</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="calculateCost"></a>
+                    <span class="name">
+                        <span ><b>calculateCost</b></span>
+                        <a href="#calculateCost"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>calculateCost(invoice: <a href="../interfaces/Invoice.html" target="_self">Invoice</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="103"
+                            class="link-to-prism">src/app/views/invoice/invoice-details/invoice-details.component.ts:103</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>invoice</td>
+                                    <td>
+                                                <code><a href="../interfaces/Invoice.html" target="_self" >Invoice</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteItemFromInvoice"></a>
+                    <span class="name">
+                        <span ><b>deleteItemFromInvoice</b></span>
+                        <a href="#deleteItemFromInvoice"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteItemFromInvoice(i: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="122"
+                            class="link-to-prism">src/app/views/invoice/invoice-details/invoice-details.component.ts:122</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>i</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getInvoice"></a>
+                    <span class="name">
+                        <span ><b>getInvoice</b></span>
+                        <a href="#getInvoice"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getInvoice()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="61"
+                            class="link-to-prism">src/app/views/invoice/invoice-details/invoice-details.component.ts:61</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="50"
+                            class="link-to-prism">src/app/views/invoice/invoice-details/invoice-details.component.ts:50</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="print"></a>
+                    <span class="name">
+                        <span ><b>print</b></span>
+                        <a href="#print"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>print()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="145"
+                            class="link-to-prism">src/app/views/invoice/invoice-details/invoice-details.component.ts:145</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveInvoice"></a>
+                    <span class="name">
+                        <span ><b>saveInvoice</b></span>
+                        <a href="#saveInvoice"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>saveInvoice()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="126"
+                            class="link-to-prism">src/app/views/invoice/invoice-details/invoice-details.component.ts:126</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cost"></a>
+                    <span class="name">
+                        <span ><b>cost</b></span>
+                        <a href="#cost"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/views/invoice/invoice-details/invoice-details.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currency"></a>
+                    <span class="name">
+                        <span ><b>currency</b></span>
+                        <a href="#currency"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;$&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/views/invoice/invoice-details/invoice-details.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="emptyFormObject"></a>
+                    <span class="name">
+                        <span ><b>emptyFormObject</b></span>
+                        <a href="#emptyFormObject"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/InvoiceItem.html" target="_self" >InvoiceItem</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    name: &quot;&quot;,
+    price: null,
+    unit: null
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/views/invoice/invoice-details/invoice-details.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="invocieId"></a>
+                    <span class="name">
+                        <span ><b>invocieId</b></span>
+                        <a href="#invocieId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/views/invoice/invoice-details/invoice-details.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="invoice"></a>
+                    <span class="name">
+                        <span ><b>invoice</b></span>
+                        <a href="#invoice"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/Invoice.html" target="_self" >Invoice</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    item: []
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/views/invoice/invoice-details/invoice-details.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="invoiceForm"></a>
+                    <span class="name">
+                        <span ><b>invoiceForm</b></span>
+                        <a href="#invoiceForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/views/invoice/invoice-details/invoice-details.component.ts:21</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="invoiceFormSub"></a>
+                    <span class="name">
+                        <span ><b>invoiceFormSub</b></span>
+                        <a href="#invoiceFormSub"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/views/invoice/invoice-details/invoice-details.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isLoading"></a>
+                    <span class="name">
+                        <span ><b>isLoading</b></span>
+                        <a href="#isLoading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/views/invoice/invoice-details/invoice-details.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="itemTableColumn"></a>
+                    <span class="name">
+                        <span ><b>itemTableColumn</b></span>
+                        <a href="#itemTableColumn"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    &quot;Number&quot;,
+    &quot;Item Name&quot;,
+    &quot;Unit Price&quot;,
+    &quot;Unit&quot;,
+    &quot;Cost&quot;
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/views/invoice/invoice-details/invoice-details.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showEditOption"></a>
+                    <span class="name">
+                        <span ><b>showEditOption</b></span>
+                        <a href="#showEditOption"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/views/invoice/invoice-details/invoice-details.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="vat"></a>
+                    <span class="name">
+                        <span ><b>vat</b></span>
+                        <a href="#vat"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/views/invoice/invoice-details/invoice-details.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="invoiceItemFormArray"></a>
+                        <span class="name"><b>invoiceItemFormArray</b><a href="#invoiceItemFormArray"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>invoiceItemFormArray()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="149" class="link-to-prism">src/app/views/invoice/invoice-details/invoice-details.component.ts:149</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Subscription } from &#x27;rxjs&#x27;;
+import { FormGroup, FormArray, FormBuilder } from &quot;@angular/forms&quot;;
+import { ActivatedRoute, Router } from &quot;@angular/router&quot;;
+import { Component, OnInit, ChangeDetectorRef, ChangeDetectionStrategy } from &quot;@angular/core&quot;;
+import { InvoiceService } from &quot;../invoice.service&quot;;
+import { Invoice, InvoiceItem } from &#x27;app/shared/models/invoice.model&#x27;;
+
+@Component({
+  selector: &quot;app-invoice-details&quot;,
+  templateUrl: &quot;./invoice-details.component.html&quot;,
+  styleUrls: [&quot;./invoice-details.component.scss&quot;],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+
+})
+export class InvoiceDetailsComponent implements OnInit {
+  cost: number &#x3D; 0;
+  vat: number &#x3D; 0;
+  currency: string &#x3D; &#x27;$&#x27;;
+  showEditOption: boolean &#x3D; false;
+  isLoading &#x3D; false;
+  invoiceForm: FormGroup;
+  invoiceFormSub: Subscription;
+  invocieId: number;
+  invoice: Invoice &#x3D; {
+    item: []
+  };
+
+  emptyFormObject: InvoiceItem &#x3D; {
+    name: &quot;&quot;,
+    price: null,
+    unit: null
+  };
+
+  itemTableColumn: string[] &#x3D; [
+    &quot;Number&quot;,
+    &quot;Item Name&quot;,
+    &quot;Unit Price&quot;,
+    &quot;Unit&quot;,
+    &quot;Cost&quot;
+  ];
+
+  constructor(
+    private fb: FormBuilder,
+    private route: ActivatedRoute,
+    private router: Router,
+    private invoiceService: InvoiceService,
+    private cdr: ChangeDetectorRef
+  ) {}
+
+  ngOnInit() {
+    this.invocieId &#x3D; this.route.snapshot.params[&quot;id&quot;];
+    if (this.invocieId) {
+      this.getInvoice();
+      this.showEditOption &#x3D; false;
+    } else {
+      this.buildInvoiceForm();
+      this.showEditOption &#x3D; true;
+    }
+  }
+
+  getInvoice() {
+    this.invoiceService.getInvoiceById(this.invocieId).subscribe((invoice: Invoice) &#x3D;&gt; {
+      this.invoice &#x3D; invoice;
+      this.buildInvoiceForm(this.invoice);
+      this.calculateCost(this.invoice);
+      this.cdr.markForCheck();
+    });
+  }
+
+  buildInvoiceForm(invoice?: Invoice) {
+    this.invoiceForm &#x3D; this.fb.group({
+      id: [invoice?invoice.id:&#x27;&#x27;],
+      orderNo: [invoice?invoice.orderNo:&#x27;&#x27;],
+      status: invoice?invoice.status:&#x27;&#x27;,
+      date: invoice?new Date(invoice.date):&#x27;&#x27;,
+      vat: invoice?invoice.vat:0,
+      currency: invoice?invoice.currency:&#x27;&#x27;,
+      seller: this.fb.group({
+        name: [invoice?invoice.seller.name:&#x27;&#x27;],
+        address: [invoice?invoice.seller.address:&#x27;&#x27;],
+      }),
+      buyer: this.fb.group({
+        name: [invoice?invoice.buyer.name:&#x27;&#x27;],
+        address: [invoice?invoice.buyer.address:&#x27;&#x27;],
+      }),
+      item: this.fb.array([])
+    });
+
+    this.invoice.item.forEach(i &#x3D;&gt; {
+      this.addNewItem(i);
+    });
+
+    if(this.invoiceFormSub){
+      this.invoiceFormSub.unsubscribe();
+    }
+
+    this.invoiceFormSub &#x3D; this.invoiceForm.valueChanges.subscribe(res &#x3D;&gt; {
+      this.calculateCost(res);
+    });
+
+  }
+
+  calculateCost(invoice: Invoice) {
+    this.cost &#x3D; 0;
+    invoice.item.forEach(element &#x3D;&gt; {
+      this.cost +&#x3D; element.unit * element.price;
+    });
+    this.vat &#x3D; (invoice.vat * this.cost)/100;
+    this.currency &#x3D; invoice.currency;
+  }
+
+  addNewItem(item: InvoiceItem) {
+    this.invoiceItemFormArray.push(
+      this.fb.group({
+        name: [item?item.name:&#x27;&#x27;],
+        price: [item?item.price:&#x27;&#x27;],
+        unit: [item?item.unit:&#x27;&#x27;]
+      })
+    );
+  }
+
+  deleteItemFromInvoice(i: number) {
+    this.invoiceItemFormArray.removeAt(i);
+  }
+
+  saveInvoice() {
+    if (this.invoiceForm.invalid) {
+      return;
+    }
+    this.isLoading &#x3D; true;
+    this.invoiceService.saveInvoice(this.invoiceForm.value)
+    .subscribe( (res: Invoice) &#x3D;&gt; {
+      this.invoice &#x3D; this.invoiceForm.value;
+      this.isLoading &#x3D; false;
+      this.showEditOption &#x3D; false;
+
+      this.cdr.markForCheck();
+
+      if(res) {
+        this.router.navigateByUrl(&#x27;/invoice/&#x27;+ res.id);
+      }
+    });
+  }
+
+  print() {
+    window.print();
+  }
+
+  get invoiceItemFormArray(): FormArray {
+    return this.invoiceForm.get(&quot;item&quot;) as FormArray;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!-- Edit Invoice --&gt;
+&lt;mat-card *ngIf&#x3D;&quot;showEditOption&quot;&gt;
+  &lt;form [formGroup]&#x3D;&quot;invoiceForm&quot; (ngSubmit)&#x3D;&quot;saveInvoice()&quot;&gt;
+    &lt;div fxLayout&#x3D;&quot;row&quot; fxLayoutAlign&#x3D;&quot;end center&quot;&gt;
+      &lt;button
+        mat-button
+        type&#x3D;&quot;button&quot;
+        class&#x3D;&quot;ml-16 mr-16&quot;
+        *ngIf&#x3D;&quot;!isLoading&quot;
+        (click)&#x3D;&quot;showEditOption &#x3D; !showEditOption&quot;
+      &gt;
+        Cancel
+      &lt;/button&gt;
+
+      &lt;button-loading
+        [loadingText]&#x3D;&quot;&#x27;Saving...&#x27;&quot;
+        color&#x3D;&quot;primary&quot;
+        [type]&#x3D;&quot;&#x27;submit&#x27;&quot;
+        [loading]&#x3D;&quot;isLoading&quot;
+        &gt;Save&lt;/button-loading
+      &gt;
+    &lt;/div&gt;
+
+    &lt;!-- order details --&gt;
+    &lt;div fxLayout&#x3D;&quot;row wrap&quot; fxLayoutAlign&#x3D;&quot;space-between&quot; class&#x3D;&quot;order-info&quot;&gt;
+      &lt;div fxLayout&#x3D;&quot;column&quot; fxFlex&#x3D;&quot;33.33%&quot;&gt;
+        &lt;h4&gt;&lt;strong&gt;Order Info&lt;/strong&gt;&lt;/h4&gt;
+        &lt;p&gt;Order Number&lt;/p&gt;
+        &lt;mat-form-field&gt;
+          &lt;input
+            formControlName&#x3D;&quot;orderNo&quot;
+            matInput
+            required
+            placeholder&#x3D;&quot;Order No.&quot;
+          /&gt;
+        &lt;/mat-form-field&gt;
+      &lt;/div&gt;
+
+      &lt;div fxLayout&#x3D;&quot;column&quot; fxFlex&#x3D;&quot;33.33%&quot; fxLayoutGap&#x3D;&quot;20px&quot;&gt;
+        &lt;div&gt;
+          &lt;mat-radio-group
+            formControlName&#x3D;&quot;status&quot;
+            fxLayout&#x3D;&quot;column&quot;
+            fxLayoutAlign&#x3D;&quot;end end&quot;
+            fxLayoutGap&#x3D;&quot;5px&quot;
+            required
+          &gt;
+            &lt;mat-radio-button labelPosition&#x3D;&quot;before&quot; value&#x3D;&quot;pending&quot;
+              &gt;Pending&lt;/mat-radio-button
+            &gt;
+            &lt;mat-radio-button labelPosition&#x3D;&quot;before&quot; value&#x3D;&quot;processing&quot;
+              &gt;Processing&lt;/mat-radio-button
+            &gt;
+            &lt;mat-radio-button labelPosition&#x3D;&quot;before&quot; value&#x3D;&quot;delivered&quot;
+              &gt;Delivered&lt;/mat-radio-button
+            &gt;
+          &lt;/mat-radio-group&gt;
+        &lt;/div&gt;
+
+        &lt;div&gt;
+          &lt;p class&#x3D;&quot;align-right&quot;&gt;Order Date&lt;/p&gt;
+          &lt;mat-form-field fxFill&gt;
+            &lt;input
+              matInput
+              [matDatepicker]&#x3D;&quot;picker&quot;
+              required
+              placeholder&#x3D;&quot;Choose a date&quot;
+              formControlName&#x3D;&quot;date&quot;
+            /&gt;
+            &lt;mat-datepicker-toggle
+              matSuffix
+              [for]&#x3D;&quot;picker&quot;
+            &gt;&lt;/mat-datepicker-toggle&gt;
+            &lt;mat-datepicker #picker&gt;&lt;/mat-datepicker&gt;
+          &lt;/mat-form-field&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- end of order details --&gt;
+
+    &lt;mat-divider&gt;&lt;/mat-divider&gt;
+
+    &lt;!-- billing details --&gt;
+    &lt;div
+      class&#x3D;&quot;billing-address&quot;
+      fxLayout&#x3D;&quot;row wrap&quot;
+      fxLayoutAlign&#x3D;&quot;space-between center&quot;
+    &gt;
+      &lt;!-- seller --&gt;
+      &lt;div
+        formGroupName&#x3D;&quot;seller&quot;
+        fxLayout&#x3D;&quot;column&quot;
+        fxLayoutGap&#x3D;&quot;20px&quot;
+        fxFlex&#x3D;&quot;33.33%&quot;
+      &gt;
+        &lt;h4&gt;&lt;strong&gt;Bill From&lt;/strong&gt;&lt;/h4&gt;
+        &lt;mat-form-field&gt;
+          &lt;input
+            formControlName&#x3D;&quot;name&quot;
+            matInput
+            required
+            placeholder&#x3D;&quot;Name of Seller&quot;
+          /&gt;
+        &lt;/mat-form-field&gt;
+        &lt;mat-form-field&gt;
+          &lt;textarea
+            formControlName&#x3D;&quot;address&quot;
+            matInput
+            required
+            matTextareaAutosize
+            placeholder&#x3D;&quot;Address of Seller&quot;
+          &gt;&lt;/textarea&gt;
+        &lt;/mat-form-field&gt;
+      &lt;/div&gt;
+
+      &lt;!-- buyer --&gt;
+      &lt;div
+        formGroupName&#x3D;&quot;buyer&quot;
+        fxLayout&#x3D;&quot;column&quot;
+        fxLayoutAlign&#x3D;&quot;center end&quot;
+        fxLayoutGap&#x3D;&quot;20px&quot;
+        fxFlex&#x3D;&quot;33.33%&quot;
+      &gt;
+        &lt;h4&gt;&lt;strong&gt;Bill To&lt;/strong&gt;&lt;/h4&gt;
+        &lt;mat-form-field fxFill&gt;
+          &lt;input
+            formControlName&#x3D;&quot;name&quot;
+            matInput
+            required
+            placeholder&#x3D;&quot;Name of Buyer&quot;
+          /&gt;
+        &lt;/mat-form-field&gt;
+        &lt;mat-form-field fxFill&gt;
+          &lt;textarea
+            formControlName&#x3D;&quot;address&quot;
+            matInput
+            required
+            matTextareaAutosize
+            placeholder&#x3D;&quot;Address of Buyer&quot;
+          &gt;&lt;/textarea&gt;
+        &lt;/mat-form-field&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- end of billing details --&gt;
+
+    &lt;!-- item form table --&gt;
+    &lt;div formArrayName&#x3D;&quot;item&quot; class&#x3D;&quot;item-form-list&quot; fxLayout&#x3D;&quot;column&quot;&gt;
+      &lt;div
+        class&#x3D;&quot;item-form-list-head-line&quot;
+        fxLayout&#x3D;&quot;row&quot;
+        fxLayoutAlign&#x3D;&quot;space-around center&quot;
+      &gt;
+        &lt;p&gt;#&lt;/p&gt;
+        &lt;p&gt;Item Name&lt;/p&gt;
+        &lt;p&gt;Unit Price&lt;/p&gt;
+        &lt;p&gt;Unit&lt;/p&gt;
+        &lt;p&gt;Cost&lt;/p&gt;
+        &lt;p&gt;&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div
+        *ngFor&#x3D;&quot;let item of invoiceItemFormArray.controls; let i &#x3D; index&quot;
+        [formGroup]&#x3D;&quot;item&quot;
+        class&#x3D;&quot;form-rows&quot;
+        fxLayout&#x3D;&quot;row&quot;
+        fxLayoutAlign&#x3D;&quot;space-around center&quot;
+      &gt;
+        &lt;span&gt;{{ i + 1 }}&lt;/span&gt;
+        &lt;mat-form-field&gt;
+          &lt;input
+            formControlName&#x3D;&quot;name&quot;
+            matInput
+            placeholder&#x3D;&quot;Item Name&quot;
+            #name
+            required
+          /&gt;
+        &lt;/mat-form-field&gt;
+        &lt;mat-form-field&gt;
+          &lt;input
+            type&#x3D;&quot;number&quot;
+            formControlName&#x3D;&quot;price&quot;
+            matInput
+            placeholder&#x3D;&quot;Item Price&quot;
+            #price
+            required
+          /&gt;
+        &lt;/mat-form-field&gt;
+        &lt;mat-form-field&gt;
+          &lt;input
+            type&#x3D;&quot;number&quot;
+            formControlName&#x3D;&quot;unit&quot;
+            matInput
+            placeholder&#x3D;&quot;Item Unit&quot;
+            #unit
+            required
+          /&gt;
+        &lt;/mat-form-field&gt;
+        &lt;span&gt;{{ unit.value * price.value }}&lt;/span&gt;
+        &lt;button mat-button type&#x3D;&quot;button&quot; (click)&#x3D;&quot;deleteItemFromInvoice(i)&quot;&gt;
+          Delete
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;!-- end of item form table --&gt;
+
+      &lt;!-- add item button --&gt;
+      &lt;div class&#x3D;&quot;add-button&quot;&gt;
+        &lt;button mat-button type&#x3D;&quot;button&quot; (click)&#x3D;&quot;addNewItem(emptyFormObject)&quot;&gt;
+          Add Item
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- total cost of item form --&gt;
+    &lt;div
+      class&#x3D;&quot;form-total-cost&quot;
+      fxLayout&#x3D;&quot;column&quot;
+      fxLayoutAlign&#x3D;&quot;center end&quot;
+      fxLayoutGap&#x3D;&quot;10px&quot;
+    &gt;
+      &lt;!-- sub total --&gt;
+      &lt;div fxLayout&#x3D;&quot;row&quot; fxLayoutAlign&#x3D;&quot;space-between center&quot;&gt;
+        &lt;span&gt;Sub Total:&lt;/span&gt;
+        &lt;span&gt;{{ currency }}{{ cost }}&lt;/span&gt;
+      &lt;/div&gt;
+
+      &lt;!-- vat --&gt;
+      &lt;div fxLayout&#x3D;&quot;row&quot; fxLayoutAlign&#x3D;&quot;space-between center&quot;&gt;
+        &lt;span&gt;Vat(%):&lt;/span&gt;
+        &lt;div fxLayout&#x3D;&quot;row&quot; fxLayoutGap&#x3D;&quot;10px&quot; fxLayoutAlign&#x3D;&quot;end center&quot;&gt;
+          &lt;mat-form-field&gt;
+            &lt;input
+              type&#x3D;&quot;number&quot;
+              formControlName&#x3D;&quot;vat&quot;
+              matInput
+              placeholder&#x3D;&quot;vat&quot;
+              required
+            /&gt;
+          &lt;/mat-form-field&gt;
+          &lt;span&gt;{{ currency }}{{ vat }}&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;!-- grand total --&gt;
+      &lt;div fxLayout&#x3D;&quot;row&quot; fxLayoutAlign&#x3D;&quot;space-between center&quot;&gt;
+        &lt;h5&gt;&lt;strong&gt;Grand Total: &lt;/strong&gt;&lt;/h5&gt;
+        &lt;div fxLayout&#x3D;&quot;row&quot; fxLayoutGap&#x3D;&quot;10px&quot; fxLayoutAlign&#x3D;&quot;end center&quot;&gt;
+          &lt;mat-form-field&gt;
+            &lt;input
+              formControlName&#x3D;&quot;currency&quot;
+              matInput
+              placeholder&#x3D;&quot;currency&quot;
+              required
+            /&gt;
+          &lt;/mat-form-field&gt;
+          &lt;h5&gt;
+            &lt;strong&gt;{{ currency }}{{ cost + vat }}&lt;/strong&gt;
+          &lt;/h5&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- end of total cost --&gt;
+  &lt;/form&gt;
+&lt;/mat-card&gt;
+&lt;!-- end of edit invoice --&gt;
+&lt;!-- &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D; --&gt;
+
+&lt;!-- &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D; --&gt;
+&lt;!-- invoice details --&gt;
+&lt;mat-card *ngIf&#x3D;&quot;!showEditOption&quot; class&#x3D;&quot;invoice-details&quot;&gt;
+  &lt;div fxLayout&#x3D;&quot;row&quot;&gt;
+    &lt;button mat-icon-button routerLink&#x3D;&quot;/invoice/list&quot;&gt;
+      &lt;mat-icon&gt;arrow_back&lt;/mat-icon&gt;
+    &lt;/button&gt;
+    &lt;span fxFlex&gt;&lt;/span&gt;
+
+    &lt;button
+      mat-flat-button
+      color&#x3D;&quot;primary&quot;
+      class&#x3D;&quot;ml-16 mr-16&quot;
+      (click)&#x3D;&quot;showEditOption &#x3D; !showEditOption&quot;
+    &gt;
+      Edit Invoice
+    &lt;/button&gt;
+    &lt;button mat-flat-button color&#x3D;&quot;accent&quot; (click)&#x3D;&quot;print()&quot;&gt;
+      Print Invoice
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div id&#x3D;&quot;print-area&quot;&gt;
+    &lt;!-- order details --&gt;
+    &lt;div class&#x3D;&quot;order-info&quot; fxLayout&#x3D;&quot;row&quot; fxLayoutAlign&#x3D;&quot;space-between&quot;&gt;
+      &lt;div&gt;
+        &lt;h4&gt;&lt;strong&gt;Order Info&lt;/strong&gt;&lt;/h4&gt;
+        &lt;p&gt;Order Number&lt;/p&gt;
+        &lt;p&gt;# {{ invoice?.orderNo }}&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div&gt;
+        &lt;p&gt;&lt;strong&gt;Order status: &lt;/strong&gt; {{ invoice?.status }}&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;Order date: &lt;/strong&gt; {{ invoice?.date | date }}&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- end of order details --&gt;
+
+    &lt;mat-divider&gt;&lt;/mat-divider&gt;
+
+    &lt;!-- billing details --&gt;
+    &lt;div class&#x3D;&quot;billing-address&quot; fxLayout&#x3D;&quot;row&quot; fxLayoutAlign&#x3D;&quot;space-between&quot;&gt;
+      &lt;!-- seller --&gt;
+      &lt;div&gt;
+        &lt;h4&gt;&lt;strong&gt;Bill From&lt;/strong&gt;&lt;/h4&gt;
+        &lt;p&gt;{{ invoice?.seller?.name }}&lt;/p&gt;
+        &lt;p&gt;{{ invoice?.seller?.address }}&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;!-- buyer --&gt;
+      &lt;div&gt;
+        &lt;h4&gt;&lt;strong&gt;Bill To&lt;/strong&gt;&lt;/h4&gt;
+        &lt;p&gt;{{ invoice?.buyer?.name }}&lt;/p&gt;
+        &lt;p&gt;{{ invoice?.buyer?.address }}&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- end of billing details --&gt;
+
+    &lt;!-- item table --&gt;
+    &lt;div class&#x3D;&quot;item-table&quot;&gt;
+      &lt;mat-table [dataSource]&#x3D;&quot;invoice.item&quot; class&#x3D;&quot;mat-elevation-z4&quot; #table&gt;
+        &lt;!-- Number Column --&gt;
+        &lt;ng-container matColumnDef&#x3D;&quot;{{ itemTableColumn[0] }}&quot;&gt;
+          &lt;mat-header-cell *matHeaderCellDef&gt; # &lt;/mat-header-cell&gt;
+          &lt;mat-cell *matCellDef&#x3D;&quot;let element; let i &#x3D; index&quot;&gt;
+            {{ i + 1 }}
+          &lt;/mat-cell&gt;
+        &lt;/ng-container&gt;
+
+        &lt;!-- Item Name Column --&gt;
+        &lt;ng-container matColumnDef&#x3D;&quot;{{ itemTableColumn[1] }}&quot;&gt;
+          &lt;mat-header-cell *matHeaderCellDef&gt;
+            {{ itemTableColumn[1] }}
+          &lt;/mat-header-cell&gt;
+          &lt;mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt; {{ element.name }} &lt;/mat-cell&gt;
+        &lt;/ng-container&gt;
+
+        &lt;!-- Unit price Column --&gt;
+        &lt;ng-container matColumnDef&#x3D;&quot;{{ itemTableColumn[2] }}&quot;&gt;
+          &lt;mat-header-cell *matHeaderCellDef&gt;
+            {{ itemTableColumn[2] }}
+          &lt;/mat-header-cell&gt;
+          &lt;mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt; {{ element.price }} &lt;/mat-cell&gt;
+        &lt;/ng-container&gt;
+
+        &lt;!-- Unit Column --&gt;
+        &lt;ng-container matColumnDef&#x3D;&quot;{{ itemTableColumn[3] }}&quot;&gt;
+          &lt;mat-header-cell *matHeaderCellDef&gt;
+            {{ itemTableColumn[3] }}
+          &lt;/mat-header-cell&gt;
+          &lt;mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt; {{ element.unit }} &lt;/mat-cell&gt;
+        &lt;/ng-container&gt;
+
+        &lt;!-- Cost column --&gt;
+        &lt;ng-container matColumnDef&#x3D;&quot;{{ itemTableColumn[4] }}&quot;&gt;
+          &lt;mat-header-cell *matHeaderCellDef&gt;
+            {{ itemTableColumn[4] }}
+          &lt;/mat-header-cell&gt;
+          &lt;mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;
+            {{ element.unit * element.price }}
+          &lt;/mat-cell&gt;
+        &lt;/ng-container&gt;
+
+        &lt;mat-header-row *matHeaderRowDef&#x3D;&quot;itemTableColumn&quot;&gt;&lt;/mat-header-row&gt;
+        &lt;mat-row *matRowDef&#x3D;&quot;let row; columns: itemTableColumn&quot;&gt;&lt;/mat-row&gt;
+      &lt;/mat-table&gt;
+    &lt;/div&gt;
+    &lt;!-- end of table --&gt;
+
+    &lt;!-- total cost --&gt;
+    &lt;div
+      class&#x3D;&quot;total-cost&quot;
+      fxLayout&#x3D;&quot;row&quot;
+      fxLayoutAlign&#x3D;&quot;end&quot;
+      fxLayoutGap&#x3D;&quot;50px&quot;
+    &gt;
+      &lt;div&gt;
+        &lt;p&gt;Sub Total:&lt;/p&gt;
+        &lt;p&gt;Vat:&lt;/p&gt;
+        &lt;h5&gt;&lt;strong&gt;Grand Total: &lt;/strong&gt;&lt;/h5&gt;
+      &lt;/div&gt;
+
+      &lt;div&gt;
+        &lt;p&gt;{{ currency }}{{ cost }}&lt;/p&gt;
+        &lt;p&gt;{{ currency }}{{ vat.toFixed(2) }}&lt;/p&gt;
+        &lt;h5&gt;
+          &lt;strong&gt;{{ currency }}{{ (cost + vat).toFixed(2) }}&lt;/strong&gt;
+        &lt;/h5&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- end of total cost --&gt;
+  &lt;/div&gt;
+&lt;/mat-card&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./invoice-details.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!-- Edit Invoice --><mat-card *ngIf="showEditOption">  <form [formGroup]="invoiceForm" (ngSubmit)="saveInvoice()">    <div fxLayout="row" fxLayoutAlign="end center">      <button        mat-button        type="button"        class="ml-16 mr-16"        *ngIf="!isLoading"        (click)="showEditOption = !showEditOption"      >        Cancel      </button>      <button-loading        [loadingText]="\'Saving...\'"        color="primary"        [type]="\'submit\'"        [loading]="isLoading"        >Save</button-loading      >    </div>    <!-- order details -->    <div fxLayout="row wrap" fxLayoutAlign="space-between" class="order-info">      <div fxLayout="column" fxFlex="33.33%">        <h4><strong>Order Info</strong></h4>        <p>Order Number</p>        <mat-form-field>          <input            formControlName="orderNo"            matInput            required            placeholder="Order No."          />        </mat-form-field>      </div>      <div fxLayout="column" fxFlex="33.33%" fxLayoutGap="20px">        <div>          <mat-radio-group            formControlName="status"            fxLayout="column"            fxLayoutAlign="end end"            fxLayoutGap="5px"            required          >            <mat-radio-button labelPosition="before" value="pending"              >Pending</mat-radio-button            >            <mat-radio-button labelPosition="before" value="processing"              >Processing</mat-radio-button            >            <mat-radio-button labelPosition="before" value="delivered"              >Delivered</mat-radio-button            >          </mat-radio-group>        </div>        <div>          <p class="align-right">Order Date</p>          <mat-form-field fxFill>            <input              matInput              [matDatepicker]="picker"              required              placeholder="Choose a date"              formControlName="date"            />            <mat-datepicker-toggle              matSuffix              [for]="picker"            ></mat-datepicker-toggle>            <mat-datepicker #picker></mat-datepicker>          </mat-form-field>        </div>      </div>    </div>    <!-- end of order details -->    <mat-divider></mat-divider>    <!-- billing details -->    <div      class="billing-address"      fxLayout="row wrap"      fxLayoutAlign="space-between center"    >      <!-- seller -->      <div        formGroupName="seller"        fxLayout="column"        fxLayoutGap="20px"        fxFlex="33.33%"      >        <h4><strong>Bill From</strong></h4>        <mat-form-field>          <input            formControlName="name"            matInput            required            placeholder="Name of Seller"          />        </mat-form-field>        <mat-form-field>          <textarea            formControlName="address"            matInput            required            matTextareaAutosize            placeholder="Address of Seller"          ></textarea>        </mat-form-field>      </div>      <!-- buyer -->      <div        formGroupName="buyer"        fxLayout="column"        fxLayoutAlign="center end"        fxLayoutGap="20px"        fxFlex="33.33%"      >        <h4><strong>Bill To</strong></h4>        <mat-form-field fxFill>          <input            formControlName="name"            matInput            required            placeholder="Name of Buyer"          />        </mat-form-field>        <mat-form-field fxFill>          <textarea            formControlName="address"            matInput            required            matTextareaAutosize            placeholder="Address of Buyer"          ></textarea>        </mat-form-field>      </div>    </div>    <!-- end of billing details -->    <!-- item form table -->    <div formArrayName="item" class="item-form-list" fxLayout="column">      <div        class="item-form-list-head-line"        fxLayout="row"        fxLayoutAlign="space-around center"      >        <p>#</p>        <p>Item Name</p>        <p>Unit Price</p>        <p>Unit</p>        <p>Cost</p>        <p></p>      </div>      <div        *ngFor="let item of invoiceItemFormArray.controls; let i = index"        [formGroup]="item"        class="form-rows"        fxLayout="row"        fxLayoutAlign="space-around center"      >        <span>{{ i + 1 }}</span>        <mat-form-field>          <input            formControlName="name"            matInput            placeholder="Item Name"            #name            required          />        </mat-form-field>        <mat-form-field>          <input            type="number"            formControlName="price"            matInput            placeholder="Item Price"            #price            required          />        </mat-form-field>        <mat-form-field>          <input            type="number"            formControlName="unit"            matInput            placeholder="Item Unit"            #unit            required          />        </mat-form-field>        <span>{{ unit.value * price.value }}</span>        <button mat-button type="button" (click)="deleteItemFromInvoice(i)">          Delete        </button>      </div>      <!-- end of item form table -->      <!-- add item button -->      <div class="add-button">        <button mat-button type="button" (click)="addNewItem(emptyFormObject)">          Add Item        </button>      </div>    </div>    <!-- total cost of item form -->    <div      class="form-total-cost"      fxLayout="column"      fxLayoutAlign="center end"      fxLayoutGap="10px"    >      <!-- sub total -->      <div fxLayout="row" fxLayoutAlign="space-between center">        <span>Sub Total:</span>        <span>{{ currency }}{{ cost }}</span>      </div>      <!-- vat -->      <div fxLayout="row" fxLayoutAlign="space-between center">        <span>Vat(%):</span>        <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="end center">          <mat-form-field>            <input              type="number"              formControlName="vat"              matInput              placeholder="vat"              required            />          </mat-form-field>          <span>{{ currency }}{{ vat }}</span>        </div>      </div>      <!-- grand total -->      <div fxLayout="row" fxLayoutAlign="space-between center">        <h5><strong>Grand Total: </strong></h5>        <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="end center">          <mat-form-field>            <input              formControlName="currency"              matInput              placeholder="currency"              required            />          </mat-form-field>          <h5>            <strong>{{ currency }}{{ cost + vat }}</strong>          </h5>        </div>      </div>    </div>    <!-- end of total cost -->  </form></mat-card><!-- end of edit invoice --><!-- =================================================== --><!-- =================================================== --><!-- invoice details --><mat-card *ngIf="!showEditOption" class="invoice-details">  <div fxLayout="row">    <button mat-icon-button routerLink="/invoice/list">      <mat-icon>arrow_back</mat-icon>    </button>    <span fxFlex></span>    <button      mat-flat-button      color="primary"      class="ml-16 mr-16"      (click)="showEditOption = !showEditOption"    >      Edit Invoice    </button>    <button mat-flat-button color="accent" (click)="print()">      Print Invoice    </button>  </div>  <div id="print-area">    <!-- order details -->    <div class="order-info" fxLayout="row" fxLayoutAlign="space-between">      <div>        <h4><strong>Order Info</strong></h4>        <p>Order Number</p>        <p># {{ invoice?.orderNo }}</p>      </div>      <div>        <p><strong>Order status: </strong> {{ invoice?.status }}</p>        <p><strong>Order date: </strong> {{ invoice?.date | date }}</p>      </div>    </div>    <!-- end of order details -->    <mat-divider></mat-divider>    <!-- billing details -->    <div class="billing-address" fxLayout="row" fxLayoutAlign="space-between">      <!-- seller -->      <div>        <h4><strong>Bill From</strong></h4>        <p>{{ invoice?.seller?.name }}</p>        <p>{{ invoice?.seller?.address }}</p>      </div>      <!-- buyer -->      <div>        <h4><strong>Bill To</strong></h4>        <p>{{ invoice?.buyer?.name }}</p>        <p>{{ invoice?.buyer?.address }}</p>      </div>    </div>    <!-- end of billing details -->    <!-- item table -->    <div class="item-table">      <mat-table [dataSource]="invoice.item" class="mat-elevation-z4" #table>        <!-- Number Column -->        <ng-container matColumnDef="{{ itemTableColumn[0] }}">          <mat-header-cell *matHeaderCellDef> # </mat-header-cell>          <mat-cell *matCellDef="let element; let i = index">            {{ i + 1 }}          </mat-cell>        </ng-container>        <!-- Item Name Column -->        <ng-container matColumnDef="{{ itemTableColumn[1] }}">          <mat-header-cell *matHeaderCellDef>            {{ itemTableColumn[1] }}          </mat-header-cell>          <mat-cell *matCellDef="let element"> {{ element.name }} </mat-cell>        </ng-container>        <!-- Unit price Column -->        <ng-container matColumnDef="{{ itemTableColumn[2] }}">          <mat-header-cell *matHeaderCellDef>            {{ itemTableColumn[2] }}          </mat-header-cell>          <mat-cell *matCellDef="let element"> {{ element.price }} </mat-cell>        </ng-container>        <!-- Unit Column -->        <ng-container matColumnDef="{{ itemTableColumn[3] }}">          <mat-header-cell *matHeaderCellDef>            {{ itemTableColumn[3] }}          </mat-header-cell>          <mat-cell *matCellDef="let element"> {{ element.unit }} </mat-cell>        </ng-container>        <!-- Cost column -->        <ng-container matColumnDef="{{ itemTableColumn[4] }}">          <mat-header-cell *matHeaderCellDef>            {{ itemTableColumn[4] }}          </mat-header-cell>          <mat-cell *matCellDef="let element">            {{ element.unit * element.price }}          </mat-cell>        </ng-container>        <mat-header-row *matHeaderRowDef="itemTableColumn"></mat-header-row>        <mat-row *matRowDef="let row; columns: itemTableColumn"></mat-row>      </mat-table>    </div>    <!-- end of table -->    <!-- total cost -->    <div      class="total-cost"      fxLayout="row"      fxLayoutAlign="end"      fxLayoutGap="50px"    >      <div>        <p>Sub Total:</p>        <p>Vat:</p>        <h5><strong>Grand Total: </strong></h5>      </div>      <div>        <p>{{ currency }}{{ cost }}</p>        <p>{{ currency }}{{ vat.toFixed(2) }}</p>        <h5>          <strong>{{ currency }}{{ (cost + vat).toFixed(2) }}</strong>        </h5>      </div>    </div>    <!-- end of total cost -->  </div></mat-card></div>'
+    var COMPONENTS = [{'name': 'AccordinExpansionPanelComponent', 'selector': 'app-accordin-expansion-panel'},{'name': 'AdminLayoutComponent', 'selector': 'app-admin-layout'},{'name': 'AlignTabGroupComponent', 'selector': 'app-align-tab-group'},{'name': 'AnalyticsComponent', 'selector': 'app-analytics'},{'name': 'AnimationTabGroupComponent', 'selector': 'app-animation-tab-group'},{'name': 'AppBlankComponent', 'selector': 'app-blank'},{'name': 'AppCalendarComponent', 'selector': 'app-calendar'},{'name': 'AppChatsComponent', 'selector': 'app-chats'},{'name': 'AppComfirmComponent', 'selector': 'app-confirm'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppearanceFormFieldComponent', 'selector': 'app-appearance-form-field'},{'name': 'AppGalleryComponent', 'selector': 'app-gallery'},{'name': 'AppInboxComponent', 'selector': 'app-inbox'},{'name': 'AppLoaderComponent', 'selector': 'app-app-loader'},{'name': 'AppPricingComponent', 'selector': 'app-pricing'},{'name': 'AppTourComponent', 'selector': 'app-app-tour'},{'name': 'AppUsersComponent', 'selector': 'app-users'},{'name': 'AuthLayoutComponent', 'selector': 'app-auth-layout'},{'name': 'AutocompleteChipComponent', 'selector': 'app-autocomplete-chip'},{'name': 'AutocompleteOverviewComponent', 'selector': 'app-autocomplete-overview'},{'name': 'AutoHideTooltipComponent', 'selector': 'app-auto-hide-tooltip'},{'name': 'AutoresizeSidenavComponent', 'selector': 'app-autoresize-sidenav'},{'name': 'AutoResizingTexareaComponent', 'selector': 'app-auto-resizing-texarea'},{'name': 'BasicBadgeComponent', 'selector': 'app-basic-badge'},{'name': 'BasicBarComponent', 'selector': 'app-basic-bar'},{'name': 'BasicButtonToggleComponent', 'selector': 'app-basic-button-toggle'},{'name': 'BasicCardComponent', 'selector': 'app-basic-card'},{'name': 'BasicCheckboxComponent', 'selector': 'app-basic-checkbox'},{'name': 'BasicChipComponent', 'selector': 'app-basic-chip'},{'name': 'BasicDatepickerComponent', 'selector': 'app-basic-datepicker'},{'name': 'BasicDialogComponent', 'selector': 'app-basic-dialog'},{'name': 'BasicDialogOverviewComponent', 'selector': 'app-basic-dialog-overview'},{'name': 'BasicDividerComponent', 'selector': 'app-basic-divider'},{'name': 'BasicExpansionPanelComponent', 'selector': 'app-basic-expansion-panel'},{'name': 'BasicFormComponent', 'selector': 'app-basic-form'},{'name': 'BasicGridComponent', 'selector': 'app-basic-grid'},{'name': 'BasicIconComponent', 'selector': 'app-basic-icon'},{'name': 'BasicInputComponent', 'selector': 'app-basic-input'},{'name': 'BasicListComponent', 'selector': 'app-basic-list'},{'name': 'BasicMenuComponent', 'selector': 'app-basic-menu'},{'name': 'BasicPaginatorComponent', 'selector': 'app-basic-paginator'},{'name': 'BasicRadioComponent', 'selector': 'app-basic-radio'},{'name': 'BasicSelectComponent', 'selector': 'app-basic-select'},{'name': 'BasicSidenavComponent', 'selector': 'app-basic-sidenav'},{'name': 'BasicSliderComponent', 'selector': 'app-basic-slider'},{'name': 'BasicSnackbarComponent', 'selector': 'app-basic-snackbar'},{'name': 'BasicSnackbarComponent', 'selector': 'app-basic-snackbar'},{'name': 'BasicSortHeaderComponent', 'selector': 'app-basic-sort-header'},{'name': 'BasicSpinnerComponent', 'selector': 'app-basic-spinner'},{'name': 'BasicStepperComponent', 'selector': 'app-basic-stepper'},{'name': 'BasicTabGroupComponent', 'selector': 'app-basic-tab-group'},{'name': 'BasicTableComponent', 'selector': 'app-basic-table'},{'name': 'BasicToggleComponent', 'selector': 'app-basic-toggle'},{'name': 'BasicToolbarComponent', 'selector': 'app-basic-toolbar'},{'name': 'BasicTooltipComponent', 'selector': 'app-basic-tooltip'},{'name': 'BorderComponent', 'selector': 'app-border'},{'name': 'BottomSheetComponent', 'selector': 'app-bottom-sheet'},{'name': 'BottomSheetOverviewComponent', 'selector': 'app-bottom-sheet-overview'},{'name': 'BottomSheetShareComponent', 'selector': 'app-bottom-sheet-share'},{'name': 'BreadcrumbComponent', 'selector': 'app-breadcrumb'},{'name': 'ButtonExamplesComponent', 'selector': 'app-button-examples'},{'name': 'ButtonLoadingComponent', 'selector': 'button-loading'},{'name': 'ButtonsComponent', 'selector': 'app-buttons'},{'name': 'ButtonToggleComponent', 'selector': 'app-button-toggle'},{'name': 'CalendarFormDialogComponent', 'selector': 'app-calendar-form-dialog'},{'name': 'CartComponent', 'selector': 'app-cart'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ChangingTooltipComponent', 'selector': 'app-changing-tooltip'},{'name': 'ChartExampleViewComponent', 'selector': 'app-chart-example-view'},{'name': 'ChartsComponent', 'selector': 'app-charts'},{'name': 'ChatContentsComponent', 'selector': 'app-chat-contents'},{'name': 'ChatLeftSidenavComponent', 'selector': 'app-chat-left-sidenav'},{'name': 'CheckboxTreeComponent', 'selector': 'app-checkbox-tree'},{'name': 'CheckoutComponent', 'selector': 'app-checkout'},{'name': 'ClearButtonInputComponent', 'selector': 'app-clear-button-input'},{'name': 'ColorsComponent', 'selector': 'app-colors'},{'name': 'ConfigurableCheckboxComponent', 'selector': 'app-configurable-checkbox'},{'name': 'ConfigurableSidenavComponent', 'selector': 'app-configurable-sidenav'},{'name': 'ConfigurableToggleComponent', 'selector': 'app-configurable-toggle'},{'name': 'ConfirmDialogComponent', 'selector': 'app-confirm-dialog'},{'name': 'CrudNgxTableComponent', 'selector': 'app-crud-ngx-table'},{'name': 'CryptocurrencyComponent', 'selector': 'app-cryptocurrency'},{'name': 'CustomBarComponent', 'selector': 'app-custom-bar'},{'name': 'CustomClassTooltipComponent', 'selector': 'app-custom-class-tooltip'},{'name': 'CustomDatepickerComponent', 'selector': 'app-custom-datepicker'},{'name': 'CustomizedStepperComponent', 'selector': 'app-customized-stepper'},{'name': 'CustomizerComponent', 'selector': 'app-customizer'},{'name': 'CustomLoadingButtonsComponent', 'selector': 'app-custom-loading-buttons'},{'name': 'CustomPaginatorComponent', 'selector': 'app-custom-paginator'},{'name': 'CustomPanelSelectComponent', 'selector': 'app-custom-panel-select'},{'name': 'CustomPositionTooltipComponent', 'selector': 'app-custom-position-tooltip'},{'name': 'CustomRipplesComponent', 'selector': 'app-custom-ripples'},{'name': 'CustomSnackbarComponent', 'selector': 'app-custom-snackbar'},{'name': 'CustomSnackbarOverviewComponent', 'selector': 'app-custom-snackbar-overview'},{'name': 'CustomSpinnerComponent', 'selector': 'app-custom-spinner'},{'name': 'CustomTabGroupComponent', 'selector': 'app-custom-tab-group'},{'name': 'DashboardDarkComponent', 'selector': 'app-dashboard-dark'},{'name': 'DataDialogComponent', 'selector': 'app-data-dialog'},{'name': 'DataDialogOverviewComponent', 'selector': 'app-data-dialog-overview'},{'name': 'DealerTableComponent', 'selector': 'app-dealer-table'},{'name': 'DealerTablePopupComponent', 'selector': 'app-dealer-table-popup'},{'name': 'DealerTableSidenavComponent', 'selector': 'app-dealer-table-sidenav'},{'name': 'DefaultDashboardComponent', 'selector': 'app-default-dashboard'},{'name': 'DefaultDashboardComponent', 'selector': 'app-default-dashboard'},{'name': 'DelayTooltipComponent', 'selector': 'app-delay-tooltip'},{'name': 'DifferentLocaleDatepickerComponent', 'selector': 'app-different-locale-datepicker'},{'name': 'DisabledDatepickerComponent', 'selector': 'app-disabled-datepicker'},{'name': 'DisabledSelectComponent', 'selector': 'app-disabled-select'},{'name': 'DisabledTooltipComponent', 'selector': 'app-disabled-tooltip'},{'name': 'DisplayValueAutocompleteComponent', 'selector': 'app-display-value-autocomplete'},{'name': 'DragndropComponent', 'selector': 'app-dragndrop'},{'name': 'DrawerSidenavComponent', 'selector': 'app-drawer-sidenav'},{'name': 'DynamicDataTreeComponent', 'selector': 'app-dynamic-data-tree'},{'name': 'DynamicGridComponent', 'selector': 'app-dynamic-grid'},{'name': 'DynamicTabGroupComponent', 'selector': 'app-dynamic-tab-group'},{'name': 'EchartBarComponent', 'selector': 'app-echart-bar'},{'name': 'EchartHeatmapComponent', 'selector': 'app-echart-heatmap'},{'name': 'EchartPieComponent', 'selector': 'app-echart-pie'},{'name': 'EchartRadarComponent', 'selector': 'app-echart-radar'},{'name': 'EgretExampleViewerComponent', 'selector': 'egret-example-viewer'},{'name': 'EgretExampleViewerTemplateComponent', 'selector': 'egret-example-viewer-template'},{'name': 'EgretNotifications2Component', 'selector': 'egret-notifications2'},{'name': 'EgretSidebarComponent', 'selector': 'egret-sidebar'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'ErrorFormFieldComponent', 'selector': 'app-error-form-field'},{'name': 'ErrorInputComponent', 'selector': 'app-error-input'},{'name': 'ErrorMessageInputComponent', 'selector': 'app-error-message-input'},{'name': 'ErrorSelectComponent', 'selector': 'app-error-select'},{'name': 'ErrorStepperComponent', 'selector': 'app-error-stepper'},{'name': 'EscapeBackdropSidenavComponent', 'selector': 'app-escape-backdrop-sidenav'},{'name': 'EventDatepickerComponent', 'selector': 'app-event-datepicker'},{'name': 'FabricatorDashboardComponent', 'selector': 'app-fabricator-dashboard'},{'name': 'FabricatorTableComponent', 'selector': 'app-fabricator-table'},{'name': 'FabricatorTablePopupComponent', 'selector': 'app-fabricator-table-popup'},{'name': 'FabricatorTableSidenavComponent', 'selector': 'app-fabricator-table-sidenav'},{'name': 'FeatureSelectComponent', 'selector': 'app-feature-select'},{'name': 'FileUploadComponent', 'selector': 'app-file-upload'},{'name': 'FilterAutocompleteComponent', 'selector': 'app-filter-autocomplete'},{'name': 'FilterDatepickerComponent', 'selector': 'app-filter-datepicker'},{'name': 'FilterTableComponent', 'selector': 'app-filter-table'},{'name': 'FilterTableComponent', 'selector': 'app-filter-table'},{'name': 'FinancialDealerComponent', 'selector': 'app-financial-dealer'},{'name': 'FinancialTableComponent', 'selector': 'app-financial-table'},{'name': 'FinancialTablePopupComponent', 'selector': 'app-financial-table-popup'},{'name': 'FinancialTableSidenavComponent', 'selector': 'app-financial-table-sidenav'},{'name': 'FixedSidenavComponent', 'selector': 'app-fixed-sidenav'},{'name': 'FlatTreeComponent', 'selector': 'app-flat-tree'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FooterTableComponent', 'selector': 'app-footer-table'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'FormInputComponent', 'selector': 'app-form-input'},{'name': 'FormSelectComponent', 'selector': 'app-form-select'},{'name': 'FullscreenTableComponent', 'selector': 'app-fullscreen-table'},{'name': 'FullWidthCardComponent', 'selector': 'app-full-width-card'},{'name': 'FullWidthCardTabComponent', 'selector': 'app-full-width-card-tab'},{'name': 'FullWidthPlainComponent', 'selector': 'app-full-width-plain'},{'name': 'HeaderSideComponent', 'selector': 'app-header-side'},{'name': 'HeaderTopComponent', 'selector': 'app-header-top'},{'name': 'HighlightFirstAutocompleteComponent', 'selector': 'app-highlight-first-autocomplete'},{'name': 'HintsFormFieldComponent', 'selector': 'app-hints-form-field'},{'name': 'HintsInputComponent', 'selector': 'app-hints-input'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'IconMenuComponent', 'selector': 'app-icon-menu'},{'name': 'IndeterminateBarComponent', 'selector': 'app-indeterminate-bar'},{'name': 'InputChipComponent', 'selector': 'app-input-chip'},{'name': 'InvoiceDetailsComponent', 'selector': 'app-invoice-details'},{'name': 'InvoiceListComponent', 'selector': 'app-invoice-list'},{'name': 'LabelFormFieldComponent', 'selector': 'app-label-form-field'},{'name': 'LearningManagementComponent', 'selector': 'app-learning-management'},{'name': 'LeftSidebarCardComponent', 'selector': 'app-left-sidebar-card'},{'name': 'LeftSidebarPlainComponent', 'selector': 'app-left-sidebar-plain'},{'name': 'LoaderDialogComponent', 'selector': 'app-loader-dialog'},{'name': 'LockscreenComponent', 'selector': 'app-lockscreen'},{'name': 'MailComposeComponent', 'selector': 'mail-compose'},{'name': 'ManualHideTooltipComponent', 'selector': 'app-manual-hide-tooltip'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'MaterialExampleViewComponent', 'selector': 'app-material-example-view'},{'name': 'MaterialTableComponent', 'selector': 'app-material-table'},{'name': 'MatIconsComponent', 'selector': 'app-mat-icons'},{'name': 'MinMaxDatepickerComponent', 'selector': 'app-min-max-datepicker'},{'name': 'MomentJsDatepickerComponent', 'selector': 'app-moment-js-datepicker'},{'name': 'MultipleSelectComponent', 'selector': 'app-multiple-select'},{'name': 'MultiRowToolbarComponent', 'selector': 'app-multi-row-toolbar'},{'name': 'MultiSectionCardComponent', 'selector': 'app-multi-section-card'},{'name': 'NavTabGroupComponent', 'selector': 'app-nav-tab-group'},{'name': 'Nested1Component', 'selector': 'app-nested1'},{'name': 'Nested2Component', 'selector': 'app-nested2'},{'name': 'Nested3Component', 'selector': 'app-nested3'},{'name': 'NestedMenuComponent', 'selector': 'app-nested-menu'},{'name': 'NestedTreeComponent', 'selector': 'app-nested-tree'},{'name': 'NgmodelRadioComponent', 'selector': 'app-ngmodel-radio'},{'name': 'NgxTablePopupComponent', 'selector': 'app-ngx-table-popup'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'NotificationsComponent', 'selector': 'app-notifications'},{'name': 'OpenCloseSidenavComponent', 'selector': 'app-open-close-sidenav'},{'name': 'OpenMethodDatepickerComponent', 'selector': 'app-open-method-datepicker'},{'name': 'OptionGroupAutocompleteComponent', 'selector': 'app-option-group-autocomplete'},{'name': 'OptionGroupSelectComponent', 'selector': 'app-option-group-select'},{'name': 'OrderCostListComponent', 'selector': 'app-order-cost-list'},{'name': 'OrderDetailComponent', 'selector': 'app-order-detail'},{'name': 'OrderListComponent', 'selector': 'app-order-list'},{'name': 'OrderTableComponent', 'selector': 'app-order-table'},{'name': 'OrderTablePopupComponent', 'selector': 'app-order-table-popup'},{'name': 'OrderTableSidenavComponent', 'selector': 'app-order-table-sidenav'},{'name': 'PaginationTableComponent', 'selector': 'app-pagination-table'},{'name': 'PagingTableComponent', 'selector': 'app-paging-table'},{'name': 'PrefixSuffixFormFieldComponent', 'selector': 'app-prefix-suffix-form-field'},{'name': 'ProductDetailsComponent', 'selector': 'app-product-details'},{'name': 'ProductsComponent', 'selector': 'app-products'},{'name': 'ProfileBlankComponent', 'selector': 'app-profile-blank'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ProfileOverviewComponent', 'selector': 'app-profile-overview'},{'name': 'ProfileSettingsComponent', 'selector': 'app-profile-settings'},{'name': 'ResetSelectComponent', 'selector': 'app-reset-select'},{'name': 'ResponsiveSidenavComponent', 'selector': 'app-responsive-sidenav'},{'name': 'ResultPageComponent', 'selector': 'app-result-page'},{'name': 'RichTextEditorComponent', 'selector': 'app-rich-text-editor'},{'name': 'RightSidebarCardComponent', 'selector': 'app-right-sidebar-card'},{'name': 'RipplelessSelectComponent', 'selector': 'app-rippleless-select'},{'name': 'ScrollableDialogComponent', 'selector': 'app-scrollable-dialog'},{'name': 'ScrollableDialogOverviewComponent', 'selector': 'app-scrollable-dialog-overview'},{'name': 'SearchInputOverComponent', 'selector': 'egret-search-input-over'},{'name': 'SectionListComponent', 'selector': 'app-section-list'},{'name': 'SelectedValueDatepickerComponent', 'selector': 'app-selected-value-datepicker'},{'name': 'SelectionTableComponent', 'selector': 'app-selection-table'},{'name': 'SidebarSideComponent', 'selector': 'app-sidebar-side'},{'name': 'SidebarTopComponent', 'selector': 'app-sidebar-top'},{'name': 'SidenavComponent', 'selector': 'app-sidenav'},{'name': 'Signin2Component', 'selector': 'app-signin2'},{'name': 'Signin3Component', 'selector': 'app-signin3'},{'name': 'Signin4Component', 'selector': 'app-signin4'},{'name': 'SigninComponent', 'selector': 'app-signin'},{'name': 'Signup2Component', 'selector': 'app-signup2'},{'name': 'Signup3Component', 'selector': 'app-signup3'},{'name': 'Signup4Component', 'selector': 'app-signup4'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SimpleAutocompleteComponent', 'selector': 'app-simple-autocomplete'},{'name': 'SimpleFormFieldComponent', 'selector': 'app-simple-form-field'},{'name': 'SliderComponent', 'selector': 'app-slider'},{'name': 'SortingTableComponent', 'selector': 'app-sorting-table'},{'name': 'SpacingComponent', 'selector': 'app-spacing'},{'name': 'StackedChipComponent', 'selector': 'app-stacked-chip'},{'name': 'StartDateDatepickerComponent', 'selector': 'app-start-date-datepicker'},{'name': 'StickyColumnTableComponent', 'selector': 'app-sticky-column-table'},{'name': 'StickyFooterTableComponent', 'selector': 'app-sticky-footer-table'},{'name': 'StickyHeaderTableComponent', 'selector': 'app-sticky-header-table'},{'name': 'SuffixPrefixInputComponent', 'selector': 'app-suffix-prefix-input'},{'name': 'SvgIconComponent', 'selector': 'app-svg-icon'},{'name': 'TableSortingComponent', 'selector': 'app-table-sorting'},{'name': 'TagDialogueComponent', 'selector': 'app-tag-dialogue'},{'name': 'ThemingFormFieldComponent', 'selector': 'app-theming-form-field'},{'name': 'TodoComponent', 'selector': 'app-todo'},{'name': 'TodoDetailsComponent', 'selector': 'app-todo-details'},{'name': 'TodoListComponent', 'selector': 'app-todo-list'},{'name': 'TouchDatepickerComponent', 'selector': 'app-touch-datepicker'},{'name': 'TriggerSelectComponent', 'selector': 'app-trigger-select'},{'name': 'TwoSidenavComponent', 'selector': 'app-two-sidenav'},{'name': 'TwoWayBindingSelectComponent', 'selector': 'app-two-way-binding-select'},{'name': 'TypographyComponent', 'selector': 'app-typography'},{'name': 'UILibIconsComponent', 'selector': 'app-uilib-icons'},{'name': 'UserTableComponent', 'selector': 'app-user-table'},{'name': 'UserTablePopupComponent', 'selector': 'app-user-table-popup'},{'name': 'UserTableSidenavComponent', 'selector': 'app-user-table-sidenav'},{'name': 'VerticalStepperComponent', 'selector': 'app-vertical-stepper'},{'name': 'WizardComponent', 'selector': 'app-wizard'}];
+    var DIRECTIVES = [{'name': 'AppDropdownDirective', 'selector': '[appDropdown]'},{'name': 'DropdownAnchorDirective', 'selector': '[appDropdownToggle]'},{'name': 'DropdownLinkDirective', 'selector': '[appDropdownLink]'},{'name': 'EgretHighlightDirective', 'selector': '[egretHighlight]'},{'name': 'EgretSidebarTogglerDirective', 'selector': '[egretSidebarToggler]'},{'name': 'EgretSidenavHelperDirective', 'selector': '[egretSidenavHelper]'},{'name': 'EgretSideNavToggleDirective', 'selector': '[EgretSideNavToggle]'},{'name': 'EgretSidenavTogglerDirective', 'selector': '[egretSidenavToggler]'},{'name': 'FontSizeDirective', 'selector': '[fontSize]'},{'name': 'ScrollToDirective', 'selector': '[scrollTo]'}];
+    var ACTUAL_COMPONENT = {'name': 'InvoiceDetailsComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'InvoiceDetailsComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

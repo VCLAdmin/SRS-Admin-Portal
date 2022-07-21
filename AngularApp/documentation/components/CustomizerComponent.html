@@ -1,0 +1,1654 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>egret documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">egret documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  CustomizerComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/shared/components/customizer/customizer.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-customizer</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./customizer.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./customizer.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#customizer" >customizer</a>
+                            </li>
+                            <li>
+                                <a href="#egretThemes" >egretThemes</a>
+                            </li>
+                            <li>
+                                <a href="#isCustomizerOpen" >isCustomizerOpen</a>
+                            </li>
+                            <li>
+                                <a href="#isFooterFixed" >isFooterFixed</a>
+                            </li>
+                            <li>
+                                <a href="#isRTL" >isRTL</a>
+                            </li>
+                            <li>
+                                <a href="#isTopbarFixed" >isTopbarFixed</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#layout" >layout</a>
+                            </li>
+                            <li>
+                                <a href="#layoutConf" >layoutConf</a>
+                            </li>
+                            <li>
+                                <a href="#perfectScrollbarEnabled" >perfectScrollbarEnabled</a>
+                            </li>
+                            <li>
+                                <a href="#selectedLayout" >selectedLayout</a>
+                            </li>
+                            <li>
+                                <a href="#selectedMenu" >selectedMenu</a>
+                            </li>
+                            <li>
+                                <a href="#sidebarColors" >sidebarColors</a>
+                            </li>
+                            <li>
+                                <a href="#sidenavTypes" >sidenavTypes</a>
+                            </li>
+                            <li>
+                                <a href="#topbarColors" >topbarColors</a>
+                            </li>
+                            <li>
+                                <a href="#viewMode" >viewMode</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#changeLayoutStyle" >changeLayoutStyle</a>
+                            </li>
+                            <li>
+                                <a href="#changeSidenav" >changeSidenav</a>
+                            </li>
+                            <li>
+                                <a href="#changeTheme" >changeTheme</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#toggleBreadcrumb" >toggleBreadcrumb</a>
+                            </li>
+                            <li>
+                                <a href="#toggleDir" >toggleDir</a>
+                            </li>
+                            <li>
+                                <a href="#toggleTopbarFixed" >toggleTopbarFixed</a>
+                            </li>
+                            <li>
+                                <a href="#tooglePerfectScrollbar" >tooglePerfectScrollbar</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(navService: <a href="../injectables/NavigationService.html" target="_self">NavigationService</a>, layout: <a href="../injectables/LayoutService.html" target="_self">LayoutService</a>, themeService: <a href="../injectables/ThemeService.html" target="_self">ThemeService</a>, customizer: <a href="../injectables/CustomizerService.html" target="_self">CustomizerService</a>, renderer: <a href="https://angular.io/api/core/Renderer2" target="_blank">Renderer2</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>navService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NavigationService.html" target="_self" >NavigationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>layout</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LayoutService.html" target="_self" >LayoutService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>themeService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ThemeService.html" target="_self" >ThemeService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>customizer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CustomizerService.html" target="_self" >CustomizerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>renderer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/Renderer2" target="_blank" >Renderer2</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeLayoutStyle"></a>
+                    <span class="name">
+                        <span ><b>changeLayoutStyle</b></span>
+                        <a href="#changeLayoutStyle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeLayoutStyle(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="61"
+                            class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:61</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeSidenav"></a>
+                    <span class="name">
+                        <span ><b>changeSidenav</b></span>
+                        <a href="#changeSidenav"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeSidenav(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:64</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeTheme"></a>
+                    <span class="name">
+                        <span ><b>changeTheme</b></span>
+                        <a href="#changeTheme"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeTheme(theme)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="57"
+                            class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:57</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>theme</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="50"
+                            class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:50</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleBreadcrumb"></a>
+                    <span class="name">
+                        <span ><b>toggleBreadcrumb</b></span>
+                        <a href="#toggleBreadcrumb"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleBreadcrumb(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="67"
+                            class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleDir"></a>
+                    <span class="name">
+                        <span ><b>toggleDir</b></span>
+                        <a href="#toggleDir"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleDir(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="73"
+                            class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:73</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleTopbarFixed"></a>
+                    <span class="name">
+                        <span ><b>toggleTopbarFixed</b></span>
+                        <a href="#toggleTopbarFixed"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleTopbarFixed(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="70"
+                            class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:70</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tooglePerfectScrollbar"></a>
+                    <span class="name">
+                        <span ><b>tooglePerfectScrollbar</b></span>
+                        <a href="#tooglePerfectScrollbar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>tooglePerfectScrollbar(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="77"
+                            class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:77</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="customizer"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>customizer</b></span>
+                        <a href="#customizer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/CustomizerService.html" target="_self" >CustomizerService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:46</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="egretThemes"></a>
+                    <span class="name">
+                        <span ><b>egretThemes</b></span>
+                        <a href="#egretThemes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/ITheme.html" target="_self" >ITheme[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:39</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isCustomizerOpen"></a>
+                    <span class="name">
+                        <span ><b>isCustomizerOpen</b></span>
+                        <a href="#isCustomizerOpen"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isFooterFixed"></a>
+                    <span class="name">
+                        <span ><b>isFooterFixed</b></span>
+                        <a href="#isFooterFixed"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isRTL"></a>
+                    <span class="name">
+                        <span ><b>isRTL</b></span>
+                        <a href="#isRTL"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isTopbarFixed"></a>
+                    <span class="name">
+                        <span ><b>isTopbarFixed</b></span>
+                        <a href="#isTopbarFixed"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="layout"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>layout</b></span>
+                        <a href="#layout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/LayoutService.html" target="_self" >LayoutService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:44</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="layoutConf"></a>
+                    <span class="name">
+                        <span ><b>layoutConf</b></span>
+                        <a href="#layoutConf"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="perfectScrollbarEnabled"></a>
+                    <span class="name">
+                        <span ><b>perfectScrollbarEnabled</b></span>
+                        <a href="#perfectScrollbarEnabled"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedLayout"></a>
+                    <span class="name">
+                        <span ><b>selectedLayout</b></span>
+                        <a href="#selectedLayout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedMenu"></a>
+                    <span class="name">
+                        <span ><b>selectedMenu</b></span>
+                        <a href="#selectedMenu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;icon-menu&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sidebarColors"></a>
+                    <span class="name">
+                        <span ><b>sidebarColors</b></span>
+                        <a href="#sidebarColors"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sidenavTypes"></a>
+                    <span class="name">
+                        <span ><b>sidenavTypes</b></span>
+                        <a href="#sidenavTypes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    {
+      name: &#x27;Default Menu&#x27;,
+      value: &#x27;default-menu&#x27;,
+    },
+    {
+      name: &#x27;Separator Menu&#x27;,
+      value: &#x27;separator-menu&#x27;,
+    },
+    {
+      name: &#x27;Icon Menu&#x27;,
+      value: &#x27;icon-menu&#x27;,
+    },
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="topbarColors"></a>
+                    <span class="name">
+                        <span ><b>topbarColors</b></span>
+                        <a href="#topbarColors"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="viewMode"></a>
+                    <span class="name">
+                        <span ><b>viewMode</b></span>
+                        <a href="#viewMode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>&quot;options&quot; | &quot;json&quot;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;options&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/shared/components/customizer/customizer.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Input, Renderer2 } from &#x27;@angular/core&#x27;;
+import { NavigationService } from &#x27;../../../shared/services/navigation.service&#x27;;
+import { LayoutService } from &#x27;../../../shared/services/layout.service&#x27;;
+import PerfectScrollbar from &#x27;perfect-scrollbar&#x27;;
+import { CustomizerService } from &#x27;app/shared/services/customizer.service&#x27;;
+import { ThemeService, ITheme } from &#x27;app/shared/services/theme.service&#x27;;
+
+@Component({
+  selector: &#x27;app-customizer&#x27;,
+  templateUrl: &#x27;./customizer.component.html&#x27;,
+  styleUrls: [&#x27;./customizer.component.scss&#x27;],
+})
+export class CustomizerComponent implements OnInit {
+  isCustomizerOpen &#x3D; false;
+  viewMode: &#x27;options&#x27; | &#x27;json&#x27; &#x3D; &#x27;options&#x27;;
+  sidenavTypes &#x3D; [
+    {
+      name: &#x27;Default Menu&#x27;,
+      value: &#x27;default-menu&#x27;,
+    },
+    {
+      name: &#x27;Separator Menu&#x27;,
+      value: &#x27;separator-menu&#x27;,
+    },
+    {
+      name: &#x27;Icon Menu&#x27;,
+      value: &#x27;icon-menu&#x27;,
+    },
+  ];
+  sidebarColors: any[];
+  topbarColors: any[];
+
+  layoutConf;
+  selectedMenu &#x3D; &#x27;icon-menu&#x27;;
+  selectedLayout: string;
+  isTopbarFixed &#x3D; false;
+  isFooterFixed &#x3D; false;
+  isRTL &#x3D; false;
+  egretThemes: ITheme[];
+  perfectScrollbarEnabled &#x3D; true;
+
+  constructor(
+    private navService: NavigationService,
+    public layout: LayoutService,
+    private themeService: ThemeService,
+    public customizer: CustomizerService,
+    private renderer: Renderer2
+  ) {}
+
+  ngOnInit() {
+    this.layoutConf &#x3D; this.layout.layoutConf;
+    this.selectedLayout &#x3D; this.layoutConf.navigationPos;
+    this.isTopbarFixed &#x3D; this.layoutConf.topbarFixed;
+    this.isRTL &#x3D; this.layoutConf.dir &#x3D;&#x3D;&#x3D; &#x27;rtl&#x27;;
+    this.egretThemes &#x3D; this.themeService.egretThemes;
+  }
+  changeTheme(theme) {
+    // this.themeService.changeTheme(theme);
+    this.layout.publishLayoutChange({ matTheme: theme.name });
+  }
+  changeLayoutStyle(data) {
+    this.layout.publishLayoutChange({ navigationPos: this.selectedLayout });
+  }
+  changeSidenav(data) {
+    this.navService.publishNavigationChange(data.value);
+  }
+  toggleBreadcrumb(data) {
+    this.layout.publishLayoutChange({ useBreadcrumb: data.checked });
+  }
+  toggleTopbarFixed(data) {
+    this.layout.publishLayoutChange({ topbarFixed: data.checked });
+  }
+  toggleDir(data) {
+    let dir &#x3D; data.checked ? &#x27;rtl&#x27; : &#x27;ltr&#x27;;
+    this.layout.publishLayoutChange({ dir: dir });
+  }
+  tooglePerfectScrollbar(data) {
+    this.layout.publishLayoutChange({ perfectScrollbar: this.perfectScrollbarEnabled });
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;handle&quot; *ngIf&#x3D;&quot;!isCustomizerOpen&quot;&gt;
+    &lt;button 
+    mat-fab
+    color&#x3D;&quot;primary&quot; 
+    (click)&#x3D;&quot;isCustomizerOpen &#x3D; true&quot;&gt;
+      &lt;mat-icon class&#x3D;&quot;spin text-white&quot;&gt;settings&lt;/mat-icon&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;div id&#x3D;&quot;app-customizer&quot; *ngIf&#x3D;&quot;isCustomizerOpen&quot;&gt;
+  &lt;mat-card class&#x3D;&quot;p-0&quot;&gt;
+    &lt;mat-card-title class&#x3D;&quot;m-0 light-gray&quot;&gt;
+      &lt;div class&#x3D;&quot;card-title-text&quot; fxLayout&#x3D;&quot;row wrap&quot; fxLayoutAlign&#x3D;&quot;center center&quot;&gt;
+        &lt;button mat-flat-button [color]&#x3D;&quot;viewMode &#x3D;&#x3D;&#x3D; &#x27;options&#x27; ? &#x27;primary&#x27;:&#x27;&#x27;&quot; (click)&#x3D;&quot;viewMode &#x3D; &#x27;options&#x27;&quot;&gt;Options&lt;/button&gt;
+        &lt;span fxFlex&#x3D;&quot;15px&quot;&gt;&lt;/span&gt;
+        &lt;button mat-flat-button [color]&#x3D;&quot;viewMode &#x3D;&#x3D;&#x3D; &#x27;json&#x27; ? &#x27;primary&#x27;:&#x27;&#x27;&quot; (click)&#x3D;&quot;viewMode &#x3D; &#x27;json&#x27;&quot;&gt;Json&lt;/button&gt;
+        &lt;span fxFlex&gt;&lt;/span&gt;
+        &lt;button 
+        class&#x3D;&quot;card-control&quot; 
+        mat-icon-button
+        (click)&#x3D;&quot;isCustomizerOpen &#x3D; false&quot;&gt;
+          &lt;mat-icon&gt;close&lt;/mat-icon&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/mat-card-title&gt;
+    &lt;mat-card-content *ngIf&#x3D;&quot;viewMode &#x3D;&#x3D;&#x3D; &#x27;json&#x27;&quot; style&#x3D;&quot;min-height: 100vh&quot;&gt;
+        &lt;!-- &lt;pre class&#x3D;&quot;text-muted&quot;&gt;{{this.layoutConf | json}}&lt;/pre&gt; --&gt;
+        &lt;pre&gt;&lt;code [egretHighlight]&#x3D;&quot;this.layoutConf | json&quot;&gt;&lt;/code&gt;&lt;/pre&gt;
+        &lt;div&gt;
+          &lt;span fxFlex&gt;&lt;/span&gt;
+          &lt;a href&#x3D;&quot;http://demos.ui-lib.com/egret-doc/#layout&quot; target&#x3D;&quot;_blank&quot; mat-mini-fab&gt;&lt;mat-icon&gt;help&lt;/mat-icon&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/mat-card-content&gt;
+
+    &lt;mat-card-content [perfectScrollbar] *ngIf&#x3D;&quot;viewMode &#x3D;&#x3D;&#x3D; &#x27;options&#x27;&quot;&gt;
+      &lt;p&gt;&lt;small&gt;Customize the template then copy configuration json.&lt;/small&gt;&lt;/p&gt;
+      &lt;div class&#x3D;&quot;pb-16 mb-16 border-bottom&quot;&gt;
+        &lt;h6 class&#x3D;&quot;title text-muted&quot;&gt;Layouts&lt;/h6&gt;
+        &lt;mat-radio-group fxLayout&#x3D;&quot;column&quot; [(ngModel)]&#x3D;&quot;selectedLayout&quot; (change)&#x3D;&quot;changeLayoutStyle($event)&quot;&gt;
+            &lt;mat-radio-button [value]&#x3D;&quot;&#x27;top&#x27;&quot;&gt; Top Navigation &lt;/mat-radio-button&gt;
+            &lt;mat-radio-button [value]&#x3D;&quot;&#x27;side&#x27;&quot;&gt; Side Navigation &lt;/mat-radio-button&gt;
+        &lt;/mat-radio-group&gt;
+      &lt;/div&gt;
+
+     
+      &lt;div class&#x3D;&quot;pb-16 mb-16 border-bottom&quot;&gt;
+          &lt;!-- &lt;h6 class&#x3D;&quot;title text-muted&quot;&gt;Header Colors&lt;/h6&gt; --&gt;
+          &lt;!-- &lt;div class&#x3D;&quot;mb-16&quot;&gt;
+            &lt;mat-checkbox [(ngModel)]&#x3D;&quot;isTopbarFixed&quot; (change)&#x3D;&quot;toggleTopbarFixed($event)&quot; [disabled]&#x3D;&quot;selectedLayout &#x3D;&#x3D;&#x3D; &#x27;top&#x27;&quot; [value]&#x3D;&quot;selectedLayout !&#x3D;&#x3D; &#x27;top&#x27;&quot;&gt;Fixed Header&lt;/mat-checkbox&gt;
+          &lt;/div&gt; --&gt;
+
+          &lt;!-- &lt;div class&#x3D;&quot;colors&quot;&gt;
+              &lt;div 
+              class&#x3D;&quot;color {{c.class}}&quot; 
+              *ngFor&#x3D;&quot;let c of customizer.topbarColors&quot;
+              (click)&#x3D;&quot;customizer.changeTopbarColor(c)&quot;&gt;
+              &lt;mat-icon class&#x3D;&quot;active-icon&quot; *ngIf&#x3D;&quot;c.active&quot;&gt;check&lt;/mat-icon&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;   --&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;pb-16 mb-16 border-bottom&quot;&gt;
+        &lt;h6 class&#x3D;&quot;title text-muted&quot;&gt;Sidebar colors&lt;/h6&gt;
+        &lt;div class&#x3D;&quot;colors&quot;&gt;
+            &lt;div 
+            class&#x3D;&quot;color {{c.class}}&quot; 
+            *ngFor&#x3D;&quot;let c of customizer.sidebarColors&quot;
+            (click)&#x3D;&quot;customizer.changeSidebarColor(c)&quot;&gt;
+            &lt;mat-icon class&#x3D;&quot;active-icon&quot; *ngIf&#x3D;&quot;c.active&quot;&gt;check&lt;/mat-icon&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;pb-16 mb-16 border-bottom&quot;&gt;
+        &lt;h6 class&#x3D;&quot;title text-muted&quot;&gt;Material Themes&lt;/h6&gt;
+        &lt;div class&#x3D;&quot;colors&quot;&gt;
+            &lt;div class&#x3D;&quot;color&quot; *ngFor&#x3D;&quot;let theme of egretThemes&quot;
+            (click)&#x3D;&quot;changeTheme(theme)&quot; [style.background]&#x3D;&quot;theme.baseColor&quot;&gt;
+              &lt;mat-icon class&#x3D;&quot;active-icon&quot; *ngIf&#x3D;&quot;theme.isActive&quot;&gt;check&lt;/mat-icon&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;pb-16 mb-16 border-bottom&quot;&gt;
+        &lt;h6 class&#x3D;&quot;title text-muted&quot;&gt;Footer Colors&lt;/h6&gt;
+        &lt;div class&#x3D;&quot;mb-16&quot;&gt;
+          &lt;mat-checkbox [(ngModel)]&#x3D;&quot;isFooterFixed&quot; (change)&#x3D;&quot;layout.publishLayoutChange({ footerFixed: $event.checked })&quot; [value]&#x3D;&quot;selectedLayout !&#x3D;&#x3D; &#x27;top&#x27;&quot;&gt;Fixed Footer&lt;/mat-checkbox&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;colors&quot;&gt;
+            &lt;div 
+            class&#x3D;&quot;color {{c.class}}&quot; 
+            *ngFor&#x3D;&quot;let c of customizer.footerColors&quot;
+            (click)&#x3D;&quot;customizer.changeFooterColor(c)&quot;&gt;
+            &lt;mat-icon class&#x3D;&quot;active-icon&quot; *ngIf&#x3D;&quot;c.active&quot;&gt;check&lt;/mat-icon&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;  
+    &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;pb-16 mb-16 border-bottom&quot;&gt;
+          &lt;h6 class&#x3D;&quot;title text-muted&quot;&gt;Breadcrumb&lt;/h6&gt;
+          &lt;div class&#x3D;&quot;mb-16&quot;&gt;
+              &lt;mat-checkbox [(ngModel)]&#x3D;&quot;layoutConf.useBreadcrumb&quot; (change)&#x3D;&quot;toggleBreadcrumb($event)&quot;&gt;Use breadcrumb&lt;/mat-checkbox&gt;
+          &lt;/div&gt;
+          &lt;small class&#x3D;&quot;text-muted&quot;&gt;Breadcrumb types&lt;/small&gt;
+          &lt;mat-radio-group fxLayout&#x3D;&quot;column&quot; [(ngModel)]&#x3D;&quot;layoutConf.breadcrumb&quot; [disabled]&#x3D;&quot;!layoutConf.useBreadcrumb&quot;&gt;
+              &lt;mat-radio-button [value]&#x3D;&quot;&#x27;simple&#x27;&quot;&gt; Simple &lt;/mat-radio-button&gt;
+              &lt;mat-radio-button [value]&#x3D;&quot;&#x27;title&#x27;&quot;&gt; Simple with title &lt;/mat-radio-button&gt;
+          &lt;/mat-radio-group&gt;
+        &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;pb-16 pos-rel mb-16 border-bottom&quot;&gt;
+        &lt;h6 class&#x3D;&quot;title text-muted&quot;&gt;Navigation&lt;/h6&gt;
+        &lt;mat-radio-group 
+        fxLayout&#x3D;&quot;column&quot; 
+        [(ngModel)]&#x3D;&quot;selectedMenu&quot; 
+        (change)&#x3D;&quot;changeSidenav($event)&quot; 
+        [disabled]&#x3D;&quot;selectedLayout &#x3D;&#x3D;&#x3D; &#x27;top&#x27;&quot;&gt;
+          &lt;mat-radio-button 
+          *ngFor&#x3D;&quot;let type of sidenavTypes&quot; 
+          [value]&#x3D;&quot;type.value&quot;&gt;
+            {{type.name}}
+          &lt;/mat-radio-button&gt;
+        &lt;/mat-radio-group&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;pb-16 pos-rel mb-16 border-bottom&quot;&gt;
+        &lt;mat-checkbox [(ngModel)]&#x3D;&quot;perfectScrollbarEnabled&quot; (change)&#x3D;&quot;tooglePerfectScrollbar($event)&quot;&gt;Custom scrollbar&lt;/mat-checkbox&gt;
+      &lt;/div&gt;
+      
+      &lt;div class&#x3D;&quot;pb-16 &quot;&gt;
+        &lt;mat-checkbox [(ngModel)]&#x3D;&quot;isRTL&quot; (change)&#x3D;&quot;toggleDir($event)&quot;&gt;RTL&lt;/mat-checkbox&gt;
+      &lt;/div&gt;
+    &lt;/mat-card-content&gt;
+  &lt;/mat-card&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./customizer.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.handle {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+}
+#app-customizer {
+  position: fixed;
+  bottom: 0px;
+  top: 0;
+  right: 0;
+  min-width: 180px;
+  max-width: 280px;
+  z-index: 999;
+  .title {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 0 1rem;
+  }
+  .mat-card {
+    margin: 0;
+    border-radius: 0;
+  }
+  .mat-card-content  {
+        padding: 1rem 1.5rem 2rem;
+        max-height: calc(100vh - 80px);
+    }
+}
+.pos-rel {
+  position: relative;
+  z-index: 99;
+  .olay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 100;
+  }
+}
+
+.colors {
+  display: flex;
+  flex-wrap: wrap;
+  .color {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 8px;
+    text-align: center;
+    box-shadow: 0 4px 20px 1px rgba(0,0,0,.06), 0 1px 4px rgba(0,0,0,.03);
+    cursor: pointer;
+    .active-icon {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 6px;
+    }
+  }
+}
+
+// [dir&#x3D;&quot;rtl&quot;] {
+//   .handle {}
+//   #app-customizer {
+//     right: auto;
+//     left: 0;
+//   }
+// }</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="handle" *ngIf="!isCustomizerOpen">    <button     mat-fab    color="primary"     (click)="isCustomizerOpen = true">      <mat-icon class="spin text-white">settings</mat-icon>    </button>  </div><div id="app-customizer" *ngIf="isCustomizerOpen">  <mat-card class="p-0">    <mat-card-title class="m-0 light-gray">      <div class="card-title-text" fxLayout="row wrap" fxLayoutAlign="center center">        <button mat-flat-button [color]="viewMode === \'options\' ? \'primary\':\'\'" (click)="viewMode = \'options\'">Options</button>        <span fxFlex="15px"></span>        <button mat-flat-button [color]="viewMode === \'json\' ? \'primary\':\'\'" (click)="viewMode = \'json\'">Json</button>        <span fxFlex></span>        <button         class="card-control"         mat-icon-button        (click)="isCustomizerOpen = false">          <mat-icon>close</mat-icon>        </button>      </div>    </mat-card-title>    <mat-card-content *ngIf="viewMode === \'json\'" style="min-height: 100vh">        <!-- <pre class="text-muted">{{this.layoutConf | json}}</pre> -->        <pre><code [egretHighlight]="this.layoutConf | json"></code></pre>        <div>          <span fxFlex></span>          <a href="http://demos.ui-lib.com/egret-doc/#layout" target="_blank" mat-mini-fab><mat-icon>help</mat-icon></a>        </div>    </mat-card-content>    <mat-card-content [perfectScrollbar] *ngIf="viewMode === \'options\'">      <p><small>Customize the template then copy configuration json.</small></p>      <div class="pb-16 mb-16 border-bottom">        <h6 class="title text-muted">Layouts</h6>        <mat-radio-group fxLayout="column" [(ngModel)]="selectedLayout" (change)="changeLayoutStyle($event)">            <mat-radio-button [value]="\'top\'"> Top Navigation </mat-radio-button>            <mat-radio-button [value]="\'side\'"> Side Navigation </mat-radio-button>        </mat-radio-group>      </div>           <div class="pb-16 mb-16 border-bottom">          <!-- <h6 class="title text-muted">Header Colors</h6> -->          <!-- <div class="mb-16">            <mat-checkbox [(ngModel)]="isTopbarFixed" (change)="toggleTopbarFixed($event)" [disabled]="selectedLayout === \'top\'" [value]="selectedLayout !== \'top\'">Fixed Header</mat-checkbox>          </div> -->          <!-- <div class="colors">              <div               class="color {{c.class}}"               *ngFor="let c of customizer.topbarColors"              (click)="customizer.changeTopbarColor(c)">              <mat-icon class="active-icon" *ngIf="c.active">check</mat-icon>            </div>          </div>   -->      </div>      <div class="pb-16 mb-16 border-bottom">        <h6 class="title text-muted">Sidebar colors</h6>        <div class="colors">            <div             class="color {{c.class}}"             *ngFor="let c of customizer.sidebarColors"            (click)="customizer.changeSidebarColor(c)">            <mat-icon class="active-icon" *ngIf="c.active">check</mat-icon>          </div>        </div>      </div>      <div class="pb-16 mb-16 border-bottom">        <h6 class="title text-muted">Material Themes</h6>        <div class="colors">            <div class="color" *ngFor="let theme of egretThemes"            (click)="changeTheme(theme)" [style.background]="theme.baseColor">              <mat-icon class="active-icon" *ngIf="theme.isActive">check</mat-icon>            </div>        </div>      </div>      <div class="pb-16 mb-16 border-bottom">        <h6 class="title text-muted">Footer Colors</h6>        <div class="mb-16">          <mat-checkbox [(ngModel)]="isFooterFixed" (change)="layout.publishLayoutChange({ footerFixed: $event.checked })" [value]="selectedLayout !== \'top\'">Fixed Footer</mat-checkbox>        </div>        <div class="colors">            <div             class="color {{c.class}}"             *ngFor="let c of customizer.footerColors"            (click)="customizer.changeFooterColor(c)">            <mat-icon class="active-icon" *ngIf="c.active">check</mat-icon>          </div>        </div>      </div>      <div class="pb-16 mb-16 border-bottom">          <h6 class="title text-muted">Breadcrumb</h6>          <div class="mb-16">              <mat-checkbox [(ngModel)]="layoutConf.useBreadcrumb" (change)="toggleBreadcrumb($event)">Use breadcrumb</mat-checkbox>          </div>          <small class="text-muted">Breadcrumb types</small>          <mat-radio-group fxLayout="column" [(ngModel)]="layoutConf.breadcrumb" [disabled]="!layoutConf.useBreadcrumb">              <mat-radio-button [value]="\'simple\'"> Simple </mat-radio-button>              <mat-radio-button [value]="\'title\'"> Simple with title </mat-radio-button>          </mat-radio-group>        </div>      <div class="pb-16 pos-rel mb-16 border-bottom">        <h6 class="title text-muted">Navigation</h6>        <mat-radio-group         fxLayout="column"         [(ngModel)]="selectedMenu"         (change)="changeSidenav($event)"         [disabled]="selectedLayout === \'top\'">          <mat-radio-button           *ngFor="let type of sidenavTypes"           [value]="type.value">            {{type.name}}          </mat-radio-button>        </mat-radio-group>      </div>      <div class="pb-16 pos-rel mb-16 border-bottom">        <mat-checkbox [(ngModel)]="perfectScrollbarEnabled" (change)="tooglePerfectScrollbar($event)">Custom scrollbar</mat-checkbox>      </div>            <div class="pb-16 ">        <mat-checkbox [(ngModel)]="isRTL" (change)="toggleDir($event)">RTL</mat-checkbox>      </div>    </mat-card-content>  </mat-card></div></div>'
+    var COMPONENTS = [{'name': 'AccordinExpansionPanelComponent', 'selector': 'app-accordin-expansion-panel'},{'name': 'AdminLayoutComponent', 'selector': 'app-admin-layout'},{'name': 'AlignTabGroupComponent', 'selector': 'app-align-tab-group'},{'name': 'AnalyticsComponent', 'selector': 'app-analytics'},{'name': 'AnimationTabGroupComponent', 'selector': 'app-animation-tab-group'},{'name': 'AppBlankComponent', 'selector': 'app-blank'},{'name': 'AppCalendarComponent', 'selector': 'app-calendar'},{'name': 'AppChatsComponent', 'selector': 'app-chats'},{'name': 'AppComfirmComponent', 'selector': 'app-confirm'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppearanceFormFieldComponent', 'selector': 'app-appearance-form-field'},{'name': 'AppGalleryComponent', 'selector': 'app-gallery'},{'name': 'AppInboxComponent', 'selector': 'app-inbox'},{'name': 'AppLoaderComponent', 'selector': 'app-app-loader'},{'name': 'AppPricingComponent', 'selector': 'app-pricing'},{'name': 'AppTourComponent', 'selector': 'app-app-tour'},{'name': 'AppUsersComponent', 'selector': 'app-users'},{'name': 'AuthLayoutComponent', 'selector': 'app-auth-layout'},{'name': 'AutocompleteChipComponent', 'selector': 'app-autocomplete-chip'},{'name': 'AutocompleteOverviewComponent', 'selector': 'app-autocomplete-overview'},{'name': 'AutoHideTooltipComponent', 'selector': 'app-auto-hide-tooltip'},{'name': 'AutoresizeSidenavComponent', 'selector': 'app-autoresize-sidenav'},{'name': 'AutoResizingTexareaComponent', 'selector': 'app-auto-resizing-texarea'},{'name': 'BasicBadgeComponent', 'selector': 'app-basic-badge'},{'name': 'BasicBarComponent', 'selector': 'app-basic-bar'},{'name': 'BasicButtonToggleComponent', 'selector': 'app-basic-button-toggle'},{'name': 'BasicCardComponent', 'selector': 'app-basic-card'},{'name': 'BasicCheckboxComponent', 'selector': 'app-basic-checkbox'},{'name': 'BasicChipComponent', 'selector': 'app-basic-chip'},{'name': 'BasicDatepickerComponent', 'selector': 'app-basic-datepicker'},{'name': 'BasicDialogComponent', 'selector': 'app-basic-dialog'},{'name': 'BasicDialogOverviewComponent', 'selector': 'app-basic-dialog-overview'},{'name': 'BasicDividerComponent', 'selector': 'app-basic-divider'},{'name': 'BasicExpansionPanelComponent', 'selector': 'app-basic-expansion-panel'},{'name': 'BasicFormComponent', 'selector': 'app-basic-form'},{'name': 'BasicGridComponent', 'selector': 'app-basic-grid'},{'name': 'BasicIconComponent', 'selector': 'app-basic-icon'},{'name': 'BasicInputComponent', 'selector': 'app-basic-input'},{'name': 'BasicListComponent', 'selector': 'app-basic-list'},{'name': 'BasicMenuComponent', 'selector': 'app-basic-menu'},{'name': 'BasicPaginatorComponent', 'selector': 'app-basic-paginator'},{'name': 'BasicRadioComponent', 'selector': 'app-basic-radio'},{'name': 'BasicSelectComponent', 'selector': 'app-basic-select'},{'name': 'BasicSidenavComponent', 'selector': 'app-basic-sidenav'},{'name': 'BasicSliderComponent', 'selector': 'app-basic-slider'},{'name': 'BasicSnackbarComponent', 'selector': 'app-basic-snackbar'},{'name': 'BasicSnackbarComponent', 'selector': 'app-basic-snackbar'},{'name': 'BasicSortHeaderComponent', 'selector': 'app-basic-sort-header'},{'name': 'BasicSpinnerComponent', 'selector': 'app-basic-spinner'},{'name': 'BasicStepperComponent', 'selector': 'app-basic-stepper'},{'name': 'BasicTabGroupComponent', 'selector': 'app-basic-tab-group'},{'name': 'BasicTableComponent', 'selector': 'app-basic-table'},{'name': 'BasicToggleComponent', 'selector': 'app-basic-toggle'},{'name': 'BasicToolbarComponent', 'selector': 'app-basic-toolbar'},{'name': 'BasicTooltipComponent', 'selector': 'app-basic-tooltip'},{'name': 'BorderComponent', 'selector': 'app-border'},{'name': 'BottomSheetComponent', 'selector': 'app-bottom-sheet'},{'name': 'BottomSheetOverviewComponent', 'selector': 'app-bottom-sheet-overview'},{'name': 'BottomSheetShareComponent', 'selector': 'app-bottom-sheet-share'},{'name': 'BreadcrumbComponent', 'selector': 'app-breadcrumb'},{'name': 'ButtonExamplesComponent', 'selector': 'app-button-examples'},{'name': 'ButtonLoadingComponent', 'selector': 'button-loading'},{'name': 'ButtonsComponent', 'selector': 'app-buttons'},{'name': 'ButtonToggleComponent', 'selector': 'app-button-toggle'},{'name': 'CalendarFormDialogComponent', 'selector': 'app-calendar-form-dialog'},{'name': 'CartComponent', 'selector': 'app-cart'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ChangingTooltipComponent', 'selector': 'app-changing-tooltip'},{'name': 'ChartExampleViewComponent', 'selector': 'app-chart-example-view'},{'name': 'ChartsComponent', 'selector': 'app-charts'},{'name': 'ChatContentsComponent', 'selector': 'app-chat-contents'},{'name': 'ChatLeftSidenavComponent', 'selector': 'app-chat-left-sidenav'},{'name': 'CheckboxTreeComponent', 'selector': 'app-checkbox-tree'},{'name': 'CheckoutComponent', 'selector': 'app-checkout'},{'name': 'ClearButtonInputComponent', 'selector': 'app-clear-button-input'},{'name': 'ColorsComponent', 'selector': 'app-colors'},{'name': 'ConfigurableCheckboxComponent', 'selector': 'app-configurable-checkbox'},{'name': 'ConfigurableSidenavComponent', 'selector': 'app-configurable-sidenav'},{'name': 'ConfigurableToggleComponent', 'selector': 'app-configurable-toggle'},{'name': 'ConfirmDialogComponent', 'selector': 'app-confirm-dialog'},{'name': 'CrudNgxTableComponent', 'selector': 'app-crud-ngx-table'},{'name': 'CryptocurrencyComponent', 'selector': 'app-cryptocurrency'},{'name': 'CustomBarComponent', 'selector': 'app-custom-bar'},{'name': 'CustomClassTooltipComponent', 'selector': 'app-custom-class-tooltip'},{'name': 'CustomDatepickerComponent', 'selector': 'app-custom-datepicker'},{'name': 'CustomizedStepperComponent', 'selector': 'app-customized-stepper'},{'name': 'CustomizerComponent', 'selector': 'app-customizer'},{'name': 'CustomLoadingButtonsComponent', 'selector': 'app-custom-loading-buttons'},{'name': 'CustomPaginatorComponent', 'selector': 'app-custom-paginator'},{'name': 'CustomPanelSelectComponent', 'selector': 'app-custom-panel-select'},{'name': 'CustomPositionTooltipComponent', 'selector': 'app-custom-position-tooltip'},{'name': 'CustomRipplesComponent', 'selector': 'app-custom-ripples'},{'name': 'CustomSnackbarComponent', 'selector': 'app-custom-snackbar'},{'name': 'CustomSnackbarOverviewComponent', 'selector': 'app-custom-snackbar-overview'},{'name': 'CustomSpinnerComponent', 'selector': 'app-custom-spinner'},{'name': 'CustomTabGroupComponent', 'selector': 'app-custom-tab-group'},{'name': 'DashboardDarkComponent', 'selector': 'app-dashboard-dark'},{'name': 'DataDialogComponent', 'selector': 'app-data-dialog'},{'name': 'DataDialogOverviewComponent', 'selector': 'app-data-dialog-overview'},{'name': 'DealerTableComponent', 'selector': 'app-dealer-table'},{'name': 'DealerTablePopupComponent', 'selector': 'app-dealer-table-popup'},{'name': 'DealerTableSidenavComponent', 'selector': 'app-dealer-table-sidenav'},{'name': 'DefaultDashboardComponent', 'selector': 'app-default-dashboard'},{'name': 'DefaultDashboardComponent', 'selector': 'app-default-dashboard'},{'name': 'DelayTooltipComponent', 'selector': 'app-delay-tooltip'},{'name': 'DifferentLocaleDatepickerComponent', 'selector': 'app-different-locale-datepicker'},{'name': 'DisabledDatepickerComponent', 'selector': 'app-disabled-datepicker'},{'name': 'DisabledSelectComponent', 'selector': 'app-disabled-select'},{'name': 'DisabledTooltipComponent', 'selector': 'app-disabled-tooltip'},{'name': 'DisplayValueAutocompleteComponent', 'selector': 'app-display-value-autocomplete'},{'name': 'DragndropComponent', 'selector': 'app-dragndrop'},{'name': 'DrawerSidenavComponent', 'selector': 'app-drawer-sidenav'},{'name': 'DynamicDataTreeComponent', 'selector': 'app-dynamic-data-tree'},{'name': 'DynamicGridComponent', 'selector': 'app-dynamic-grid'},{'name': 'DynamicTabGroupComponent', 'selector': 'app-dynamic-tab-group'},{'name': 'EchartBarComponent', 'selector': 'app-echart-bar'},{'name': 'EchartHeatmapComponent', 'selector': 'app-echart-heatmap'},{'name': 'EchartPieComponent', 'selector': 'app-echart-pie'},{'name': 'EchartRadarComponent', 'selector': 'app-echart-radar'},{'name': 'EgretExampleViewerComponent', 'selector': 'egret-example-viewer'},{'name': 'EgretExampleViewerTemplateComponent', 'selector': 'egret-example-viewer-template'},{'name': 'EgretNotifications2Component', 'selector': 'egret-notifications2'},{'name': 'EgretSidebarComponent', 'selector': 'egret-sidebar'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'ErrorFormFieldComponent', 'selector': 'app-error-form-field'},{'name': 'ErrorInputComponent', 'selector': 'app-error-input'},{'name': 'ErrorMessageInputComponent', 'selector': 'app-error-message-input'},{'name': 'ErrorSelectComponent', 'selector': 'app-error-select'},{'name': 'ErrorStepperComponent', 'selector': 'app-error-stepper'},{'name': 'EscapeBackdropSidenavComponent', 'selector': 'app-escape-backdrop-sidenav'},{'name': 'EventDatepickerComponent', 'selector': 'app-event-datepicker'},{'name': 'FabricatorDashboardComponent', 'selector': 'app-fabricator-dashboard'},{'name': 'FabricatorTableComponent', 'selector': 'app-fabricator-table'},{'name': 'FabricatorTablePopupComponent', 'selector': 'app-fabricator-table-popup'},{'name': 'FabricatorTableSidenavComponent', 'selector': 'app-fabricator-table-sidenav'},{'name': 'FeatureSelectComponent', 'selector': 'app-feature-select'},{'name': 'FileUploadComponent', 'selector': 'app-file-upload'},{'name': 'FilterAutocompleteComponent', 'selector': 'app-filter-autocomplete'},{'name': 'FilterDatepickerComponent', 'selector': 'app-filter-datepicker'},{'name': 'FilterTableComponent', 'selector': 'app-filter-table'},{'name': 'FilterTableComponent', 'selector': 'app-filter-table'},{'name': 'FinancialDealerComponent', 'selector': 'app-financial-dealer'},{'name': 'FinancialTableComponent', 'selector': 'app-financial-table'},{'name': 'FinancialTablePopupComponent', 'selector': 'app-financial-table-popup'},{'name': 'FinancialTableSidenavComponent', 'selector': 'app-financial-table-sidenav'},{'name': 'FixedSidenavComponent', 'selector': 'app-fixed-sidenav'},{'name': 'FlatTreeComponent', 'selector': 'app-flat-tree'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FooterTableComponent', 'selector': 'app-footer-table'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'FormInputComponent', 'selector': 'app-form-input'},{'name': 'FormSelectComponent', 'selector': 'app-form-select'},{'name': 'FullscreenTableComponent', 'selector': 'app-fullscreen-table'},{'name': 'FullWidthCardComponent', 'selector': 'app-full-width-card'},{'name': 'FullWidthCardTabComponent', 'selector': 'app-full-width-card-tab'},{'name': 'FullWidthPlainComponent', 'selector': 'app-full-width-plain'},{'name': 'HeaderSideComponent', 'selector': 'app-header-side'},{'name': 'HeaderTopComponent', 'selector': 'app-header-top'},{'name': 'HighlightFirstAutocompleteComponent', 'selector': 'app-highlight-first-autocomplete'},{'name': 'HintsFormFieldComponent', 'selector': 'app-hints-form-field'},{'name': 'HintsInputComponent', 'selector': 'app-hints-input'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'IconMenuComponent', 'selector': 'app-icon-menu'},{'name': 'IndeterminateBarComponent', 'selector': 'app-indeterminate-bar'},{'name': 'InputChipComponent', 'selector': 'app-input-chip'},{'name': 'InvoiceDetailsComponent', 'selector': 'app-invoice-details'},{'name': 'InvoiceListComponent', 'selector': 'app-invoice-list'},{'name': 'LabelFormFieldComponent', 'selector': 'app-label-form-field'},{'name': 'LearningManagementComponent', 'selector': 'app-learning-management'},{'name': 'LeftSidebarCardComponent', 'selector': 'app-left-sidebar-card'},{'name': 'LeftSidebarPlainComponent', 'selector': 'app-left-sidebar-plain'},{'name': 'LoaderDialogComponent', 'selector': 'app-loader-dialog'},{'name': 'LockscreenComponent', 'selector': 'app-lockscreen'},{'name': 'MailComposeComponent', 'selector': 'mail-compose'},{'name': 'ManualHideTooltipComponent', 'selector': 'app-manual-hide-tooltip'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'MaterialExampleViewComponent', 'selector': 'app-material-example-view'},{'name': 'MaterialTableComponent', 'selector': 'app-material-table'},{'name': 'MatIconsComponent', 'selector': 'app-mat-icons'},{'name': 'MinMaxDatepickerComponent', 'selector': 'app-min-max-datepicker'},{'name': 'MomentJsDatepickerComponent', 'selector': 'app-moment-js-datepicker'},{'name': 'MultipleSelectComponent', 'selector': 'app-multiple-select'},{'name': 'MultiRowToolbarComponent', 'selector': 'app-multi-row-toolbar'},{'name': 'MultiSectionCardComponent', 'selector': 'app-multi-section-card'},{'name': 'NavTabGroupComponent', 'selector': 'app-nav-tab-group'},{'name': 'Nested1Component', 'selector': 'app-nested1'},{'name': 'Nested2Component', 'selector': 'app-nested2'},{'name': 'Nested3Component', 'selector': 'app-nested3'},{'name': 'NestedMenuComponent', 'selector': 'app-nested-menu'},{'name': 'NestedTreeComponent', 'selector': 'app-nested-tree'},{'name': 'NgmodelRadioComponent', 'selector': 'app-ngmodel-radio'},{'name': 'NgxTablePopupComponent', 'selector': 'app-ngx-table-popup'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'NotificationsComponent', 'selector': 'app-notifications'},{'name': 'OpenCloseSidenavComponent', 'selector': 'app-open-close-sidenav'},{'name': 'OpenMethodDatepickerComponent', 'selector': 'app-open-method-datepicker'},{'name': 'OptionGroupAutocompleteComponent', 'selector': 'app-option-group-autocomplete'},{'name': 'OptionGroupSelectComponent', 'selector': 'app-option-group-select'},{'name': 'OrderCostListComponent', 'selector': 'app-order-cost-list'},{'name': 'OrderDetailComponent', 'selector': 'app-order-detail'},{'name': 'OrderListComponent', 'selector': 'app-order-list'},{'name': 'OrderTableComponent', 'selector': 'app-order-table'},{'name': 'OrderTablePopupComponent', 'selector': 'app-order-table-popup'},{'name': 'OrderTableSidenavComponent', 'selector': 'app-order-table-sidenav'},{'name': 'PaginationTableComponent', 'selector': 'app-pagination-table'},{'name': 'PagingTableComponent', 'selector': 'app-paging-table'},{'name': 'PrefixSuffixFormFieldComponent', 'selector': 'app-prefix-suffix-form-field'},{'name': 'ProductDetailsComponent', 'selector': 'app-product-details'},{'name': 'ProductsComponent', 'selector': 'app-products'},{'name': 'ProfileBlankComponent', 'selector': 'app-profile-blank'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ProfileOverviewComponent', 'selector': 'app-profile-overview'},{'name': 'ProfileSettingsComponent', 'selector': 'app-profile-settings'},{'name': 'ResetSelectComponent', 'selector': 'app-reset-select'},{'name': 'ResponsiveSidenavComponent', 'selector': 'app-responsive-sidenav'},{'name': 'ResultPageComponent', 'selector': 'app-result-page'},{'name': 'RichTextEditorComponent', 'selector': 'app-rich-text-editor'},{'name': 'RightSidebarCardComponent', 'selector': 'app-right-sidebar-card'},{'name': 'RipplelessSelectComponent', 'selector': 'app-rippleless-select'},{'name': 'ScrollableDialogComponent', 'selector': 'app-scrollable-dialog'},{'name': 'ScrollableDialogOverviewComponent', 'selector': 'app-scrollable-dialog-overview'},{'name': 'SearchInputOverComponent', 'selector': 'egret-search-input-over'},{'name': 'SectionListComponent', 'selector': 'app-section-list'},{'name': 'SelectedValueDatepickerComponent', 'selector': 'app-selected-value-datepicker'},{'name': 'SelectionTableComponent', 'selector': 'app-selection-table'},{'name': 'SidebarSideComponent', 'selector': 'app-sidebar-side'},{'name': 'SidebarTopComponent', 'selector': 'app-sidebar-top'},{'name': 'SidenavComponent', 'selector': 'app-sidenav'},{'name': 'Signin2Component', 'selector': 'app-signin2'},{'name': 'Signin3Component', 'selector': 'app-signin3'},{'name': 'Signin4Component', 'selector': 'app-signin4'},{'name': 'SigninComponent', 'selector': 'app-signin'},{'name': 'Signup2Component', 'selector': 'app-signup2'},{'name': 'Signup3Component', 'selector': 'app-signup3'},{'name': 'Signup4Component', 'selector': 'app-signup4'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SimpleAutocompleteComponent', 'selector': 'app-simple-autocomplete'},{'name': 'SimpleFormFieldComponent', 'selector': 'app-simple-form-field'},{'name': 'SliderComponent', 'selector': 'app-slider'},{'name': 'SortingTableComponent', 'selector': 'app-sorting-table'},{'name': 'SpacingComponent', 'selector': 'app-spacing'},{'name': 'StackedChipComponent', 'selector': 'app-stacked-chip'},{'name': 'StartDateDatepickerComponent', 'selector': 'app-start-date-datepicker'},{'name': 'StickyColumnTableComponent', 'selector': 'app-sticky-column-table'},{'name': 'StickyFooterTableComponent', 'selector': 'app-sticky-footer-table'},{'name': 'StickyHeaderTableComponent', 'selector': 'app-sticky-header-table'},{'name': 'SuffixPrefixInputComponent', 'selector': 'app-suffix-prefix-input'},{'name': 'SvgIconComponent', 'selector': 'app-svg-icon'},{'name': 'TableSortingComponent', 'selector': 'app-table-sorting'},{'name': 'TagDialogueComponent', 'selector': 'app-tag-dialogue'},{'name': 'ThemingFormFieldComponent', 'selector': 'app-theming-form-field'},{'name': 'TodoComponent', 'selector': 'app-todo'},{'name': 'TodoDetailsComponent', 'selector': 'app-todo-details'},{'name': 'TodoListComponent', 'selector': 'app-todo-list'},{'name': 'TouchDatepickerComponent', 'selector': 'app-touch-datepicker'},{'name': 'TriggerSelectComponent', 'selector': 'app-trigger-select'},{'name': 'TwoSidenavComponent', 'selector': 'app-two-sidenav'},{'name': 'TwoWayBindingSelectComponent', 'selector': 'app-two-way-binding-select'},{'name': 'TypographyComponent', 'selector': 'app-typography'},{'name': 'UILibIconsComponent', 'selector': 'app-uilib-icons'},{'name': 'UserTableComponent', 'selector': 'app-user-table'},{'name': 'UserTablePopupComponent', 'selector': 'app-user-table-popup'},{'name': 'UserTableSidenavComponent', 'selector': 'app-user-table-sidenav'},{'name': 'VerticalStepperComponent', 'selector': 'app-vertical-stepper'},{'name': 'WizardComponent', 'selector': 'app-wizard'}];
+    var DIRECTIVES = [{'name': 'AppDropdownDirective', 'selector': '[appDropdown]'},{'name': 'DropdownAnchorDirective', 'selector': '[appDropdownToggle]'},{'name': 'DropdownLinkDirective', 'selector': '[appDropdownLink]'},{'name': 'EgretHighlightDirective', 'selector': '[egretHighlight]'},{'name': 'EgretSidebarTogglerDirective', 'selector': '[egretSidebarToggler]'},{'name': 'EgretSidenavHelperDirective', 'selector': '[egretSidenavHelper]'},{'name': 'EgretSideNavToggleDirective', 'selector': '[EgretSideNavToggle]'},{'name': 'EgretSidenavTogglerDirective', 'selector': '[egretSidenavToggler]'},{'name': 'FontSizeDirective', 'selector': '[fontSize]'},{'name': 'ScrollToDirective', 'selector': '[scrollTo]'}];
+    var ACTUAL_COMPONENT = {'name': 'CustomizerComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CustomizerComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

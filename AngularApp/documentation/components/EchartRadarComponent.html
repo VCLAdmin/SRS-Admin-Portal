@@ -1,0 +1,822 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>egret documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">egret documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  EchartRadarComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/assets/examples/chart/echart-radar/echart-radar.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-echart-radar</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./echart-radar.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./echart-radar.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#aquiRadar" >aquiRadar</a>
+                            </li>
+                            <li>
+                                <a href="#fancyRadar" >fancyRadar</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#loadAQIRadarData" >loadAQIRadarData</a>
+                            </li>
+                            <li>
+                                <a href="#loadFancyRadarData" >loadFancyRadarData</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/assets/examples/chart/echart-radar/echart-radar.component.ts:11</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadAQIRadarData"></a>
+                    <span class="name">
+                        <span ><b>loadAQIRadarData</b></span>
+                        <a href="#loadAQIRadarData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadAQIRadarData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="98"
+                            class="link-to-prism">src/assets/examples/chart/echart-radar/echart-radar.component.ts:98</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadFancyRadarData"></a>
+                    <span class="name">
+                        <span ><b>loadFancyRadarData</b></span>
+                        <a href="#loadFancyRadarData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadFancyRadarData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="20"
+                            class="link-to-prism">src/assets/examples/chart/echart-radar/echart-radar.component.ts:20</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="15"
+                            class="link-to-prism">src/assets/examples/chart/echart-radar/echart-radar.component.ts:15</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="aquiRadar"></a>
+                    <span class="name">
+                        <span ><b>aquiRadar</b></span>
+                        <a href="#aquiRadar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/assets/examples/chart/echart-radar/echart-radar.component.ts:10</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fancyRadar"></a>
+                    <span class="name">
+                        <span ><b>fancyRadar</b></span>
+                        <a href="#fancyRadar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/assets/examples/chart/echart-radar/echart-radar.component.ts:11</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+
+@Component({
+  selector: &#x27;app-echart-radar&#x27;,
+  templateUrl: &#x27;./echart-radar.component.html&#x27;,
+  styleUrls: [&#x27;./echart-radar.component.scss&#x27;]
+})
+export class EchartRadarComponent implements OnInit {
+
+aquiRadar;
+fancyRadar;
+
+  constructor() { }
+
+  ngOnInit() {
+    this.loadAQIRadarData();
+    this.loadFancyRadarData();
+  }
+
+  loadFancyRadarData() {
+      this.fancyRadar  &#x3D; {
+    // title: {
+    //     text: &#x27;Proportion Radar&#x27;,
+    //     subtext: &#x27;Proportion of Browsers&#x27;,
+    //     top: 10,
+    //     left: 10
+    // },
+    tooltip: {
+        trigger: &#x27;item&#x27;,
+        backgroundColor : &#x27;rgba(0,0,250,0.2)&#x27;
+    },
+    legend: {
+        type: &#x27;scroll&#x27;,
+        bottom: 10,
+        data: (function (){
+            var list &#x3D; [];
+            for (var i &#x3D; 1; i &lt;&#x3D;28; i++) {
+                list.push(i + 2000 + &#x27;&#x27;);
+            }
+            return list;
+        })()
+    },
+    visualMap: {
+        top: &#x27;middle&#x27;,
+        right: 10,
+        color: [&#x27;rgba(15, 21, 77, 0.8)&#x27;, &#x27;#03A9F4&#x27;],
+        calculable: true
+    },
+    radar: {
+        name: {
+            textStyle: {
+                color: &#x27;rgba(0,0,0,0.87)&#x27;
+            }
+        },
+       indicator : [
+           { text: &#x27;IE8-&#x27;, max: 400},
+           { text: &#x27;IE9+&#x27;, max: 400},
+           { text: &#x27;Safari&#x27;, max: 400},
+           { text: &#x27;Firefox&#x27;, max: 400},
+           { text: &#x27;Chrome&#x27;, max: 400}
+        ]
+    },
+    series : (function (){
+        var series &#x3D; [];
+        for (var i &#x3D; 1; i &lt;&#x3D; 28; i++) {
+            series.push({
+                name:&#x27;Hridoy&#x27;,
+                type: &#x27;radar&#x27;,
+                symbol: &#x27;none&#x27;,
+                lineStyle: {
+                    width: 1
+                },
+                emphasis: {
+                    areaStyle: {
+                        color: &#x27;#FFC107&#x27;
+                    }
+                },
+                data:[
+                  {
+                    value:[
+                        (40 - i) * 10,
+                        (38 - i) * 4 + 60,
+                        i * 5 + 10,
+                        i * 9,
+                        i * i /2
+                    ],
+                    name: i + 2000 + &#x27;&#x27;
+                  }
+                ]
+            });
+        }
+        return series;
+    })()
+};
+  }
+
+
+loadAQIRadarData() {
+// Schema:
+// date,AQIindex,PM2.5,PM10,CO,NO2,SO2
+var dataBJ &#x3D; [
+  [55,9,56,0.46,18,6,1],
+  [25,11,21,0.65,34,9,2],
+  [56,7,63,0.3,14,5,3],
+  [33,7,29,0.33,16,6,4],
+  [42,24,44,0.76,40,16,5],
+  [82,58,90,1.77,68,33,6],
+  [74,49,77,1.46,48,27,7],
+  [78,55,80,1.29,59,29,8],
+  [267,216,280,4.8,108,64,9],
+  [185,127,216,2.52,61,27,10],
+  [39,19,38,0.57,31,15,11],
+  [41,11,40,0.43,21,7,12],
+  [64,38,74,1.04,46,22,13],
+  [108,79,120,1.7,75,41,14],
+  [108,63,116,1.48,44,26,15],
+  [33,6,29,0.34,13,5,16],
+  [94,66,110,1.54,62,31,17],
+  [186,142,192,3.88,93,79,18],
+  [57,31,54,0.96,32,14,19],
+  [22,8,17,0.48,23,10,20],
+  [39,15,36,0.61,29,13,21],
+  [94,69,114,2.08,73,39,22],
+  [99,73,110,2.43,76,48,23],
+  [31,12,30,0.5,32,16,24],
+  [42,27,43,1,53,22,25],
+  [154,117,157,3.05,92,58,26],
+  [234,185,230,4.09,123,69,27],
+  [160,120,186,2.77,91,50,28],
+  [134,96,165,2.76,83,41,29],
+  [52,24,60,1.03,50,21,30],
+  [46,5,49,0.28,10,6,31]
+];
+
+var dataGZ &#x3D; [
+  [26,37,27,1.163,27,13,1],
+  [85,62,71,1.195,60,8,2],
+  [78,38,74,1.363,37,7,3],
+  [21,21,36,0.634,40,9,4],
+  [41,42,46,0.915,81,13,5],
+  [56,52,69,1.067,92,16,6],
+  [64,30,28,0.924,51,2,7],
+  [55,48,74,1.236,75,26,8],
+  [76,85,113,1.237,114,27,9],
+  [91,81,104,1.041,56,40,10],
+  [84,39,60,0.964,25,11,11],
+  [64,51,101,0.862,58,23,12],
+  [70,69,120,1.198,65,36,13],
+  [77,105,178,2.549,64,16,14],
+  [109,68,87,0.996,74,29,15],
+  [73,68,97,0.905,51,34,16],
+  [54,27,47,0.592,53,12,17],
+  [51,61,97,0.811,65,19,18],
+  [91,71,121,1.374,43,18,19],
+  [73,102,182,2.787,44,19,20],
+  [73,50,76,0.717,31,20,21],
+  [84,94,140,2.238,68,18,22],
+  [93,77,104,1.165,53,7,23],
+  [99,130,227,3.97,55,15,24],
+  [146,84,139,1.094,40,17,25],
+  [113,108,137,1.481,48,15,26],
+  [81,48,62,1.619,26,3,27],
+  [56,48,68,1.336,37,9,28],
+  [82,92,174,3.29,0,13,29],
+  [106,116,188,3.628,101,16,30],
+  [118,50,0,1.383,76,11,31]
+];
+
+var dataSH &#x3D; [
+  [91,45,125,0.82,34,23,1],
+  [65,27,78,0.86,45,29,2],
+  [83,60,84,1.09,73,27,3],
+  [109,81,121,1.28,68,51,4],
+  [106,77,114,1.07,55,51,5],
+  [109,81,121,1.28,68,51,6],
+  [106,77,114,1.07,55,51,7],
+  [89,65,78,0.86,51,26,8],
+  [53,33,47,0.64,50,17,9],
+  [80,55,80,1.01,75,24,10],
+  [117,81,124,1.03,45,24,11],
+  [99,71,142,1.1,62,42,12],
+  [95,69,130,1.28,74,50,13],
+  [116,87,131,1.47,84,40,14],
+  [108,80,121,1.3,85,37,15],
+  [134,83,167,1.16,57,43,16],
+  [79,43,107,1.05,59,37,17],
+  [71,46,89,0.86,64,25,18],
+  [97,71,113,1.17,88,31,19],
+  [84,57,91,0.85,55,31,20],
+  [87,63,101,0.9,56,41,21],
+  [104,77,119,1.09,73,48,22],
+  [87,62,100,1,72,28,23],
+  [168,128,172,1.49,97,56,24],
+  [65,45,51,0.74,39,17,25],
+  [39,24,38,0.61,47,17,26],
+  [39,24,39,0.59,50,19,27],
+  [93,68,96,1.05,79,29,28],
+  [188,143,197,1.66,99,51,29],
+  [174,131,174,1.55,108,50,30],
+  [187,143,201,1.39,89,53,31]
+];
+
+var lineStyle &#x3D; {
+  normal: {
+      width: 1,
+      opacity: 0.5,
+      color: &quot;rgba(15, 21, 77, 0.8)&quot;
+  }
+};
+
+this.aquiRadar &#x3D; {
+  backgroundColor: &#x27;#ffffff&#x27;,
+//   title: {
+//       text: &#x27;AQI - Radar&#x27;,
+//       left: &#x27;center&#x27;,
+//       textStyle: {
+//           color: &#x27;#eee&#x27;
+//       }
+//   },
+  legend: {
+      bottom: 5,
+      data: [&#x27;Mango&#x27;, &#x27;Banana&#x27;, &#x27;Litchi&#x27;],
+      itemGap: 20,
+      textStyle: {
+          color: &quot;rgba(0,0,0,, 0.87)&quot;,
+          fontSize: 14
+      },
+      selectedMode: &#x27;single&#x27;
+  },
+  // visualMap: {
+  //     show: true,
+  //     min: 0,
+  //     max: 20,
+  //     dimension: 6,
+  //     inRange: {
+  //         colorLightness: [0.5, 0.8]
+  //     }
+  // },
+  radar: {
+      indicator: [
+          {name: &#x27;AQI&#x27;, max: 300},
+          {name: &#x27;PM2.5&#x27;, max: 250},
+          {name: &#x27;PM10&#x27;, max: 300},
+          {name: &#x27;CO&#x27;, max: 5},
+          {name: &#x27;NO2&#x27;, max: 200},
+          {name: &#x27;SO2&#x27;, max: 100}
+      ],
+      shape: &#x27;circle&#x27;,
+      splitNumber: 5,
+      name: {
+          textStyle: {
+              color: &#x27;rgba(0, 0, 0, 0.87)&#x27;
+          }
+      },
+      splitLine: {
+          lineStyle: {
+              color: [
+                  &#x27;rgba(238, 197, 102, 0.1)&#x27;, &#x27;rgba(238, 197, 102, 0.2)&#x27;,
+                  &#x27;rgba(238, 197, 102, 0.4)&#x27;, &#x27;rgba(238, 197, 102, 0.6)&#x27;,
+                  &#x27;rgba(238, 197, 102, 0.8)&#x27;, &#x27;rgba(238, 197, 102, 1)&#x27;
+              ].reverse()
+          }
+      },
+      splitArea: {
+          show: false
+      },
+      axisLine: {
+          lineStyle: {
+              color: &#x27;rgba(238, 197, 102, 0.5)&#x27;
+          }
+      }
+  },
+  series: [
+      {
+          name: &#x27;Mango&#x27;,
+          type: &#x27;radar&#x27;,
+          lineStyle: lineStyle,
+          data: dataBJ,
+          symbol: &#x27;none&#x27;,
+          itemStyle: {
+              normal: {
+                  color: &#x27;rgba(15, 21, 77, 0.8)&#x27;
+              }
+          },
+          areaStyle: {
+              normal: {
+                  opacity: 0.1
+              }
+          }
+      },
+      {
+          name: &#x27;Banana&#x27;,
+          type: &#x27;radar&#x27;,
+          lineStyle: lineStyle,
+          data: dataSH,
+          symbol: &#x27;none&#x27;,
+          itemStyle: {
+              normal: {
+                  color: &#x27;#FFC107&#x27;
+              }
+          },
+          areaStyle: {
+              normal: {
+                  opacity: 0.05
+              }
+          }
+      },
+      {
+          name: &#x27;Litchi&#x27;,
+          type: &#x27;radar&#x27;,
+          lineStyle: lineStyle,
+          data: dataGZ,
+          symbol: &#x27;none&#x27;,
+          itemStyle: {
+              normal: {
+                  color: &#x27;#03A9F4&#x27;
+              }
+          },
+          areaStyle: {
+              normal: {
+                  opacity: 0.05
+              }
+          }
+      }
+  ]
+};
+}
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;h3 class&#x3D;&quot;mb-16&quot;&gt;Proportion of Browsers&lt;/h3&gt;
+&lt;div echarts [options]&#x3D;&quot;fancyRadar&quot; style&#x3D;&quot;height: 400px&quot;&gt;&lt;/div&gt;
+&lt;div class&#x3D;&quot;m-24&quot;&gt;
+    &lt;mat-divider&gt;&lt;/mat-divider&gt;
+&lt;/div&gt;
+
+&lt;h3 class&#x3D;&quot;mb-16&quot;&gt;AQI Radar Chart&lt;/h3&gt;
+&lt;div echarts [options]&#x3D;&quot;aquiRadar&quot; style&#x3D;&quot;height: 600px&quot;&gt;&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./echart-radar.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><h3 class="mb-16">Proportion of Browsers</h3><div echarts [options]="fancyRadar" style="height: 400px"></div><div class="m-24">    <mat-divider></mat-divider></div><h3 class="mb-16">AQI Radar Chart</h3><div echarts [options]="aquiRadar" style="height: 600px"></div></div>'
+    var COMPONENTS = [{'name': 'AccordinExpansionPanelComponent', 'selector': 'app-accordin-expansion-panel'},{'name': 'AdminLayoutComponent', 'selector': 'app-admin-layout'},{'name': 'AlignTabGroupComponent', 'selector': 'app-align-tab-group'},{'name': 'AnalyticsComponent', 'selector': 'app-analytics'},{'name': 'AnimationTabGroupComponent', 'selector': 'app-animation-tab-group'},{'name': 'AppBlankComponent', 'selector': 'app-blank'},{'name': 'AppCalendarComponent', 'selector': 'app-calendar'},{'name': 'AppChatsComponent', 'selector': 'app-chats'},{'name': 'AppComfirmComponent', 'selector': 'app-confirm'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppearanceFormFieldComponent', 'selector': 'app-appearance-form-field'},{'name': 'AppGalleryComponent', 'selector': 'app-gallery'},{'name': 'AppInboxComponent', 'selector': 'app-inbox'},{'name': 'AppLoaderComponent', 'selector': 'app-app-loader'},{'name': 'AppPricingComponent', 'selector': 'app-pricing'},{'name': 'AppTourComponent', 'selector': 'app-app-tour'},{'name': 'AppUsersComponent', 'selector': 'app-users'},{'name': 'AuthLayoutComponent', 'selector': 'app-auth-layout'},{'name': 'AutocompleteChipComponent', 'selector': 'app-autocomplete-chip'},{'name': 'AutocompleteOverviewComponent', 'selector': 'app-autocomplete-overview'},{'name': 'AutoHideTooltipComponent', 'selector': 'app-auto-hide-tooltip'},{'name': 'AutoresizeSidenavComponent', 'selector': 'app-autoresize-sidenav'},{'name': 'AutoResizingTexareaComponent', 'selector': 'app-auto-resizing-texarea'},{'name': 'BasicBadgeComponent', 'selector': 'app-basic-badge'},{'name': 'BasicBarComponent', 'selector': 'app-basic-bar'},{'name': 'BasicButtonToggleComponent', 'selector': 'app-basic-button-toggle'},{'name': 'BasicCardComponent', 'selector': 'app-basic-card'},{'name': 'BasicCheckboxComponent', 'selector': 'app-basic-checkbox'},{'name': 'BasicChipComponent', 'selector': 'app-basic-chip'},{'name': 'BasicDatepickerComponent', 'selector': 'app-basic-datepicker'},{'name': 'BasicDialogComponent', 'selector': 'app-basic-dialog'},{'name': 'BasicDialogOverviewComponent', 'selector': 'app-basic-dialog-overview'},{'name': 'BasicDividerComponent', 'selector': 'app-basic-divider'},{'name': 'BasicExpansionPanelComponent', 'selector': 'app-basic-expansion-panel'},{'name': 'BasicFormComponent', 'selector': 'app-basic-form'},{'name': 'BasicGridComponent', 'selector': 'app-basic-grid'},{'name': 'BasicIconComponent', 'selector': 'app-basic-icon'},{'name': 'BasicInputComponent', 'selector': 'app-basic-input'},{'name': 'BasicListComponent', 'selector': 'app-basic-list'},{'name': 'BasicMenuComponent', 'selector': 'app-basic-menu'},{'name': 'BasicPaginatorComponent', 'selector': 'app-basic-paginator'},{'name': 'BasicRadioComponent', 'selector': 'app-basic-radio'},{'name': 'BasicSelectComponent', 'selector': 'app-basic-select'},{'name': 'BasicSidenavComponent', 'selector': 'app-basic-sidenav'},{'name': 'BasicSliderComponent', 'selector': 'app-basic-slider'},{'name': 'BasicSnackbarComponent', 'selector': 'app-basic-snackbar'},{'name': 'BasicSnackbarComponent', 'selector': 'app-basic-snackbar'},{'name': 'BasicSortHeaderComponent', 'selector': 'app-basic-sort-header'},{'name': 'BasicSpinnerComponent', 'selector': 'app-basic-spinner'},{'name': 'BasicStepperComponent', 'selector': 'app-basic-stepper'},{'name': 'BasicTabGroupComponent', 'selector': 'app-basic-tab-group'},{'name': 'BasicTableComponent', 'selector': 'app-basic-table'},{'name': 'BasicToggleComponent', 'selector': 'app-basic-toggle'},{'name': 'BasicToolbarComponent', 'selector': 'app-basic-toolbar'},{'name': 'BasicTooltipComponent', 'selector': 'app-basic-tooltip'},{'name': 'BorderComponent', 'selector': 'app-border'},{'name': 'BottomSheetComponent', 'selector': 'app-bottom-sheet'},{'name': 'BottomSheetOverviewComponent', 'selector': 'app-bottom-sheet-overview'},{'name': 'BottomSheetShareComponent', 'selector': 'app-bottom-sheet-share'},{'name': 'BreadcrumbComponent', 'selector': 'app-breadcrumb'},{'name': 'ButtonExamplesComponent', 'selector': 'app-button-examples'},{'name': 'ButtonLoadingComponent', 'selector': 'button-loading'},{'name': 'ButtonsComponent', 'selector': 'app-buttons'},{'name': 'ButtonToggleComponent', 'selector': 'app-button-toggle'},{'name': 'CalendarFormDialogComponent', 'selector': 'app-calendar-form-dialog'},{'name': 'CartComponent', 'selector': 'app-cart'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ChangingTooltipComponent', 'selector': 'app-changing-tooltip'},{'name': 'ChartExampleViewComponent', 'selector': 'app-chart-example-view'},{'name': 'ChartsComponent', 'selector': 'app-charts'},{'name': 'ChatContentsComponent', 'selector': 'app-chat-contents'},{'name': 'ChatLeftSidenavComponent', 'selector': 'app-chat-left-sidenav'},{'name': 'CheckboxTreeComponent', 'selector': 'app-checkbox-tree'},{'name': 'CheckoutComponent', 'selector': 'app-checkout'},{'name': 'ClearButtonInputComponent', 'selector': 'app-clear-button-input'},{'name': 'ColorsComponent', 'selector': 'app-colors'},{'name': 'ConfigurableCheckboxComponent', 'selector': 'app-configurable-checkbox'},{'name': 'ConfigurableSidenavComponent', 'selector': 'app-configurable-sidenav'},{'name': 'ConfigurableToggleComponent', 'selector': 'app-configurable-toggle'},{'name': 'ConfirmDialogComponent', 'selector': 'app-confirm-dialog'},{'name': 'CrudNgxTableComponent', 'selector': 'app-crud-ngx-table'},{'name': 'CryptocurrencyComponent', 'selector': 'app-cryptocurrency'},{'name': 'CustomBarComponent', 'selector': 'app-custom-bar'},{'name': 'CustomClassTooltipComponent', 'selector': 'app-custom-class-tooltip'},{'name': 'CustomDatepickerComponent', 'selector': 'app-custom-datepicker'},{'name': 'CustomizedStepperComponent', 'selector': 'app-customized-stepper'},{'name': 'CustomizerComponent', 'selector': 'app-customizer'},{'name': 'CustomLoadingButtonsComponent', 'selector': 'app-custom-loading-buttons'},{'name': 'CustomPaginatorComponent', 'selector': 'app-custom-paginator'},{'name': 'CustomPanelSelectComponent', 'selector': 'app-custom-panel-select'},{'name': 'CustomPositionTooltipComponent', 'selector': 'app-custom-position-tooltip'},{'name': 'CustomRipplesComponent', 'selector': 'app-custom-ripples'},{'name': 'CustomSnackbarComponent', 'selector': 'app-custom-snackbar'},{'name': 'CustomSnackbarOverviewComponent', 'selector': 'app-custom-snackbar-overview'},{'name': 'CustomSpinnerComponent', 'selector': 'app-custom-spinner'},{'name': 'CustomTabGroupComponent', 'selector': 'app-custom-tab-group'},{'name': 'DashboardDarkComponent', 'selector': 'app-dashboard-dark'},{'name': 'DataDialogComponent', 'selector': 'app-data-dialog'},{'name': 'DataDialogOverviewComponent', 'selector': 'app-data-dialog-overview'},{'name': 'DealerTableComponent', 'selector': 'app-dealer-table'},{'name': 'DealerTablePopupComponent', 'selector': 'app-dealer-table-popup'},{'name': 'DealerTableSidenavComponent', 'selector': 'app-dealer-table-sidenav'},{'name': 'DefaultDashboardComponent', 'selector': 'app-default-dashboard'},{'name': 'DefaultDashboardComponent', 'selector': 'app-default-dashboard'},{'name': 'DelayTooltipComponent', 'selector': 'app-delay-tooltip'},{'name': 'DifferentLocaleDatepickerComponent', 'selector': 'app-different-locale-datepicker'},{'name': 'DisabledDatepickerComponent', 'selector': 'app-disabled-datepicker'},{'name': 'DisabledSelectComponent', 'selector': 'app-disabled-select'},{'name': 'DisabledTooltipComponent', 'selector': 'app-disabled-tooltip'},{'name': 'DisplayValueAutocompleteComponent', 'selector': 'app-display-value-autocomplete'},{'name': 'DragndropComponent', 'selector': 'app-dragndrop'},{'name': 'DrawerSidenavComponent', 'selector': 'app-drawer-sidenav'},{'name': 'DynamicDataTreeComponent', 'selector': 'app-dynamic-data-tree'},{'name': 'DynamicGridComponent', 'selector': 'app-dynamic-grid'},{'name': 'DynamicTabGroupComponent', 'selector': 'app-dynamic-tab-group'},{'name': 'EchartBarComponent', 'selector': 'app-echart-bar'},{'name': 'EchartHeatmapComponent', 'selector': 'app-echart-heatmap'},{'name': 'EchartPieComponent', 'selector': 'app-echart-pie'},{'name': 'EchartRadarComponent', 'selector': 'app-echart-radar'},{'name': 'EgretExampleViewerComponent', 'selector': 'egret-example-viewer'},{'name': 'EgretExampleViewerTemplateComponent', 'selector': 'egret-example-viewer-template'},{'name': 'EgretNotifications2Component', 'selector': 'egret-notifications2'},{'name': 'EgretSidebarComponent', 'selector': 'egret-sidebar'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'ErrorFormFieldComponent', 'selector': 'app-error-form-field'},{'name': 'ErrorInputComponent', 'selector': 'app-error-input'},{'name': 'ErrorMessageInputComponent', 'selector': 'app-error-message-input'},{'name': 'ErrorSelectComponent', 'selector': 'app-error-select'},{'name': 'ErrorStepperComponent', 'selector': 'app-error-stepper'},{'name': 'EscapeBackdropSidenavComponent', 'selector': 'app-escape-backdrop-sidenav'},{'name': 'EventDatepickerComponent', 'selector': 'app-event-datepicker'},{'name': 'FabricatorDashboardComponent', 'selector': 'app-fabricator-dashboard'},{'name': 'FabricatorTableComponent', 'selector': 'app-fabricator-table'},{'name': 'FabricatorTablePopupComponent', 'selector': 'app-fabricator-table-popup'},{'name': 'FabricatorTableSidenavComponent', 'selector': 'app-fabricator-table-sidenav'},{'name': 'FeatureSelectComponent', 'selector': 'app-feature-select'},{'name': 'FileUploadComponent', 'selector': 'app-file-upload'},{'name': 'FilterAutocompleteComponent', 'selector': 'app-filter-autocomplete'},{'name': 'FilterDatepickerComponent', 'selector': 'app-filter-datepicker'},{'name': 'FilterTableComponent', 'selector': 'app-filter-table'},{'name': 'FilterTableComponent', 'selector': 'app-filter-table'},{'name': 'FinancialDealerComponent', 'selector': 'app-financial-dealer'},{'name': 'FinancialTableComponent', 'selector': 'app-financial-table'},{'name': 'FinancialTablePopupComponent', 'selector': 'app-financial-table-popup'},{'name': 'FinancialTableSidenavComponent', 'selector': 'app-financial-table-sidenav'},{'name': 'FixedSidenavComponent', 'selector': 'app-fixed-sidenav'},{'name': 'FlatTreeComponent', 'selector': 'app-flat-tree'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FooterTableComponent', 'selector': 'app-footer-table'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'FormInputComponent', 'selector': 'app-form-input'},{'name': 'FormSelectComponent', 'selector': 'app-form-select'},{'name': 'FullscreenTableComponent', 'selector': 'app-fullscreen-table'},{'name': 'FullWidthCardComponent', 'selector': 'app-full-width-card'},{'name': 'FullWidthCardTabComponent', 'selector': 'app-full-width-card-tab'},{'name': 'FullWidthPlainComponent', 'selector': 'app-full-width-plain'},{'name': 'HeaderSideComponent', 'selector': 'app-header-side'},{'name': 'HeaderTopComponent', 'selector': 'app-header-top'},{'name': 'HighlightFirstAutocompleteComponent', 'selector': 'app-highlight-first-autocomplete'},{'name': 'HintsFormFieldComponent', 'selector': 'app-hints-form-field'},{'name': 'HintsInputComponent', 'selector': 'app-hints-input'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'IconMenuComponent', 'selector': 'app-icon-menu'},{'name': 'IndeterminateBarComponent', 'selector': 'app-indeterminate-bar'},{'name': 'InputChipComponent', 'selector': 'app-input-chip'},{'name': 'InvoiceDetailsComponent', 'selector': 'app-invoice-details'},{'name': 'InvoiceListComponent', 'selector': 'app-invoice-list'},{'name': 'LabelFormFieldComponent', 'selector': 'app-label-form-field'},{'name': 'LearningManagementComponent', 'selector': 'app-learning-management'},{'name': 'LeftSidebarCardComponent', 'selector': 'app-left-sidebar-card'},{'name': 'LeftSidebarPlainComponent', 'selector': 'app-left-sidebar-plain'},{'name': 'LoaderDialogComponent', 'selector': 'app-loader-dialog'},{'name': 'LockscreenComponent', 'selector': 'app-lockscreen'},{'name': 'MailComposeComponent', 'selector': 'mail-compose'},{'name': 'ManualHideTooltipComponent', 'selector': 'app-manual-hide-tooltip'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'MaterialExampleViewComponent', 'selector': 'app-material-example-view'},{'name': 'MaterialTableComponent', 'selector': 'app-material-table'},{'name': 'MatIconsComponent', 'selector': 'app-mat-icons'},{'name': 'MinMaxDatepickerComponent', 'selector': 'app-min-max-datepicker'},{'name': 'MomentJsDatepickerComponent', 'selector': 'app-moment-js-datepicker'},{'name': 'MultipleSelectComponent', 'selector': 'app-multiple-select'},{'name': 'MultiRowToolbarComponent', 'selector': 'app-multi-row-toolbar'},{'name': 'MultiSectionCardComponent', 'selector': 'app-multi-section-card'},{'name': 'NavTabGroupComponent', 'selector': 'app-nav-tab-group'},{'name': 'Nested1Component', 'selector': 'app-nested1'},{'name': 'Nested2Component', 'selector': 'app-nested2'},{'name': 'Nested3Component', 'selector': 'app-nested3'},{'name': 'NestedMenuComponent', 'selector': 'app-nested-menu'},{'name': 'NestedTreeComponent', 'selector': 'app-nested-tree'},{'name': 'NgmodelRadioComponent', 'selector': 'app-ngmodel-radio'},{'name': 'NgxTablePopupComponent', 'selector': 'app-ngx-table-popup'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'NotificationsComponent', 'selector': 'app-notifications'},{'name': 'OpenCloseSidenavComponent', 'selector': 'app-open-close-sidenav'},{'name': 'OpenMethodDatepickerComponent', 'selector': 'app-open-method-datepicker'},{'name': 'OptionGroupAutocompleteComponent', 'selector': 'app-option-group-autocomplete'},{'name': 'OptionGroupSelectComponent', 'selector': 'app-option-group-select'},{'name': 'OrderCostListComponent', 'selector': 'app-order-cost-list'},{'name': 'OrderDetailComponent', 'selector': 'app-order-detail'},{'name': 'OrderListComponent', 'selector': 'app-order-list'},{'name': 'OrderTableComponent', 'selector': 'app-order-table'},{'name': 'OrderTablePopupComponent', 'selector': 'app-order-table-popup'},{'name': 'OrderTableSidenavComponent', 'selector': 'app-order-table-sidenav'},{'name': 'PaginationTableComponent', 'selector': 'app-pagination-table'},{'name': 'PagingTableComponent', 'selector': 'app-paging-table'},{'name': 'PrefixSuffixFormFieldComponent', 'selector': 'app-prefix-suffix-form-field'},{'name': 'ProductDetailsComponent', 'selector': 'app-product-details'},{'name': 'ProductsComponent', 'selector': 'app-products'},{'name': 'ProfileBlankComponent', 'selector': 'app-profile-blank'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ProfileOverviewComponent', 'selector': 'app-profile-overview'},{'name': 'ProfileSettingsComponent', 'selector': 'app-profile-settings'},{'name': 'ResetSelectComponent', 'selector': 'app-reset-select'},{'name': 'ResponsiveSidenavComponent', 'selector': 'app-responsive-sidenav'},{'name': 'ResultPageComponent', 'selector': 'app-result-page'},{'name': 'RichTextEditorComponent', 'selector': 'app-rich-text-editor'},{'name': 'RightSidebarCardComponent', 'selector': 'app-right-sidebar-card'},{'name': 'RipplelessSelectComponent', 'selector': 'app-rippleless-select'},{'name': 'ScrollableDialogComponent', 'selector': 'app-scrollable-dialog'},{'name': 'ScrollableDialogOverviewComponent', 'selector': 'app-scrollable-dialog-overview'},{'name': 'SearchInputOverComponent', 'selector': 'egret-search-input-over'},{'name': 'SectionListComponent', 'selector': 'app-section-list'},{'name': 'SelectedValueDatepickerComponent', 'selector': 'app-selected-value-datepicker'},{'name': 'SelectionTableComponent', 'selector': 'app-selection-table'},{'name': 'SidebarSideComponent', 'selector': 'app-sidebar-side'},{'name': 'SidebarTopComponent', 'selector': 'app-sidebar-top'},{'name': 'SidenavComponent', 'selector': 'app-sidenav'},{'name': 'Signin2Component', 'selector': 'app-signin2'},{'name': 'Signin3Component', 'selector': 'app-signin3'},{'name': 'Signin4Component', 'selector': 'app-signin4'},{'name': 'SigninComponent', 'selector': 'app-signin'},{'name': 'Signup2Component', 'selector': 'app-signup2'},{'name': 'Signup3Component', 'selector': 'app-signup3'},{'name': 'Signup4Component', 'selector': 'app-signup4'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SimpleAutocompleteComponent', 'selector': 'app-simple-autocomplete'},{'name': 'SimpleFormFieldComponent', 'selector': 'app-simple-form-field'},{'name': 'SliderComponent', 'selector': 'app-slider'},{'name': 'SortingTableComponent', 'selector': 'app-sorting-table'},{'name': 'SpacingComponent', 'selector': 'app-spacing'},{'name': 'StackedChipComponent', 'selector': 'app-stacked-chip'},{'name': 'StartDateDatepickerComponent', 'selector': 'app-start-date-datepicker'},{'name': 'StickyColumnTableComponent', 'selector': 'app-sticky-column-table'},{'name': 'StickyFooterTableComponent', 'selector': 'app-sticky-footer-table'},{'name': 'StickyHeaderTableComponent', 'selector': 'app-sticky-header-table'},{'name': 'SuffixPrefixInputComponent', 'selector': 'app-suffix-prefix-input'},{'name': 'SvgIconComponent', 'selector': 'app-svg-icon'},{'name': 'TableSortingComponent', 'selector': 'app-table-sorting'},{'name': 'TagDialogueComponent', 'selector': 'app-tag-dialogue'},{'name': 'ThemingFormFieldComponent', 'selector': 'app-theming-form-field'},{'name': 'TodoComponent', 'selector': 'app-todo'},{'name': 'TodoDetailsComponent', 'selector': 'app-todo-details'},{'name': 'TodoListComponent', 'selector': 'app-todo-list'},{'name': 'TouchDatepickerComponent', 'selector': 'app-touch-datepicker'},{'name': 'TriggerSelectComponent', 'selector': 'app-trigger-select'},{'name': 'TwoSidenavComponent', 'selector': 'app-two-sidenav'},{'name': 'TwoWayBindingSelectComponent', 'selector': 'app-two-way-binding-select'},{'name': 'TypographyComponent', 'selector': 'app-typography'},{'name': 'UILibIconsComponent', 'selector': 'app-uilib-icons'},{'name': 'UserTableComponent', 'selector': 'app-user-table'},{'name': 'UserTablePopupComponent', 'selector': 'app-user-table-popup'},{'name': 'UserTableSidenavComponent', 'selector': 'app-user-table-sidenav'},{'name': 'VerticalStepperComponent', 'selector': 'app-vertical-stepper'},{'name': 'WizardComponent', 'selector': 'app-wizard'}];
+    var DIRECTIVES = [{'name': 'AppDropdownDirective', 'selector': '[appDropdown]'},{'name': 'DropdownAnchorDirective', 'selector': '[appDropdownToggle]'},{'name': 'DropdownLinkDirective', 'selector': '[appDropdownLink]'},{'name': 'EgretHighlightDirective', 'selector': '[egretHighlight]'},{'name': 'EgretSidebarTogglerDirective', 'selector': '[egretSidebarToggler]'},{'name': 'EgretSidenavHelperDirective', 'selector': '[egretSidenavHelper]'},{'name': 'EgretSideNavToggleDirective', 'selector': '[EgretSideNavToggle]'},{'name': 'EgretSidenavTogglerDirective', 'selector': '[egretSidenavToggler]'},{'name': 'FontSizeDirective', 'selector': '[fontSize]'},{'name': 'ScrollToDirective', 'selector': '[scrollTo]'}];
+    var ACTUAL_COMPONENT = {'name': 'EchartRadarComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'EchartRadarComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

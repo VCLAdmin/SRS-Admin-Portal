@@ -71,6 +71,12 @@ export class FabricatorTableSidenavComponent implements OnInit, OnChanges {
       }
     }
   }
+
+ /**
+ * This function is used to initialize the fabricator form with the selected fabricator details
+ * 
+ * @param {any} item is the fabricator object which has the selected fabricator details.
+ */
   buildItemForm(item) {
     if (item.PrimaryContactEmail != undefined) {
       this.editing = true;
@@ -106,10 +112,20 @@ export class FabricatorTableSidenavComponent implements OnInit, OnChanges {
     this.googleSearchAddress();
   }
 
+ /**
+ * This function has the output event emitter to close the side nav of selected fabricator.
+ * 
+ * it closes the selected fabricator side nav which has the fabricator details.
+ */
   close(reason: string) {
     this.onCloseSideNav.emit(false);
   }
 
+ /**
+ * This function has the output event emitter to submit the form data in the parent component.
+ * 
+ * it submits the form data which was edited by the user.
+ */
   submit() {
     this.itemForm.value.SupportsADS = this.selectedSRSProductType.indexOf("ADS") > -1 ? 1 : 0;
     this.itemForm.value.SupportsAWS = this.selectedSRSProductType.indexOf("AWS") > -1 ? 1 : 0;
@@ -120,6 +136,11 @@ export class FabricatorTableSidenavComponent implements OnInit, OnChanges {
   _address: Address;
   @ViewChild('addressText') addressText: any;
   autocomplete: google.maps.places.Autocomplete;
+
+ /**
+ * This function is used to search the address using google address api to enter the address for fabricator.
+ * 
+ */
   googleSearchAddress() {
     this.showGoogleMap = false;
     const self = this;
@@ -140,6 +161,12 @@ export class FabricatorTableSidenavComponent implements OnInit, OnChanges {
     }
   }
 
+ /**
+ * This function is used to get the google address auto complete in which the google returned address is mapped to the
+ * 
+ * form fields which was there in the fabricator form.
+ * 
+ */
   private getPlaceAutocomplete(): void {
     setTimeout(() => {
       if (this.addressText) {
@@ -229,6 +256,11 @@ export class FabricatorTableSidenavComponent implements OnInit, OnChanges {
   //     }
   //   });
   // }
+
+ /**
+ * This function is used to set the address fields of the form.
+ * 
+ */
   onAddressAutocomplete(event: Address): void {
     this.itemForm.controls.Line1.setValue(event.Line1);
     this.itemForm.controls.Line2.setValue(event.Line2);

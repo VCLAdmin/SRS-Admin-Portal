@@ -40,6 +40,11 @@ export class DealerTableComponent implements OnInit, OnDestroy {
       this.getItemSub.unsubscribe()
     }
   }
+
+ /**
+ * This function is used to get the list of Dealers
+ *
+ */
   getItems() {
     this.getItemSub = this.crudService.getItems()
       .subscribe(data => {
@@ -52,15 +57,32 @@ export class DealerTableComponent implements OnInit, OnDestroy {
   isNew: undefined;
   title: string;
   selectedRow: DealerApiModel = undefined;
+
+ /**
+ * This function is used to reset the side nav when user clicks on the dealer
+ *
+ */
   resetSideNav() {
     this.isNew = undefined;
     this.title = "";
     this.selectedRow = undefined;
   }
+
+ /**
+ * This function is used to close the side nav of a selected dealer
+ *
+ */
   onCloseSideNav(reason: string) {
     this.resetSideNav();
     this.sidenav.close();
   }
+
+ /**
+ * This function is used to submit the dealer form data when the user updates the dealer data in the side nav
+ *
+ * @param {any} res is the dealer form object which needs to submit 
+ * 
+ */
   onSubmitData(res: any) {
     if (!res) {
       // If user press cancel
@@ -85,6 +107,11 @@ export class DealerTableComponent implements OnInit, OnDestroy {
         })
     }
   }
+
+ /**
+ * This function is used to open the dealer side nav when user selects the dealer
+ *
+ */
   onOpenSideNav(data: any = {}, isNew?) {
     this.isNew = isNew;
     this.title = isNew ? 'Add New Dealer' : 'Update Dealer';
@@ -92,6 +119,13 @@ export class DealerTableComponent implements OnInit, OnDestroy {
     this.sidenav.open()
   }
 
+ /**
+ * This function is called when user clck on the delete icon of any particular dealer from the list.
+ * 
+ * It deletes the dealer from the list and the db is updated
+ *
+ * @param {any} row is the selected dealer object which is to delete
+ */
   deleteItem(row) {
     this.confirmService.confirm({ message: `Delete ${row.Name}?` })
       .subscribe(res => {

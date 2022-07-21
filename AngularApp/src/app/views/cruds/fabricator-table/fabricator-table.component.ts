@@ -32,6 +32,11 @@ export class FabricatorTableComponent implements OnInit, OnDestroy {
       this.getItemSub.unsubscribe()
     }
   }
+
+ /**
+ * This function is used to get the list of Fabricators
+ *
+ */
   getItems() {
     this.getItemSub = this.crudService.getItems()
       .subscribe(data => {
@@ -43,15 +48,30 @@ export class FabricatorTableComponent implements OnInit, OnDestroy {
   isNew: undefined;
   title: string;
   selectedRow: FabricatorApiModel = undefined;
+
+ /**
+ * This function is used to reset the side nav when user clicks on the fabricator
+ *
+ */
   resetSideNav() {
     this.isNew = undefined;
     this.title = "";
     this.selectedRow = undefined;
   }
+
+ /**
+ * This function is used to close the side nav of a selected fabricator
+ *
+ */
   onCloseSideNav(reason: string) {
     this.resetSideNav();
     this.sidenav.close();
   }
+
+ /**
+ * This function is used to submit the fabricator form data when the user updates the fabricator data in the side nav
+ *
+ */
   onSubmitData(res: any) {
     if (!res) {
       // If user press cancel
@@ -89,6 +109,11 @@ export class FabricatorTableComponent implements OnInit, OnDestroy {
         })
     }
   }
+
+ /**
+ * This function is used to open the fabricator side nav when user selects the fabricator
+ *
+ */
   onOpenSideNav(data: any = {}, isNew?) {
     this.isNew = isNew;
     this.title = isNew ? 'Add New Fabricator' : 'Update Fabricator';
@@ -96,6 +121,13 @@ export class FabricatorTableComponent implements OnInit, OnDestroy {
     this.sidenav.open()
   }
 
+ /**
+ * This function is called when user clck on the delete icon of any particular fabricator from the list.
+ * 
+ * It deletes the fabricator from the list and the db is updated
+ *
+ * @param {any} row is the selected fabricator object which is to delete
+ */
   deleteItem(row) {
     this.confirmService.confirm({ message: `Delete ${row.Name}?` })
       .subscribe(res => {

@@ -1,0 +1,968 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>egret documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">egret documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >JwtAuthService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/shared/services/auth/jwt-auth.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#APP_USER" >APP_USER</a>
+                            </li>
+                            <li>
+                                <a href="#isAuthenticated" >isAuthenticated</a>
+                            </li>
+                            <li>
+                                <a href="#JWT_TOKEN" >JWT_TOKEN</a>
+                            </li>
+                            <li>
+                                <a href="#return" >return</a>
+                            </li>
+                            <li>
+                                <a href="#signingIn" >signingIn</a>
+                            </li>
+                            <li>
+                                <a href="#token" >token</a>
+                            </li>
+                            <li>
+                                <a href="#user" >user</a>
+                            </li>
+                            <li>
+                                <a href="#user$" >user$</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#checkTokenIsValid" >checkTokenIsValid</a>
+                            </li>
+                            <li>
+                                <a href="#isLoggedIn" >isLoggedIn</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#signin" >signin</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#signout" >signout</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(ls: <a href="../injectables/LocalStorageService.html" target="_self">LocalStorageService</a>, http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>, authService: <a href="../injectables/AuthService.html" target="_self">AuthService</a>, loginService: <a href="../injectables/LoginService.html" target="_self">LoginService</a>, navigationService: <a href="../injectables/NavigationService.html" target="_self">NavigationService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/shared/services/auth/jwt-auth.service.ts:36</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>ls</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LocalStorageService.html" target="_self" >LocalStorageService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>loginService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LoginService.html" target="_self" >LoginService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>navigationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NavigationService.html" target="_self" >NavigationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkTokenIsValid"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>checkTokenIsValid</b></span>
+                        <a href="#checkTokenIsValid"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkTokenIsValid()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="141"
+                            class="link-to-prism">src/app/shared/services/auth/jwt-auth.service.ts:141</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isLoggedIn"></a>
+                    <span class="name">
+                        <span ><b>isLoggedIn</b></span>
+                        <a href="#isLoggedIn"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isLoggedIn()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="180"
+                            class="link-to-prism">src/app/shared/services/auth/jwt-auth.service.ts:180</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" >Boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="signin"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>signin</b></span>
+                        <a href="#signin"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>signin(username, password, returnURL)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="51"
+                            class="link-to-prism">src/app/shared/services/auth/jwt-auth.service.ts:51</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>username</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>password</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>returnURL</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="signout"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>signout</b></span>
+                        <a href="#signout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>signout()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="173"
+                            class="link-to-prism">src/app/shared/services/auth/jwt-auth.service.ts:173</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="APP_USER"></a>
+                    <span class="name">
+                        <span ><b>APP_USER</b></span>
+                        <a href="#APP_USER"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;EGRET_USER&quot;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/shared/services/auth/jwt-auth.service.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isAuthenticated"></a>
+                    <span class="name">
+                        <span ><b>isAuthenticated</b></span>
+                        <a href="#isAuthenticated"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" >Boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/shared/services/auth/jwt-auth.service.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="JWT_TOKEN"></a>
+                    <span class="name">
+                        <span ><b>JWT_TOKEN</b></span>
+                        <a href="#JWT_TOKEN"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;JWT_TOKEN&quot;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/shared/services/auth/jwt-auth.service.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="return"></a>
+                    <span class="name">
+                        <span ><b>return</b></span>
+                        <a href="#return"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/shared/services/auth/jwt-auth.service.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="signingIn"></a>
+                    <span class="name">
+                        <span ><b>signingIn</b></span>
+                        <a href="#signingIn"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" >Boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/shared/services/auth/jwt-auth.service.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="token"></a>
+                    <span class="name">
+                        <span ><b>token</b></span>
+                        <a href="#token"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/shared/services/auth/jwt-auth.service.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="user"></a>
+                    <span class="name">
+                        <span ><b>user</b></span>
+                        <a href="#user"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/User.html" target="_self" >User</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/shared/services/auth/jwt-auth.service.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="user$"></a>
+                    <span class="name">
+                        <span ><b>user$</b></span>
+                        <a href="#user$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>(new BehaviorSubject&lt;User&gt;(this.user))</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/shared/services/auth/jwt-auth.service.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &quot;@angular/core&quot;;
+import { LocalStorageService } from &quot;../local-store.service&quot;;
+import { AuthService } from &quot;./auth.service&quot;
+import { LoginService } from &quot;../login.service&quot;
+import { HttpClient } from &quot;@angular/common/http&quot;;
+import { Router, ActivatedRoute } from &quot;@angular/router&quot;;
+import { map, catchError, delay } from &quot;rxjs/operators&quot;;
+import { User } from &quot;../../models/user.model&quot;;
+import { Account } from &quot;../../models/account&quot;;
+import { of, BehaviorSubject, throwError } from &quot;rxjs&quot;;
+import { environment } from &quot;environments/environment&quot;;
+import { NavigationService } from &quot;../navigation.service&quot;;
+
+// &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D; only for demo purpose &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+// const DEMO_TOKEN &#x3D;
+//   &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjhkNDc4MDc4NmM3MjE3MjBkYzU1NzMiLCJlbWFpbCI6InJhZmkuYm9ncmFAZ21haWwuY29tIiwicm9sZSI6IlNBIiwiYWN0aXZlIjp0cnVlLCJpYXQiOjE1ODc3MTc2NTgsImV4cCI6MTU4ODMyMjQ1OH0.dXw0ySun5ex98dOzTEk0lkmXJvxg3Qgz4ed&quot;;
+
+// const DEMO_USER: User &#x3D; {
+//   id: &quot;5b700c45639d2c0c54b354ba&quot;,
+//   displayName: &quot;Watson Joyce&quot;,
+//   role: &quot;SA&quot;,
+// };
+// &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D; you will get those data from server &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+
+@Injectable({
+  providedIn: &quot;root&quot;,
+})
+export class JwtAuthService {
+  token;
+  isAuthenticated: Boolean;
+  user: User;
+  user$ &#x3D; (new BehaviorSubject&lt;User&gt;(this.user));
+  signingIn: Boolean;
+  return: string;
+  JWT_TOKEN &#x3D; &quot;JWT_TOKEN&quot;;
+  APP_USER &#x3D; &quot;EGRET_USER&quot;;
+
+  constructor(
+    private ls: LocalStorageService,
+    private http: HttpClient,
+    private authService: AuthService,
+    private loginService: LoginService,
+    private navigationService: NavigationService,
+    private router: Router,
+    private route: ActivatedRoute
+  ) {
+    this.route.queryParams
+      .subscribe(params &#x3D;&gt; this.return &#x3D; params[&#x27;return&#x27;] || &#x27;/&#x27;);
+  }
+
+  public signin(username, password, returnURL) {
+
+    // return of({token: DEMO_TOKEN, user: DEMO_USER})
+    //   .pipe(
+    //     delay(1000),
+    //     map((res: any) &#x3D;&gt; {
+    //       this.setUserAndToken(res.token, res.user, !!res);
+    //       this.signingIn &#x3D; false;
+    //       return res;
+    //     }),
+    //     catchError((error) &#x3D;&gt; {
+    //       return throwError(error);
+    //     })
+    //   );
+
+    // FOLLOWING CODE SENDS SIGNIN REQUEST TO SERVER
+
+    this.signingIn &#x3D; true;
+    return this.authService.login(username, password)
+      //return this.http.post(&#x60;${environment.apiURL}/auth/local&#x60;, { username, password })
+      .pipe(
+        map((res: any) &#x3D;&gt; {
+          //this.setUserAndToken(res.token, res.user, !!res);
+          this.signingIn &#x3D; false;
+          let currentAccount: Account &#x3D; new Account(username, password, &quot;en-US&quot;);
+          this.loginService.SignIn(currentAccount).subscribe((user) &#x3D;&gt; {
+
+            if (user &amp;&amp; user.UserGuid) {
+              this.loginService.currentUser &#x3D; user;
+              currentAccount.User &#x3D; user;
+              //this.loginService.ValidateHash(currentAccount).subscribe((isValid: boolean) &#x3D;&gt; {
+
+                //if (isValid) {
+                  //this.ls.setValue&lt;any&gt;(&#x27;currentUser&#x27;, JSON.stringify(currentAccount.User));
+                  this.ls.setValue&lt;User&gt;(&#x27;currentUser&#x27;, currentAccount.User);
+
+                  var superAdmin &#x3D; user.AccessRoles.includes(&quot;SRSAdministrator&quot;) ? true : false;
+                  var FabricatorUser &#x3D; user.AccessRoles.includes(&quot;Fabricator&quot;) ? true : false;
+                  var DealerFull &#x3D; user.AccessRoles.includes(&quot;Dealer-Full&quot;) ? true : false;
+                  if (superAdmin) {
+                    this.navigationService.publishNavigationChange(&#x27;icon-menu&#x27;);
+                    //isAuthentificated &#x3D; true;
+                    if (returnURL &#x3D;&#x3D; &quot;/dashboard&quot; || returnURL &#x3D;&#x3D; &quot;/&quot;) { returnURL &#x3D; &quot;/dashboard/default&quot;; }
+                  }
+
+                  if (FabricatorUser) {
+                    this.navigationService.publishNavigationChange(&#x27;icon-menu-fabricator&#x27;);
+                    if (returnURL &#x3D;&#x3D; &quot;/dashboard&quot; || returnURL &#x3D;&#x3D; &quot;/&quot;) { returnURL &#x3D; &quot;/dashboard/fabricator&quot;; }
+                  }
+                  if (!superAdmin &amp;&amp; !FabricatorUser) { 
+                    returnURL &#x3D; &quot;/sessions/signin&quot;;
+                    this.signout();
+                    throw Error(&quot;Access Denied&quot;);
+                  }
+                  //If you want to allow Dealers to access fabricator portal uncomment below lines and comment above 3 lines.
+                  // if (DealerFull) {
+                  //   this.navigationService.publishNavigationChange(&#x27;icon-menu-fabricator&#x27;);
+                  //   if (returnURL &#x3D;&#x3D; &quot;/dashboard&quot; || returnURL &#x3D;&#x3D; &quot;/&quot;) { returnURL &#x3D; &quot;/dashboard/fabricator&quot;; }
+                  // }
+
+                  this.router.navigateByUrl(returnURL);
+
+                //}
+              // }, error &#x3D;&gt; {
+              //   console.log(error);
+              //   // this.showLoader &#x3D; false;
+              // });
+            } else {
+              // this.showLoader &#x3D; false
+              // this.username &#x3D; &#x27;&#x27;;
+              // this.password &#x3D; &#x27;&#x27;;
+              // this.checkedTnC &#x3D; false;
+            }
+          }, error &#x3D;&gt; {
+            console.log(error);
+            // this.showLoader &#x3D; false;
+            // this.InvalidUserContainer &#x3D; true;
+          });
+          return res;
+        }),
+        catchError((error) &#x3D;&gt; {
+          return throwError(error);
+        })
+      );
+  }
+
+  /*
+    checkTokenIsValid is called inside constructor of
+    shared/components/layouts/admin-layout/admin-layout.component.ts
+  */
+  public checkTokenIsValid() {
+    // return of(DEMO_USER)
+    //   .pipe(
+    //     map((profile: User) &#x3D;&gt; {
+    //       this.setUserAndToken(this.getJwtToken(), profile, true);
+    //       this.signingIn &#x3D; false;
+    //       return profile;
+    //     }),
+    //     catchError((error) &#x3D;&gt; {
+    //       return of(error);
+    //     })
+    //   );
+
+    /*
+      The following code get user data and jwt token is assigned to
+      Request header using token.interceptor
+      This checks if the existing token is valid when app is reloaded
+    */
+
+    // return this.http.get(&#x60;${environment.apiURL}/api/users/profile&#x60;)
+    //   .pipe(
+    //     map((profile: User) &#x3D;&gt; {
+    //       this.setUserAndToken(this.getJwtToken(), profile, true);
+    //       return profile;
+    //     }),
+    //     catchError((error) &#x3D;&gt; {
+    //       this.signout();
+    //       return of(error);
+    //     })
+    //   );
+  }
+
+  public signout() {
+
+    this.authService.logOut();
+    //this.setUserAndToken(null, null, false);
+    this.router.navigateByUrl(&quot;sessions/signin&quot;);
+  }
+
+  isLoggedIn(): Boolean {
+
+    //return !!this.getJwtToken();
+    return !!this.authService.getAuthorizationToken();
+  }
+
+  // getJwtToken() {
+  //   return this.ls.getItem(this.JWT_TOKEN);
+  // }
+  // getUser() {
+  //   return this.ls.getItem(this.APP_USER);
+  // }
+
+  // setUserAndToken(token: String, user: User, isAuthenticated: Boolean) {
+  //   this.isAuthenticated &#x3D; isAuthenticated;
+  //   this.token &#x3D; token;
+  //   this.user &#x3D; user;
+  //   this.user$.next(user);
+  //   this.ls.setItem(this.JWT_TOKEN, token);
+  //   this.ls.setItem(this.APP_USER, user);
+  // }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'JwtAuthService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
